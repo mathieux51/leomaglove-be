@@ -31,7 +31,7 @@ export default () => (
       <span>Vidéo en boucle</span>
     </VideoContainer>
     <MoreInfoContainer>
-      <TextInfo>plus d'infos</TextInfo>
+      <TextInfo>Plus d'infos</TextInfo>
       <ButtonContainer>
         <Button>
           Les invités en <strong> Belgique</strong>
