@@ -23,7 +23,7 @@ export default ({ children }) => (
       <Head />
       <Header />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </Container>
   </ThemeProvider>
 )

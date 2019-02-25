@@ -2,7 +2,7 @@ import Head from "next/head"
 
 const HeadComponent = () => (
   <Head>
-    <title>LÉO LEFÈVRE</title>
+    <title>Léo ❤ Magali</title>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <link
       rel="shortcut icon"

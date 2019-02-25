@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 
-const StyledFooter = styled.footer.attrs({ className: "flex jc-e" })`
-  margin: 33px 0 20px;
-  padding-top: 50px;
+const StyledFooter = styled.footer.attrs({ className: "flex jc-c ai-c" })`
+  height: 100px;
+  border: 1px solid black;
 `
 
 const Footer = () => (
