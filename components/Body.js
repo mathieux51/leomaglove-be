@@ -4,15 +4,21 @@ import styled from "styled-components"
 const Main = styled.main.attrs({ className: "flex fxd-c" })`
   min-height: calc(100vh - 100px);
 `
-const VideoContainer = styled.div.attrs({ className: "" })`
-  width: 100vw;
+const VideoContainer = styled.div.attrs({
+  className: "flex-1 jc-c ai-c"
+})`
+  /* width: 100vw;
   height: calc(100vw / 2.39);
-  background: gold;
+  max-height: calc(100vh - 100px) */
+  background: black;
+`
+const Frame = styled.div.attrs({ className: "" })`
+  color: hotpink;
 `
 const MoreInfoContainer = styled.div.attrs({
   className: "flex fxd-c ai-c jc-sb"
 })`
-  padding: 0 5vw;
+  padding: 0 5vw 20px;
   background: hotpink;
 `
 const TextInfo = styled.span.attrs({ className: "" })`
@@ -28,7 +34,7 @@ const Button = styled.button.attrs({ className: "" })`
 export default () => (
   <Main id="main">
     <VideoContainer>
-      <span>Vidéo en boucle</span>
+      <Frame>Vidéo en boucle</Frame>
     </VideoContainer>
     <MoreInfoContainer>
       <TextInfo>Plus d'infos</TextInfo>
