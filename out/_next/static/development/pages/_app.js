@@ -1,266 +1,13 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_app.js"],{
 
-/***/ "./assets/fonts/italic-100-1em-proxima-nova.woff":
-/*!*******************************************************!*\
-  !*** ./assets/fonts/italic-100-1em-proxima-nova.woff ***!
-  \*******************************************************/
+/***/ "./assets/fonts/meriendaOne.woff2":
+/*!****************************************!*\
+  !*** ./assets/fonts/meriendaOne.woff2 ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/fonts/italic-100-1em-proxima-nova-7f94cbe1016b902fbc7ddd0beced85c2.woff";
-
-/***/ }),
-
-/***/ "./assets/fonts/italic-100-1em-proxima-nova.woff2":
-/*!********************************************************!*\
-  !*** ./assets/fonts/italic-100-1em-proxima-nova.woff2 ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/italic-100-1em-proxima-nova-19990f5d4a92cc3d48d14670edc3af01.woff2";
-
-/***/ }),
-
-/***/ "./assets/fonts/italic-300-1em-futura-pt.woff":
-/*!****************************************************!*\
-  !*** ./assets/fonts/italic-300-1em-futura-pt.woff ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/italic-300-1em-futura-pt-419e861bf5417a7d7dd81f08a96c7054.woff";
-
-/***/ }),
-
-/***/ "./assets/fonts/italic-300-1em-futura-pt.woff2":
-/*!*****************************************************!*\
-  !*** ./assets/fonts/italic-300-1em-futura-pt.woff2 ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/italic-300-1em-futura-pt-aa19ed6a8f8fdc586ed80ccde1e22731.woff2";
-
-/***/ }),
-
-/***/ "./assets/fonts/italic-400-1em-futura-pt.woff":
-/*!****************************************************!*\
-  !*** ./assets/fonts/italic-400-1em-futura-pt.woff ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/italic-400-1em-futura-pt-e6f2c08548a7481cac1da9bff34cfe43.woff";
-
-/***/ }),
-
-/***/ "./assets/fonts/italic-400-1em-futura-pt.woff2":
-/*!*****************************************************!*\
-  !*** ./assets/fonts/italic-400-1em-futura-pt.woff2 ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/italic-400-1em-futura-pt-ab9d2ef0e50ab4ac627e6046772fef36.woff2";
-
-/***/ }),
-
-/***/ "./assets/fonts/italic-700-1em-futura-pt.woff":
-/*!****************************************************!*\
-  !*** ./assets/fonts/italic-700-1em-futura-pt.woff ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/italic-700-1em-futura-pt-fe7ecce1222fef9311133751acd032c1.woff";
-
-/***/ }),
-
-/***/ "./assets/fonts/italic-700-1em-futura-pt.woff2":
-/*!*****************************************************!*\
-  !*** ./assets/fonts/italic-700-1em-futura-pt.woff2 ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/italic-700-1em-futura-pt-39ff1b4f3fa958a2d88f7f7b5d008d20.woff2";
-
-/***/ }),
-
-/***/ "./assets/fonts/italic-700-1em-proxima-nova.woff":
-/*!*******************************************************!*\
-  !*** ./assets/fonts/italic-700-1em-proxima-nova.woff ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/italic-700-1em-proxima-nova-ab20bb6e8bb45fb386f4718229403292.woff";
-
-/***/ }),
-
-/***/ "./assets/fonts/italic-700-1em-proxima-nova.woff2":
-/*!********************************************************!*\
-  !*** ./assets/fonts/italic-700-1em-proxima-nova.woff2 ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/italic-700-1em-proxima-nova-e893b9f0c0cc07fcdbc507e3317fd3d3.woff2";
-
-/***/ }),
-
-/***/ "./assets/fonts/normal-100-1em-proxima-nova.woff":
-/*!*******************************************************!*\
-  !*** ./assets/fonts/normal-100-1em-proxima-nova.woff ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/normal-100-1em-proxima-nova-c79a7379bb82bea2850c6261b27c9a0e.woff";
-
-/***/ }),
-
-/***/ "./assets/fonts/normal-100-1em-proxima-nova.woff2":
-/*!********************************************************!*\
-  !*** ./assets/fonts/normal-100-1em-proxima-nova.woff2 ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/normal-100-1em-proxima-nova-59c4c056007958b9ccd4de1fcdac751d.woff2";
-
-/***/ }),
-
-/***/ "./assets/fonts/normal-300-1em-futura-pt.woff":
-/*!****************************************************!*\
-  !*** ./assets/fonts/normal-300-1em-futura-pt.woff ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/normal-300-1em-futura-pt-36d5de2afa239762c85f329b38f56330.woff";
-
-/***/ }),
-
-/***/ "./assets/fonts/normal-300-1em-futura-pt.woff2":
-/*!*****************************************************!*\
-  !*** ./assets/fonts/normal-300-1em-futura-pt.woff2 ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/normal-300-1em-futura-pt-b28707c74c2a71c7e72249184daab251.woff2";
-
-/***/ }),
-
-/***/ "./assets/fonts/normal-300-1em-proxima-nova.woff":
-/*!*******************************************************!*\
-  !*** ./assets/fonts/normal-300-1em-proxima-nova.woff ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/normal-300-1em-proxima-nova-51bf4632b52dbee247dbbd9cf836999e.woff";
-
-/***/ }),
-
-/***/ "./assets/fonts/normal-300-1em-proxima-nova.woff2":
-/*!********************************************************!*\
-  !*** ./assets/fonts/normal-300-1em-proxima-nova.woff2 ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/normal-300-1em-proxima-nova-8232099aff19fa2eb634da1bb3f6fa43.woff2";
-
-/***/ }),
-
-/***/ "./assets/fonts/normal-400-1em-futura-pt.woff":
-/*!****************************************************!*\
-  !*** ./assets/fonts/normal-400-1em-futura-pt.woff ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/normal-400-1em-futura-pt-9ef13e61b676508f6c295dd85ae23f0c.woff";
-
-/***/ }),
-
-/***/ "./assets/fonts/normal-400-1em-futura-pt.woff2":
-/*!*****************************************************!*\
-  !*** ./assets/fonts/normal-400-1em-futura-pt.woff2 ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/normal-400-1em-futura-pt-dff31655072c40a3e7a0b702c6ce1b4f.woff2";
-
-/***/ }),
-
-/***/ "./assets/fonts/normal-400-1em-proxima-nova.woff":
-/*!*******************************************************!*\
-  !*** ./assets/fonts/normal-400-1em-proxima-nova.woff ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/normal-400-1em-proxima-nova-5ba527914a23534cfb05499170a144cc.woff";
-
-/***/ }),
-
-/***/ "./assets/fonts/normal-400-1em-proxima-nova.woff2":
-/*!********************************************************!*\
-  !*** ./assets/fonts/normal-400-1em-proxima-nova.woff2 ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/normal-400-1em-proxima-nova-1a23ce1ab091da91e0f4a7c4b59d707b.woff2";
-
-/***/ }),
-
-/***/ "./assets/fonts/normal-700-1em-futura-pt.woff":
-/*!****************************************************!*\
-  !*** ./assets/fonts/normal-700-1em-futura-pt.woff ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/normal-700-1em-futura-pt-6b3458e328efb8dc9ddc0b33bfe7c69f.woff";
-
-/***/ }),
-
-/***/ "./assets/fonts/normal-700-1em-futura-pt.woff2":
-/*!*****************************************************!*\
-  !*** ./assets/fonts/normal-700-1em-futura-pt.woff2 ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/normal-700-1em-futura-pt-4db6b9b52572a59518c6ae153e23f200.woff2";
-
-/***/ }),
-
-/***/ "./assets/fonts/normal-700-1em-proxima-nova.woff":
-/*!*******************************************************!*\
-  !*** ./assets/fonts/normal-700-1em-proxima-nova.woff ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/normal-700-1em-proxima-nova-4c65d111ab62fadc9b1ac3cf92aa8489.woff";
-
-/***/ }),
-
-/***/ "./assets/fonts/normal-700-1em-proxima-nova.woff2":
-/*!********************************************************!*\
-  !*** ./assets/fonts/normal-700-1em-proxima-nova.woff2 ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/fonts/normal-700-1em-proxima-nova-fce6af13df68fefbe728f620ee466d95.woff2";
+module.exports = "/_next/static/fonts/meriendaOne-02e7e86b04678a47dcd472639df01556.woff2";
 
 /***/ }),
 
@@ -278,8 +25,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var generateFontFace = function generateFontFace(ff, fw, fs, woff2, woff) {
-  return Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["css"])(["@font-face{font-family:", ";src:url(", ") format(\"woff2\"),url(", ") format(\"woff\");font-weight:", ";font-style:", ";}"], ff, woff2, woff, fw, fs);
+var generateFontFace = function generateFontFace(ff, fw, fs, woff2) {
+  return Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["css"])(["@font-face{font-family:", ";src:url(", ") format(\"woff2\");font-weight:", ";font-style:", ";}"], ff, woff2, fw, fs);
 };
 
 var fontFaces = _FontFacesList__WEBPACK_IMPORTED_MODULE_1__["default"].map(function (f) {
@@ -298,79 +45,10 @@ var fontFaces = _FontFacesList__WEBPACK_IMPORTED_MODULE_1__["default"].map(funct
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _assets_fonts_normal_100_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/fonts/normal-100-1em-proxima-nova.woff2 */ "./assets/fonts/normal-100-1em-proxima-nova.woff2");
-/* harmony import */ var _assets_fonts_normal_100_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_normal_100_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _assets_fonts_normal_100_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/fonts/normal-100-1em-proxima-nova.woff */ "./assets/fonts/normal-100-1em-proxima-nova.woff");
-/* harmony import */ var _assets_fonts_normal_100_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_normal_100_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _assets_fonts_normal_300_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/fonts/normal-300-1em-proxima-nova.woff2 */ "./assets/fonts/normal-300-1em-proxima-nova.woff2");
-/* harmony import */ var _assets_fonts_normal_300_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_normal_300_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _assets_fonts_normal_300_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/fonts/normal-300-1em-proxima-nova.woff */ "./assets/fonts/normal-300-1em-proxima-nova.woff");
-/* harmony import */ var _assets_fonts_normal_300_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_normal_300_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _assets_fonts_normal_400_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/fonts/normal-400-1em-proxima-nova.woff2 */ "./assets/fonts/normal-400-1em-proxima-nova.woff2");
-/* harmony import */ var _assets_fonts_normal_400_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_normal_400_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _assets_fonts_normal_400_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/fonts/normal-400-1em-proxima-nova.woff */ "./assets/fonts/normal-400-1em-proxima-nova.woff");
-/* harmony import */ var _assets_fonts_normal_400_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_normal_400_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _assets_fonts_normal_700_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/fonts/normal-700-1em-proxima-nova.woff2 */ "./assets/fonts/normal-700-1em-proxima-nova.woff2");
-/* harmony import */ var _assets_fonts_normal_700_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_normal_700_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _assets_fonts_normal_700_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/fonts/normal-700-1em-proxima-nova.woff */ "./assets/fonts/normal-700-1em-proxima-nova.woff");
-/* harmony import */ var _assets_fonts_normal_700_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_normal_700_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _assets_fonts_italic_100_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../assets/fonts/italic-100-1em-proxima-nova.woff2 */ "./assets/fonts/italic-100-1em-proxima-nova.woff2");
-/* harmony import */ var _assets_fonts_italic_100_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_italic_100_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _assets_fonts_italic_100_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../assets/fonts/italic-100-1em-proxima-nova.woff */ "./assets/fonts/italic-100-1em-proxima-nova.woff");
-/* harmony import */ var _assets_fonts_italic_100_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_italic_100_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _assets_fonts_italic_700_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../assets/fonts/italic-700-1em-proxima-nova.woff2 */ "./assets/fonts/italic-700-1em-proxima-nova.woff2");
-/* harmony import */ var _assets_fonts_italic_700_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_italic_700_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _assets_fonts_italic_700_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../assets/fonts/italic-700-1em-proxima-nova.woff */ "./assets/fonts/italic-700-1em-proxima-nova.woff");
-/* harmony import */ var _assets_fonts_italic_700_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_italic_700_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _assets_fonts_normal_300_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../assets/fonts/normal-300-1em-futura-pt.woff2 */ "./assets/fonts/normal-300-1em-futura-pt.woff2");
-/* harmony import */ var _assets_fonts_normal_300_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_normal_300_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _assets_fonts_normal_300_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../assets/fonts/normal-300-1em-futura-pt.woff */ "./assets/fonts/normal-300-1em-futura-pt.woff");
-/* harmony import */ var _assets_fonts_normal_300_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_normal_300_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _assets_fonts_normal_400_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../assets/fonts/normal-400-1em-futura-pt.woff2 */ "./assets/fonts/normal-400-1em-futura-pt.woff2");
-/* harmony import */ var _assets_fonts_normal_400_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_normal_400_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _assets_fonts_normal_400_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../assets/fonts/normal-400-1em-futura-pt.woff */ "./assets/fonts/normal-400-1em-futura-pt.woff");
-/* harmony import */ var _assets_fonts_normal_400_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_normal_400_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _assets_fonts_normal_700_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../assets/fonts/normal-700-1em-futura-pt.woff2 */ "./assets/fonts/normal-700-1em-futura-pt.woff2");
-/* harmony import */ var _assets_fonts_normal_700_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_normal_700_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _assets_fonts_normal_700_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../assets/fonts/normal-700-1em-futura-pt.woff */ "./assets/fonts/normal-700-1em-futura-pt.woff");
-/* harmony import */ var _assets_fonts_normal_700_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_normal_700_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _assets_fonts_italic_300_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../assets/fonts/italic-300-1em-futura-pt.woff2 */ "./assets/fonts/italic-300-1em-futura-pt.woff2");
-/* harmony import */ var _assets_fonts_italic_300_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_italic_300_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var _assets_fonts_italic_300_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../assets/fonts/italic-300-1em-futura-pt.woff */ "./assets/fonts/italic-300-1em-futura-pt.woff");
-/* harmony import */ var _assets_fonts_italic_300_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_italic_300_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _assets_fonts_italic_400_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../assets/fonts/italic-400-1em-futura-pt.woff2 */ "./assets/fonts/italic-400-1em-futura-pt.woff2");
-/* harmony import */ var _assets_fonts_italic_400_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_italic_400_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _assets_fonts_italic_400_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../assets/fonts/italic-400-1em-futura-pt.woff */ "./assets/fonts/italic-400-1em-futura-pt.woff");
-/* harmony import */ var _assets_fonts_italic_400_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_italic_400_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var _assets_fonts_italic_700_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../assets/fonts/italic-700-1em-futura-pt.woff2 */ "./assets/fonts/italic-700-1em-futura-pt.woff2");
-/* harmony import */ var _assets_fonts_italic_700_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_italic_700_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var _assets_fonts_italic_700_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../assets/fonts/italic-700-1em-futura-pt.woff */ "./assets/fonts/italic-700-1em-futura-pt.woff");
-/* harmony import */ var _assets_fonts_italic_700_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_italic_700_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var _assets_fonts_meriendaOne_woff2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/fonts/meriendaOne.woff2 */ "./assets/fonts/meriendaOne.woff2");
+/* harmony import */ var _assets_fonts_meriendaOne_woff2__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_meriendaOne_woff2__WEBPACK_IMPORTED_MODULE_1__);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ([["proxima-nova", 100, "normal", _assets_fonts_normal_100_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_0___default.a, _assets_fonts_normal_100_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_1___default.a], ["proxima-nova", 300, "normal", _assets_fonts_normal_300_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_fonts_normal_300_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_3___default.a], ["proxima-nova", 400, "normal", _assets_fonts_normal_400_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_4___default.a, _assets_fonts_normal_400_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_5___default.a], ["proxima-nova", 100, "italic", _assets_fonts_italic_100_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_8___default.a, _assets_fonts_italic_100_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_9___default.a], ["proxima-nova", 700, "normal", _assets_fonts_normal_700_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_6___default.a, _assets_fonts_normal_700_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_7___default.a], ["proxima-nova", 700, "italic", _assets_fonts_italic_700_1em_proxima_nova_woff2__WEBPACK_IMPORTED_MODULE_10___default.a, _assets_fonts_italic_700_1em_proxima_nova_woff__WEBPACK_IMPORTED_MODULE_11___default.a], ["futura-pt", 300, "normal", _assets_fonts_normal_300_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_12___default.a, _assets_fonts_normal_300_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_13___default.a], ["futura-pt", 400, "normal", _assets_fonts_normal_400_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_14___default.a, _assets_fonts_normal_400_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_15___default.a], ["futura-pt", 700, "normal", _assets_fonts_normal_700_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_16___default.a, _assets_fonts_normal_700_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_17___default.a], ["futura-pt", 300, "italic", _assets_fonts_italic_300_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_18___default.a, _assets_fonts_italic_300_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_19___default.a], ["futura-pt", 400, "italic", _assets_fonts_italic_400_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_20___default.a, _assets_fonts_italic_400_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_21___default.a], ["futura-pt", 700, "italic", _assets_fonts_italic_700_1em_futura_pt_woff2__WEBPACK_IMPORTED_MODULE_22___default.a, _assets_fonts_italic_700_1em_futura_pt_woff__WEBPACK_IMPORTED_MODULE_23___default.a]]);
+/* harmony default export */ __webpack_exports__["default"] = ([["Merienda One", 400, "normal", _assets_fonts_meriendaOne_woff2__WEBPACK_IMPORTED_MODULE_1___default.a]]);
 
 /***/ }),
 
@@ -433,7 +111,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  ", "\n  ", "\n\n    /* Reset */\n  button {\n    border: 0;\n    padding: 0;\n    background: transparent;\n  }\n\n  ul {\n    list-style: none;\n  }\n\n  html {\n    box-sizing: border-box;\n  }\n  \n  *, *:before, *:after {\n    box-sizing: inherit;\n  }\n  a {\n    text-decoration: none;\n  }\n  /* fonts */\n  body {\n    color: ", ";\n\t\tfont-family: sans-serif;\n    background: ", "\n  }\n\t.fonts-loaded body {\n\t\tfont-family: proxima-nova, sans-serif;\n\t}\n\n  .fonts-loaded .ff-futura-pt {\n    font-family: futura-pt, sans-serif;\n  }\n\n   /* flex */\n  .flex {\n    display: flex;\n  }\n  .fxd-c {\n    flex-direction: column;\n  }\n  .jc-c {\n    justify-content: center;\n  } \n  .jc-e {\n    justify-content: flex-end;\n  } \n  .jc-sb {\n    justify-content: space-between;\n  } \n  .ai-c {\n    align-items: center;\n  }\n\n  .flex-1 {\n    flex: 1;\n  }\n  .w100 {\n    width: 100%;\n  }\n  .h100 {\n    height: 100%;\n  }\n  /* font-size */\n  .f12 {\n    font-size: 12px;\n  }\n  .f14 {\n    font-size: 14px;\n  }\n  .f16 {\n    font-size: 16px;\n  }\n  .f31 {\n    font-size: 31px;\n  }\n\n  .fw300 {\n    font-weight: 300;\n  }\n  .fw400 {\n    font-weight: 400;\n  }\n\n  /* Text */\n  .ttu {\n    text-transform: uppercase;\n  }\n  .tdn {\n    text-decoration: none;\n  }\n  .ta-c {\n    text-align: center;\n  }\n  /* margin/padding */\n  .m0 {\n    margin: 0;\n  }\n  .p0 {\n    padding: 0;\n  }\n  /* display */\n  .d {\n    display: block;\n  }\n  /* debug */\n  .o {\n    outline: 5px solid gold;\n  }\n  /* position */\n  .relative {\n    position: relative;\n  }\n  .absolute {\n    position: absolute;\n  }\n  .t0 {\n    top: 0;\n  }\n  .l0 {\n    left: 0;\n  }\n  .r0 {\n    right: 0;\n  }\n  .b0 {\n    bottom: 0;\n  }\n  /* img */\n  .cover {\n    object-fit: cover;\n  }\n  .z-1 {\n    z-index: -1;\n  }\n  .z0 {\n    z-index: 0;\n  }\n  .z1 {\n    z-index: 1;\n  }\n  .pointer {\n    cursor: pointer;\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  ", "\n  ", "\n\n    /* Reset */\n  button {\n    border: 0;\n    padding: 0;\n    background: transparent;\n  }\n\n  ul {\n    list-style: none;\n  }\n\n  html {\n    box-sizing: border-box;\n  }\n  \n  *, *:before, *:after {\n    box-sizing: inherit;\n  }\n  a {\n    text-decoration: none;\n  }\n  /* fonts */\n  body {\n    color: ", ";\n\t\tfont-family: sans-serif;\n    background: ", "\n  }\n\t.fonts-loaded body {\n\t\tfont-family: 'Merienda One', sans-serif;\n\t}\n\n  .fonts-loaded .ff-futura-pt {\n    font-family: futura-pt, sans-serif;\n  }\n\n   /* flex */\n  .flex {\n    display: flex;\n  }\n  .fxd-c {\n    flex-direction: column;\n  }\n  .jc-c {\n    justify-content: center;\n  } \n  .jc-e {\n    justify-content: flex-end;\n  } \n  .jc-sb {\n    justify-content: space-between;\n  } \n  .jc-sa {\n    justify-content: space-around;\n  } \n  .ai-c {\n    align-items: center;\n  }\n\n  .flex-1 {\n    flex: 1;\n  }\n  .w100 {\n    width: 100%;\n  }\n  .h100 {\n    height: 100%;\n  }\n  /* font-size */\n  .f12 {\n    font-size: 12px;\n  }\n  .f14 {\n    font-size: 14px;\n  }\n  .f16 {\n    font-size: 16px;\n  }\n  .f31 {\n    font-size: 31px;\n  }\n\n  .fw300 {\n    font-weight: 300;\n  }\n  .fw400 {\n    font-weight: 400;\n  }\n\n  /* Text */\n  .ttu {\n    text-transform: uppercase;\n  }\n  .tdn {\n    text-decoration: none;\n  }\n  .ta-c {\n    text-align: center;\n  }\n  /* margin/padding */\n  .m0 {\n    margin: 0;\n  }\n  .p0 {\n    padding: 0;\n  }\n  /* display */\n  .d {\n    display: block;\n  }\n  /* debug */\n  .o {\n    outline: 5px solid gold;\n  }\n  /* position */\n  .relative {\n    position: relative;\n  }\n  .absolute {\n    position: absolute;\n  }\n  .t0 {\n    top: 0;\n  }\n  .l0 {\n    left: 0;\n  }\n  .r0 {\n    right: 0;\n  }\n  .b0 {\n    bottom: 0;\n  }\n  /* img */\n  .cover {\n    object-fit: cover;\n  }\n  .z-1 {\n    z-index: -1;\n  }\n  .z0 {\n    z-index: 0;\n  }\n  .z1 {\n    z-index: 1;\n  }\n  .pointer {\n    cursor: pointer;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -485,7 +163,7 @@ var HeadComponent = function HeadComponent() {
       lineNumber: 5
     },
     __self: this
-  }, "L\xE9o \u2764 Magali"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+  }, "L\xE9o \u2665\uFE0F Magali"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
     name: "viewport",
     content: "initial-scale=1.0, width=device-width",
     __source: {
@@ -540,13 +218,13 @@ var Container = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.at
 }).withConfig({
   displayName: "Header__Container",
   componentId: "sc-1l4pn8m-0"
-})(["height:100px;border:1px solid black;"]);
+})(["height:100px;border:1px solid black;margin:1px;"]);
 var H1 = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].h1.attrs({
-  className: "f31 fw400"
+  className: "fw400"
 }).withConfig({
   displayName: "Header__H1",
   componentId: "sc-1l4pn8m-1"
-})(["margin:0;font-family:cursive;"]);
+})(["margin:0;font-size:3rem;"]);
 
 var Header =
 /*#__PURE__*/
@@ -565,16 +243,16 @@ function (_React$PureComponent) {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Container, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 16
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(H1, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 17
         },
         __self: this
-      }, "L\xE9o \u2764\uFE0F Magali"));
+      }, "Magali \u2764\uFE0F L\xE9o "));
     }
   }]);
 
@@ -615,7 +293,7 @@ var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Layout__Container",
   componentId: "oy0maz-0"
-})(["min-height:100vh;overflow:hidden;background:", ";"], function (_ref) {
+})(["min-height:calc(100vh - 20px);overflow:hidden;background:", ";margin:10px;border-radius:5px;"], function (_ref) {
   var theme = _ref.theme;
   return theme.bg;
 });
@@ -625,31 +303,31 @@ var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.wi
     theme: _style_theme__WEBPACK_IMPORTED_MODULE_2__["default"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 23
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 24
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GlobalStyle__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 25
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Head__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 26
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 27
     },
     __self: this
   }), children));
