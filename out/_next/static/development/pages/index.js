@@ -9,6 +9,75 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _CountDown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CountDown */ "./components/CountDown.js");
+var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/Body.js";
+
+
+
+var Main = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].main.attrs({
+  className: "flex fxd-c"
+}).withConfig({
+  displayName: "Body__Main",
+  componentId: "sc-1ccgya6-0"
+})(["min-height:calc(100vh - 120px);border:1px solid black;margin:1px;border-top:0;"]);
+var TopContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
+  className: "flex-1 flex jc-c ai-c fxd-c"
+}).withConfig({
+  displayName: "Body__TopContainer",
+  componentId: "sc-1ccgya6-1"
+})([""]);
+var Frame = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
+  className: ""
+}).withConfig({
+  displayName: "Body__Frame",
+  componentId: "sc-1ccgya6-2"
+})(["font-size:3rem;"]);
+
+var Body = function Body() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Main, {
+    id: "main",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopContainer, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Frame, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "Plus d'info bient\xF4t !"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountDown__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Body);
+
+/***/ }),
+
+/***/ "./components/CountDown.js":
+/*!*********************************!*\
+  !*** ./components/CountDown.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
@@ -27,52 +96,34 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/Body.js";
+var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/CountDown.js";
 
 
 
-var Main = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].main.attrs({
-  className: "flex fxd-c"
-}).withConfig({
-  displayName: "Body__Main",
-  componentId: "sc-1ccgya6-0"
-})(["min-height:calc(100vh - 120px);border:1px solid black;margin:1px;border-top:0;"]);
-var TopContainer = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.attrs({
-  className: "flex-1 flex jc-c ai-c fxd-c"
-}).withConfig({
-  displayName: "Body__TopContainer",
-  componentId: "sc-1ccgya6-1"
-})([""]);
-var Frame = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.attrs({
-  className: ""
-}).withConfig({
-  displayName: "Body__Frame",
-  componentId: "sc-1ccgya6-2"
-})(["font-size:3rem;"]);
-var CountDown = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.attrs({
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.attrs({
   className: "flex"
 }).withConfig({
-  displayName: "Body__CountDown",
-  componentId: "sc-1ccgya6-3"
+  displayName: "CountDown__Container",
+  componentId: "sc-1b9i74q-0"
 })(["margin-top:10px;"]);
 
-var Body =
+var CountDown =
 /*#__PURE__*/
 function (_React$PureComponent) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Body, _React$PureComponent);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(CountDown, _React$PureComponent);
 
-  function Body() {
+  function CountDown() {
     var _getPrototypeOf2;
 
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Body);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, CountDown);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Body)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(CountDown)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
       days: 0,
@@ -81,7 +132,7 @@ function (_React$PureComponent) {
       seconds: 0
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "finalDate", new Date("June 29 2019").getTime());
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "finalDate", new Date("Jun 29 2019").getTime());
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "timer", function () {
       var now = new Date().getTime();
@@ -102,7 +153,7 @@ function (_React$PureComponent) {
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Body, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(CountDown, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       var intervalId = setInterval(this.timer, 1000);
@@ -123,29 +174,10 @@ function (_React$PureComponent) {
           hours = _this$state.hours,
           minutes = _this$state.minutes,
           seconds = _this$state.seconds;
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Main, {
-        id: "main",
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Container, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(TopContainer, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 58
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Frame, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 59
-        },
-        __self: this
-      }, "Plus d'info bient\xF4t !"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(CountDown, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 39
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_CountDownItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -153,7 +185,7 @@ function (_React$PureComponent) {
         time: days,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 40
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_CountDownItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -161,7 +193,7 @@ function (_React$PureComponent) {
         time: hours,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 41
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_CountDownItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -169,7 +201,7 @@ function (_React$PureComponent) {
         time: minutes,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 42
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_CountDownItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -177,17 +209,17 @@ function (_React$PureComponent) {
         time: seconds,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 43
         },
         __self: this
-      }))));
+      }));
     }
   }]);
 
-  return Body;
+  return CountDown;
 }(react__WEBPACK_IMPORTED_MODULE_7___default.a.PureComponent);
 
-/* harmony default export */ __webpack_exports__["default"] = (Body);
+/* harmony default export */ __webpack_exports__["default"] = (CountDown);
 
 /***/ }),
 
