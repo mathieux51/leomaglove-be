@@ -1,51 +1,71 @@
 import React from "react"
 import styled from "styled-components"
+import CountDownItem from "./CountDownItem"
 
 const Main = styled.main.attrs({ className: "flex fxd-c" })`
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 120px);
+  border: 1px solid black;
+  margin: 1px;
+  border-top: 0;
 `
-const VideoContainer = styled.div.attrs({
-  className: "flex-1 jc-c ai-c"
+const TopContainer = styled.div.attrs({
+  className: "flex-1 flex jc-c ai-c fxd-c"
 })`
   /* width: 100vw;
   height: calc(100vw / 2.39);
   max-height: calc(100vh - 100px) */
-  background: black;
+  /* background: black; */
 `
 const Frame = styled.div.attrs({ className: "" })`
-  color: hotpink;
-`
-const MoreInfoContainer = styled.div.attrs({
-  className: "flex fxd-c ai-c jc-sb"
-})`
-  padding: 0 5vw 20px;
-  background: hotpink;
-`
-const TextInfo = styled.span.attrs({ className: "" })`
-  margin: 10px 10px 20px;
+  font-size: 3rem;
 `
 
-const ButtonContainer = styled.div.attrs({ className: "flex jc-sb w100" })``
-const Button = styled.button.attrs({ className: "" })`
-  border: 1px solid black;
-  padding: 20px;
+const CountDown = styled.div.attrs({ className: "flex" })`
+  margin-top: 10px;
 `
 
-export default () => (
-  <Main id="main">
-    <VideoContainer>
-      <Frame>Vidéo en boucle</Frame>
-    </VideoContainer>
-    <MoreInfoContainer>
-      <TextInfo>Plus d'infos</TextInfo>
-      <ButtonContainer>
-        <Button>
-          Les invités en <strong> Belgique</strong>
-        </Button>
-        <Button>
-          Les invités en <strong> France</strong>
-        </Button>
-      </ButtonContainer>
-    </MoreInfoContainer>
-  </Main>
-)
+class Body extends React.PureComponent {
+  state = {
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  }
+  finalDate = new Date("March 27 2019").getTime()
+  componentDidMount() {
+    const intervalId = setInterval(this.timer, 1000)
+    this.setState({ intervalId })
+  }
+  componentWillUnmount() {
+    clearInterval(this.state.intervalId)
+  }
+
+  timer = () => {
+    const now = new Date().getTime()
+    const distance = this.finalDate - now
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24))
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    )
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000)
+    this.setState({ days, hours, minutes, seconds })
+  }
+  render() {
+    const { days, hours, minutes, seconds } = this.state
+    return (
+      <Main id="main">
+        <TopContainer>
+          <Frame>Plus d'info bientôt !</Frame>
+          <CountDown>
+            <CountDownItem text="Jours" time={days} />
+            <CountDownItem text="Heures" time={hours} />
+            <CountDownItem text="Minutes" time={minutes} />
+            <CountDownItem text="Secondes" time={seconds} />
+          </CountDown>
+        </TopContainer>
+      </Main>
+    )
+  }
+}
+export default Body

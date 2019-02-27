@@ -11,9 +11,12 @@ import GlobalStyle from "components/GlobalStyle"
 const Container = styled.div`
   /* margin: 20px; */
   /* max-width: 141.667rem; */
-  min-height: 100vh;
+  min-height: calc(100vh - 20px);
   overflow: hidden;
   background: ${({ theme }) => theme.bg};
+  margin: 10px;
+  /* border: 1px solid black; */
+  border-radius: 5px;
 `
 
 export default ({ children }) => (

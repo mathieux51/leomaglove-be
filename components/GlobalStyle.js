@@ -34,7 +34,7 @@ export default createGlobalStyle`
     background: ${({ theme }) => theme.bg}
   }
 	.fonts-loaded body {
-		font-family: proxima-nova, sans-serif;
+		font-family: 'Merienda One', sans-serif;
 	}
 
   .fonts-loaded .ff-futura-pt {
@@ -56,6 +56,9 @@ export default createGlobalStyle`
   } 
   .jc-sb {
     justify-content: space-between;
+  } 
+  .jc-sa {
+    justify-content: space-around;
   } 
   .ai-c {
     align-items: center;

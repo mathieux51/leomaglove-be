@@ -1,10 +1,10 @@
 import { css } from "styled-components"
 import FontFaceList from "./FontFacesList"
 
-const generateFontFace = (ff, fw, fs, woff2, woff) => css`
+const generateFontFace = (ff, fw, fs, woff2) => css`
   @font-face {
     font-family: ${ff};
-    src: url(${woff2}) format("woff2"), url(${woff}) format("woff");
+    src: url(${woff2}) format("woff2");
     font-weight: ${fw};
     font-style: ${fs};
   }
