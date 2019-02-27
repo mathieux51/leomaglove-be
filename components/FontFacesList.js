@@ -1,3 +1,3 @@
-import meriendaOne from "../assets/fonts/meriendaOne.woff2"
+import amaticSc from "../assets/fonts/amaticSc.woff2"
 
-export default [["Merienda One", 400, "normal", meriendaOne]]
+export default [["AmaticSC", 400, "normal", amaticSc]]

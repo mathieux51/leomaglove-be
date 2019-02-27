@@ -34,12 +34,12 @@ export default createGlobalStyle`
     background: ${({ theme }) => theme.bg}
   }
 	.fonts-loaded body {
-		font-family: 'Merienda One', sans-serif;
+		font-family: AmaticSC, sans-serif;
 	}
 
-  .fonts-loaded .ff-futura-pt {
+  /* .fonts-loaded .ff-futura-pt {
     font-family: futura-pt, sans-serif;
-  }
+  } */
 
    /* flex */
   .flex {
