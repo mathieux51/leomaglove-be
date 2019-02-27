@@ -31,7 +31,7 @@ class Body extends React.PureComponent {
     minutes: 0,
     seconds: 0
   }
-  finalDate = new Date("March 27 2019").getTime()
+  finalDate = new Date("June 29 2019").getTime()
   componentDidMount() {
     const intervalId = setInterval(this.timer, 1000)
     this.setState({ intervalId })
