@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import CountDownItemText from "./CountDownItemText"
 
 const Container = styled.div.attrs({ className: "flex fxd-c jc-sb ai-c" })`
   margin: 10px 5px 5px;
@@ -8,16 +9,14 @@ const Container = styled.div.attrs({ className: "flex fxd-c jc-sb ai-c" })`
   }
 `
 
-const Time = styled.span.attrs({ className: "" })`
+const Time = styled.span.attrs({ className: "ta-c" })`
+  font-size: 1.25rem;
   border: 1px solid black;
   padding: 5px;
   margin: 2px;
+  width: 20px;
 `
 
-const Text = styled.span.attrs({ className: "" })`
-  margin-top: 10px;
-  font-size: 1.25rem;
-`
 const SubContainer = styled.div.attrs({ className: "flex jc-c w100" })``
 
 const CountDownItem = ({ text, time }) => {
@@ -35,7 +34,7 @@ const CountDownItem = ({ text, time }) => {
           <Time>{splitTime[1]}</Time>
         </SubContainer>
       )}
-      <Text>{text}</Text>
+      <CountDownItemText text={text} />
     </Container>
   )
 }
