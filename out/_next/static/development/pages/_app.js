@@ -173,11 +173,30 @@ var HeadComponent = function HeadComponent() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
     rel: "shortcut icon",
-    type: "image/x-icon",
+    sizes: "16x16 24x24 32x32 48x48",
     href: "/static/images/favicon.ico",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+    rel: "icon",
+    type: "image/png",
+    sizes: "32x32",
+    href: "/static/images/favicon-32x32.png",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+    rel: "apple-touch-icon",
+    sizes: "180x180",
+    href: "/static/images/favicon-180x180.png",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
     },
     __self: this
   }));
@@ -293,7 +312,7 @@ var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Layout__Container",
   componentId: "oy0maz-0"
-})(["min-height:calc(100vh - 20px);overflow:hidden;background:", ";margin:10px;border-radius:5px;"], function (_ref) {
+})(["max-width:90rem;min-height:calc(100vh - 20px);overflow:hidden;background:", ";margin:10px;border-radius:5px;"], function (_ref) {
   var theme = _ref.theme;
   return theme.bg;
 });
@@ -303,31 +322,31 @@ var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.wi
     theme: _style_theme__WEBPACK_IMPORTED_MODULE_2__["default"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 22
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GlobalStyle__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 23
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Head__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 24
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 25
     },
     __self: this
   }), children));
