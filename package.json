@@ -4,17 +4,18 @@
   "description": "leomaglove.be",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
-    "export": "next export",
-    "start": "next start",
-    "build": "next build",
+    "analyze:all": "BUNDLE_ANALYZE=all npm run build",
     "analyze:server": "BUNDLE_ANALYZE=server npm run build",
     "analyze:web": "BUNDLE_ANALYZE=web npm run build",
-    "analyze:all": "BUNDLE_ANALYZE=all npm run build",
+    "build": "next build",
     "clean": "rimraf node_modules/.cache",
     "cname": "touch out/CNAME && echo \"leomaglove.be\\n\" >> out/CNAME",
+    "deploy": "git add out/ && git commit -m \"Deploy to gh-pages\" && git push origin `git subtree split --prefix out master`:gh-pages --force",
+    "dev": "next",
+    "export": "next export",
     "predeploy": "npm run clean && npm run build && npm run export && touch out/.nojekyll && npm run cname",
-    "deploy": "git add out/ && git commit -m \"Deploy to gh-pages\" && git push origin `git subtree split --prefix out master`:gh-pages --force"
+    "scripts:env": "node scripts/loadEnv",
+    "start": "next start"
   },
   "keywords": [],
   "author": "Mathieu Schmidt",
@@ -31,6 +32,7 @@
     "@zeit/next-bundle-analyzer": "^0.1.2",
     "babel-plugin-module-resolver": "^3.2.0",
     "babel-plugin-styled-components": "^1.10.0",
+    "dotenv": "^6.2.0",
     "next-fonts": "^0.17.0",
     "next-images": "^1.0.4",
     "rimraf": "^2.6.3"
