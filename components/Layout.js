@@ -9,7 +9,6 @@ import Footer from "components/Footer"
 import GlobalStyle from "components/GlobalStyle"
 
 const Container = styled.div`
-  max-width: 90rem;
   min-height: calc(100vh - 20px);
   overflow: hidden;
   background: ${({ theme }) => theme.bg};

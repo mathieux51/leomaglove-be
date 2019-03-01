@@ -11,6 +11,7 @@ const Main = styled.main.attrs({ className: "flex fxd-c" })`
 const TopContainer = styled.div.attrs({
   className: "flex-1 flex jc-c ai-c fxd-c"
 })`
+  max-height: 900px;
   /* width: 100vw;
   height: calc(100vw / 2.39);
   max-height: calc(100vh - 100px) */
