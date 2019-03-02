@@ -28,7 +28,7 @@ var TopContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div
 }).withConfig({
   displayName: "Body__TopContainer",
   componentId: "sc-1ccgya6-1"
-})([""]);
+})(["max-height:900px;"]);
 var Frame = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
   className: ""
 }).withConfig({
@@ -41,25 +41,25 @@ var Body = function Body() {
     id: "main",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 26
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Frame, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
-  }, "Plus d'info bient\xF4t !"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountDown__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, "Plus d'infos... bient\xF4t !"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountDown__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: this
   })));
@@ -101,7 +101,7 @@ var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/
 
 
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.attrs({
-  className: "flex"
+  className: "flex w100 jc-c fxw-w"
 }).withConfig({
   displayName: "CountDown__Container",
   componentId: "sc-1b9i74q-0"
@@ -245,7 +245,7 @@ var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.at
 }).withConfig({
   displayName: "CountDownItem__Container",
   componentId: "oa8lkl-0"
-})(["margin:10px 5px 5px;& > div{margin:0 30px;}"]);
+})(["min-width:108px;min-height:72px;margin:10px 5px 5px;& > div{margin:0 30px;}"]);
 var Time = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.attrs({
   className: "ta-c"
 }).withConfig({
@@ -263,51 +263,51 @@ var CountDownItem = function CountDownItem(_ref) {
   var text = _ref.text,
       time = _ref.time;
 
-  var _time = String(time);
+  var _time = time === 0 ? "00" : String(time);
 
   var splitTime = _time.split("");
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 28
     },
     __self: this
   }, _time.length === 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SubContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 30
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Time, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 31
     },
     __self: this
   }, _time)) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SubContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 34
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Time, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 35
     },
     __self: this
   }, splitTime[0]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Time, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 36
     },
     __self: this
   }, splitTime[1])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountDownItemText__WEBPACK_IMPORTED_MODULE_2__["default"], {
     text: text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 39
     },
     __self: this
   }));

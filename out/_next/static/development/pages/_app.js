@@ -1,13 +1,13 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_app.js"],{
 
-/***/ "./assets/fonts/amaticSc.woff2":
-/*!*************************************!*\
-  !*** ./assets/fonts/amaticSc.woff2 ***!
-  \*************************************/
+/***/ "./assets/fonts/ILoveGlitter.woff2":
+/*!*****************************************!*\
+  !*** ./assets/fonts/ILoveGlitter.woff2 ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/fonts/amaticSc-89a5325b9e6cfc90486ea67ff3128e12.woff2";
+module.exports = "/_next/static/fonts/ILoveGlitter-e373aeb2bbef2c024286505dc6907750.woff2";
 
 /***/ }),
 
@@ -45,10 +45,10 @@ var fontFaces = _FontFacesList__WEBPACK_IMPORTED_MODULE_1__["default"].map(funct
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _assets_fonts_amaticSc_woff2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/fonts/amaticSc.woff2 */ "./assets/fonts/amaticSc.woff2");
-/* harmony import */ var _assets_fonts_amaticSc_woff2__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_amaticSc_woff2__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_fonts_ILoveGlitter_woff2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/fonts/ILoveGlitter.woff2 */ "./assets/fonts/ILoveGlitter.woff2");
+/* harmony import */ var _assets_fonts_ILoveGlitter_woff2__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_ILoveGlitter_woff2__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = ([["AmaticSC", 400, "normal", _assets_fonts_amaticSc_woff2__WEBPACK_IMPORTED_MODULE_0___default.a]]);
+/* harmony default export */ __webpack_exports__["default"] = ([["ILoveGlitter", 400, "normal", _assets_fonts_ILoveGlitter_woff2__WEBPACK_IMPORTED_MODULE_0___default.a]]);
 
 /***/ }),
 
@@ -111,7 +111,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  ", "\n  ", "\n\n    /* Reset */\n  button {\n    border: 0;\n    padding: 0;\n    background: transparent;\n  }\n\n  ul {\n    list-style: none;\n  }\n\n  html {\n    box-sizing: border-box;\n  }\n  \n  *, *:before, *:after {\n    box-sizing: inherit;\n  }\n  a {\n    text-decoration: none;\n  }\n  /* fonts */\n  body {\n    color: ", ";\n\t\tfont-family: sans-serif;\n    background: ", "\n  }\n\t.fonts-loaded body {\n\t\tfont-family: AmaticSC, sans-serif;\n\t}\n\n  /* .fonts-loaded .ff-futura-pt {\n    font-family: futura-pt, sans-serif;\n  } */\n\n   /* flex */\n  .flex {\n    display: flex;\n  }\n  .fxd-c {\n    flex-direction: column;\n  }\n  .jc-c {\n    justify-content: center;\n  } \n  .jc-e {\n    justify-content: flex-end;\n  } \n  .jc-sb {\n    justify-content: space-between;\n  } \n  .jc-sa {\n    justify-content: space-around;\n  } \n  .ai-c {\n    align-items: center;\n  }\n\n  .flex-1 {\n    flex: 1;\n  }\n  .w100 {\n    width: 100%;\n  }\n  .h100 {\n    height: 100%;\n  }\n  /* font-size */\n  .f12 {\n    font-size: 12px;\n  }\n  .f14 {\n    font-size: 14px;\n  }\n  .f16 {\n    font-size: 16px;\n  }\n  .f31 {\n    font-size: 31px;\n  }\n\n  .fw300 {\n    font-weight: 300;\n  }\n  .fw400 {\n    font-weight: 400;\n  }\n\n  /* Text */\n  .ttu {\n    text-transform: uppercase;\n  }\n  .tdn {\n    text-decoration: none;\n  }\n  .ta-c {\n    text-align: center;\n  }\n  /* margin/padding */\n  .m0 {\n    margin: 0;\n  }\n  .p0 {\n    padding: 0;\n  }\n  /* display */\n  .d {\n    display: block;\n  }\n  /* debug */\n  .o {\n    outline: 5px solid gold;\n  }\n  /* position */\n  .relative {\n    position: relative;\n  }\n  .absolute {\n    position: absolute;\n  }\n  .t0 {\n    top: 0;\n  }\n  .l0 {\n    left: 0;\n  }\n  .r0 {\n    right: 0;\n  }\n  .b0 {\n    bottom: 0;\n  }\n  /* img */\n  .cover {\n    object-fit: cover;\n  }\n  .z-1 {\n    z-index: -1;\n  }\n  .z0 {\n    z-index: 0;\n  }\n  .z1 {\n    z-index: 1;\n  }\n  .pointer {\n    cursor: pointer;\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  ", "\n  ", "\n\n    /* Reset */\n  button {\n    border: 0;\n    padding: 0;\n    background: transparent;\n  }\n\n  ul {\n    list-style: none;\n  }\n\n  html {\n    box-sizing: border-box;\n  }\n  \n  *, *:before, *:after {\n    box-sizing: inherit;\n  }\n  a {\n    text-decoration: none;\n  }\n  /* fonts */\n  body {\n    color: ", ";\n\t\tfont-family: sans-serif;\n    background: ", "\n  }\n\t.fonts-loaded body {\n\t\tfont-family: ILoveGlitter, sans-serif;\n\t}\n\n  /* .fonts-loaded .ff-futura-pt {\n    font-family: futura-pt, sans-serif;\n  } */\n\n   /* flex */\n  .flex {\n    display: flex;\n  }\n  .fxd-c {\n    flex-direction: column;\n  }\n  .jc-c {\n    justify-content: center;\n  } \n  .jc-e {\n    justify-content: flex-end;\n  } \n  .jc-sb {\n    justify-content: space-between;\n  } \n  .jc-sa {\n    justify-content: space-around;\n  } \n  .ai-c {\n    align-items: center;\n  }\n  .fxw-n {\n    flex-wrap: nowrap;\n  }\n  .fxw-w {\n    flex-wrap: wrap;\n  }\n\n  .flex-1 {\n    flex: 1;\n  }\n  .w100 {\n    width: 100%;\n  }\n  .h100 {\n    height: 100%;\n  }\n  /* font-size */\n  .f12 {\n    font-size: 12px;\n  }\n  .f14 {\n    font-size: 14px;\n  }\n  .f16 {\n    font-size: 16px;\n  }\n  .f31 {\n    font-size: 31px;\n  }\n\n  .fw300 {\n    font-weight: 300;\n  }\n  .fw400 {\n    font-weight: 400;\n  }\n\n  /* Text */\n  .ttu {\n    text-transform: uppercase;\n  }\n  .tdn {\n    text-decoration: none;\n  }\n  .ta-c {\n    text-align: center;\n  }\n  /* margin/padding */\n  .m0 {\n    margin: 0;\n  }\n  .p0 {\n    padding: 0;\n  }\n  /* display */\n  .d {\n    display: block;\n  }\n  /* debug */\n  .o {\n    outline: 5px solid gold;\n  }\n  /* position */\n  .relative {\n    position: relative;\n  }\n  .absolute {\n    position: absolute;\n  }\n  .t0 {\n    top: 0;\n  }\n  .l0 {\n    left: 0;\n  }\n  .r0 {\n    right: 0;\n  }\n  .b0 {\n    bottom: 0;\n  }\n  /* img */\n  .cover {\n    object-fit: cover;\n  }\n  .z-1 {\n    z-index: -1;\n  }\n  .z0 {\n    z-index: 0;\n  }\n  .z1 {\n    z-index: 1;\n  }\n  .pointer {\n    cursor: pointer;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -312,7 +312,7 @@ var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Layout__Container",
   componentId: "oy0maz-0"
-})(["max-width:90rem;min-height:calc(100vh - 20px);overflow:hidden;background:", ";margin:10px;border-radius:5px;"], function (_ref) {
+})(["min-height:calc(100vh - 20px);overflow:hidden;background:", ";margin:10px;border-radius:5px;"], function (_ref) {
   var theme = _ref.theme;
   return theme.bg;
 });
@@ -322,31 +322,31 @@ var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.wi
     theme: _style_theme__WEBPACK_IMPORTED_MODULE_2__["default"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GlobalStyle__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 22
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Head__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 23
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: this
   }), children));
