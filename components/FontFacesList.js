@@ -1,3 +1,3 @@
-import amaticSc from "../assets/fonts/amaticSc.woff2"
+import ILoveGlitter from "../assets/fonts/ILoveGlitter.woff2"
 
-export default [["AmaticSC", 400, "normal", amaticSc]]
+export default [["ILoveGlitter", 400, "normal", ILoveGlitter]]

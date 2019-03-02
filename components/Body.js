@@ -24,7 +24,7 @@ const Frame = styled.div.attrs({ className: "" })`
 const Body = () => (
   <Main id="main">
     <TopContainer>
-      <Frame>Plus d'info bientôt !</Frame>
+      <Frame>Plus d'infos... bientôt !</Frame>
       <CountDown />
     </TopContainer>
   </Main>

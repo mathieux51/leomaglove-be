@@ -3,6 +3,8 @@ import styled from "styled-components"
 import CountDownItemText from "./CountDownItemText"
 
 const Container = styled.div.attrs({ className: "flex fxd-c jc-sb ai-c" })`
+  min-width: 108px;
+  min-height: 72px;
   margin: 10px 5px 5px;
   & > div {
     margin: 0 30px;
@@ -20,7 +22,7 @@ const Time = styled.span.attrs({ className: "ta-c" })`
 const SubContainer = styled.div.attrs({ className: "flex jc-c w100" })``
 
 const CountDownItem = ({ text, time }) => {
-  const _time = String(time)
+  const _time = time === 0 ? "00" : String(time)
   const splitTime = _time.split("")
   return (
     <Container>

@@ -10,7 +10,7 @@ const script = {
       }
       if ('fonts' in document) {
         Promise.all([
-        document.fonts.load("normal 400 1em 'Merienda One'"),
+        document.fonts.load("normal 400 1em 'ILoveGlitter'"),
         ]).then(function (){
           document.documentElement.className += ' fonts-loaded'
           sessionStorage.fontsLoadedFoutWithClass = true  

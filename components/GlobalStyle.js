@@ -34,7 +34,7 @@ export default createGlobalStyle`
     background: ${({ theme }) => theme.bg}
   }
 	.fonts-loaded body {
-		font-family: AmaticSC, sans-serif;
+		font-family: ILoveGlitter, sans-serif;
 	}
 
   /* .fonts-loaded .ff-futura-pt {
@@ -62,6 +62,12 @@ export default createGlobalStyle`
   } 
   .ai-c {
     align-items: center;
+  }
+  .fxw-n {
+    flex-wrap: nowrap;
+  }
+  .fxw-w {
+    flex-wrap: wrap;
   }
 
   .flex-1 {

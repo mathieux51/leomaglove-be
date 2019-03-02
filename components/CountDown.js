@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import CountDownItem from "./CountDownItem"
 
-const Container = styled.div.attrs({ className: "flex" })`
+const Container = styled.div.attrs({ className: "flex w100 jc-c fxw-w" })`
   margin-top: 10px;
 `
 
