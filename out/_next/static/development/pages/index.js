@@ -29,8 +29,8 @@ var TopContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div
   displayName: "Body__TopContainer",
   componentId: "sc-1ccgya6-1"
 })(["max-height:900px;"]);
-var Frame = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
-  className: ""
+var Frame = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2.attrs({
+  className: "m0 fw400 ta-c"
 }).withConfig({
   displayName: "Body__Frame",
   componentId: "sc-1ccgya6-2"
