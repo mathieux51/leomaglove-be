@@ -17,7 +17,7 @@ const TopContainer = styled.div.attrs({
   max-height: calc(100vh - 100px) */
   /* background: black; */
 `
-const Frame = styled.div.attrs({ className: "" })`
+const Frame = styled.h2.attrs({ className: "m0 fw400 ta-c" })`
   font-size: 3rem;
 `
 
