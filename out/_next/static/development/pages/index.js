@@ -12,7 +12,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _CountDown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CountDown */ "./components/CountDown.js");
+/* harmony import */ var _Countdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Countdown */ "./components/Countdown.js");
 var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/Body.js";
 
 
@@ -29,10 +29,10 @@ var TopContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div
   displayName: "Body__TopContainer",
   componentId: "sc-1ccgya6-1"
 })(["max-height:900px;"]);
-var Frame = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2.attrs({
+var H2 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2.attrs({
   className: "m0 fw400 ta-c"
 }).withConfig({
-  displayName: "Body__Frame",
+  displayName: "Body__H2",
   componentId: "sc-1ccgya6-2"
 })(["font-size:3rem;"]);
 
@@ -41,25 +41,25 @@ var Body = function Body() {
     id: "main",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 22
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Frame, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H2, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 23
     },
     __self: this
-  }, "Plus d'infos... bient\xF4t !"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountDown__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, "Plus d'infos... bient\xF4t !"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Countdown__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 24
     },
     __self: this
   })));
@@ -69,72 +69,152 @@ var Body = function Body() {
 
 /***/ }),
 
-/***/ "./components/CountDown.js":
+/***/ "./components/Countdown.js":
 /*!*********************************!*\
-  !*** ./components/CountDown.js ***!
+  !*** ./components/Countdown.js ***!
   \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _CountDownItem__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./CountDownItem */ "./components/CountDownItem.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _CountdownContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CountdownContext */ "./components/CountdownContext.js");
+/* harmony import */ var _CountdownItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CountdownItem */ "./components/CountdownItem.js");
+var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/Countdown.js";
 
 
 
 
-
-
-
-var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/CountDown.js";
-
-
-
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.attrs({
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
   className: "flex w100 jc-c fxw-w"
 }).withConfig({
-  displayName: "CountDown__Container",
-  componentId: "sc-1b9i74q-0"
+  displayName: "Countdown__Container",
+  componentId: "vo6s54-0"
 })(["margin-top:10px;"]);
 
-var CountDown =
+var Countdown = function Countdown() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownContext__WEBPACK_IMPORTED_MODULE_2__["CountdownConsumer"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, function (countdown) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      text: "Jours",
+      time: countdown.days,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      text: "Heures",
+      time: countdown.hours,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      text: "Minutes",
+      time: countdown.minutes,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      text: "Secondes",
+      time: countdown.seconds,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }));
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Countdown);
+
+/***/ }),
+
+/***/ "./components/CountdownContext.js":
+/*!****************************************!*\
+  !*** ./components/CountdownContext.js ***!
+  \****************************************/
+/*! exports provided: CountdownProvider, CountdownConsumer, CountdownContext */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountdownProvider", function() { return CountdownProvider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountdownConsumer", function() { return Consumer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountdownContext", function() { return CountdownContext; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+
+
+
+
+
+
+
+
+var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/CountdownContext.js";
+
+var CountdownContext;
+
+var _CountdownContext = CountdownContext = react__WEBPACK_IMPORTED_MODULE_8___default.a.createContext(),
+    Provider = _CountdownContext.Provider,
+    Consumer = _CountdownContext.Consumer;
+
+var CountdownProvider =
 /*#__PURE__*/
 function (_React$PureComponent) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(CountDown, _React$PureComponent);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(CountdownProvider, _React$PureComponent);
 
-  function CountDown() {
+  function CountdownProvider() {
     var _getPrototypeOf2;
 
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, CountDown);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, CountdownProvider);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(CountDown)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(CountdownProvider)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "state", {
       days: 0,
       hours: 0,
       minutes: 0,
       seconds: 0
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "finalDate", new Date("Jun 29 2019").getTime());
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "finalDate", new Date("Jun 29 2019").getTime());
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "timer", function () {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "timer", function () {
       var now = new Date().getTime();
       var distance = _this.finalDate - now;
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -142,18 +222,23 @@ function (_React$PureComponent) {
       var minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
       var seconds = Math.floor(distance % (1000 * 60) / 1000);
 
-      _this.setState({
-        days: days,
-        hours: hours,
-        minutes: minutes,
-        seconds: seconds
+      _this.setState(function (prevState) {
+        return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, prevState.days !== days ? {
+          days: days
+        } : {}, prevState.hours !== hours ? {
+          hours: hours
+        } : {}, prevState.minutes !== minutes ? {
+          minutes: minutes
+        } : {}, prevState.seconds !== seconds ? {
+          seconds: seconds
+        } : {});
       });
     });
 
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(CountDown, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(CountdownProvider, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       var intervalId = setInterval(this.timer, 1000);
@@ -169,63 +254,27 @@ function (_React$PureComponent) {
   }, {
     key: "render",
     value: function render() {
-      var _this$state = this.state,
-          days = _this$state.days,
-          hours = _this$state.hours,
-          minutes = _this$state.minutes,
-          seconds = _this$state.seconds;
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Container, {
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Provider, {
+        value: this.state,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 44
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_CountDownItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        text: "Jours",
-        time: days,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_CountDownItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        text: "Heures",
-        time: hours,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_CountDownItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        text: "Minutes",
-        time: minutes,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 42
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_CountDownItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        text: "Secondes",
-        time: seconds,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43
-        },
-        __self: this
-      }));
+      }, this.props.children);
     }
   }]);
 
-  return CountDown;
-}(react__WEBPACK_IMPORTED_MODULE_7___default.a.PureComponent);
+  return CountdownProvider;
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.PureComponent);
 
-/* harmony default export */ __webpack_exports__["default"] = (CountDown);
+
 
 /***/ }),
 
-/***/ "./components/CountDownItem.js":
+/***/ "./components/CountdownItem.js":
 /*!*************************************!*\
-  !*** ./components/CountDownItem.js ***!
+  !*** ./components/CountdownItem.js ***!
   \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -235,31 +284,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _CountDownItemText__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CountDownItemText */ "./components/CountDownItemText.js");
-var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/CountDownItem.js";
+/* harmony import */ var _CountdownItemText__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CountdownItemText */ "./components/CountdownItemText.js");
+var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/CountdownItem.js";
 
 
 
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
   className: "flex fxd-c jc-sb ai-c"
 }).withConfig({
-  displayName: "CountDownItem__Container",
-  componentId: "oa8lkl-0"
+  displayName: "CountdownItem__Container",
+  componentId: "sc-14hj33y-0"
 })(["min-width:108px;min-height:72px;margin:10px 5px 5px;& > div{margin:0 30px;}"]);
 var Time = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.attrs({
   className: "ta-c"
 }).withConfig({
-  displayName: "CountDownItem__Time",
-  componentId: "oa8lkl-1"
+  displayName: "CountdownItem__Time",
+  componentId: "sc-14hj33y-1"
 })(["font-size:1.25rem;border:1px solid black;padding:5px;margin:2px;width:20px;"]);
 var SubContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
   className: "flex jc-c w100"
 }).withConfig({
-  displayName: "CountDownItem__SubContainer",
-  componentId: "oa8lkl-2"
+  displayName: "CountdownItem__SubContainer",
+  componentId: "sc-14hj33y-2"
 })([""]);
-
-var CountDownItem = function CountDownItem(_ref) {
+var CountdownItem = react__WEBPACK_IMPORTED_MODULE_0___default.a.memo(function (_ref) {
   var text = _ref.text,
       time = _ref.time;
 
@@ -303,7 +351,7 @@ var CountDownItem = function CountDownItem(_ref) {
       lineNumber: 36
     },
     __self: this
-  }, splitTime[1])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountDownItemText__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, splitTime[1])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItemText__WEBPACK_IMPORTED_MODULE_2__["default"], {
     text: text,
     __source: {
       fileName: _jsxFileName,
@@ -311,15 +359,14 @@ var CountDownItem = function CountDownItem(_ref) {
     },
     __self: this
   }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (CountDownItem);
+});
+/* harmony default export */ __webpack_exports__["default"] = (CountdownItem);
 
 /***/ }),
 
-/***/ "./components/CountDownItemText.js":
+/***/ "./components/CountdownItemText.js":
 /*!*****************************************!*\
-  !*** ./components/CountDownItemText.js ***!
+  !*** ./components/CountdownItemText.js ***!
   \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -329,27 +376,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/CountDownItemText.js";
+var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/CountdownItemText.js";
 
 
-var Text = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.attrs({
-  className: ""
-}).withConfig({
-  displayName: "CountDownItemText__Text",
-  componentId: "l149h2-0"
+var Text = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
+  displayName: "CountdownItemText__Text",
+  componentId: "zh1kkt-0"
 })(["margin-top:10px;font-size:1.25rem;"]);
-
-var CountDownItemText = function CountDownItemText(_ref) {
-  var text = _ref.text;
+var CountDownItemText = react__WEBPACK_IMPORTED_MODULE_0___default.a.memo(function (props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Text, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, text);
-};
-
+  }, props.text);
+});
 /* harmony default export */ __webpack_exports__["default"] = (CountDownItemText);
 
 /***/ }),
@@ -376,6 +418,28 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptor */ "./node_modules/core-js/library/fn/object/get-own-property-descriptor.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "./node_modules/core-js/library/fn/object/get-own-property-symbols.js");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js":
 /*!********************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js ***!
@@ -384,6 +448,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/get-prototype-of */ "./node_modules/core-js/library/fn/object/get-prototype-of.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "./node_modules/core-js/library/fn/object/keys.js");
 
 /***/ }),
 
@@ -574,6 +649,49 @@ function _inherits(subClass, superClass) {
     }
   });
   if (superClass) Object(_setPrototypeOf__WEBPACK_IMPORTED_MODULE_1__["default"])(subClass, superClass);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectSpread; });
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _defineProperty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+
+
+
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    var ownKeys = _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default()(source);
+
+    if (typeof _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default.a === 'function') {
+      ownKeys = ownKeys.concat(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default()(source).filter(function (sym) {
+        return _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default()(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      Object(_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(target, key, source[key]);
+    });
+  }
+
+  return target;
 }
 
 /***/ }),
@@ -807,6 +925,35 @@ module.exports = function defineProperty(it, key, desc) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/object/get-own-property-descriptor.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/get-own-property-descriptor.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.object.get-own-property-descriptor */ "./node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js");
+var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object;
+module.exports = function getOwnPropertyDescriptor(it, key) {
+  return $Object.getOwnPropertyDescriptor(it, key);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/get-own-property-symbols.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/get-own-property-symbols.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.symbol */ "./node_modules/core-js/library/modules/es6.symbol.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.getOwnPropertySymbols;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/object/get-prototype-of.js":
 /*!********************************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/get-prototype-of.js ***!
@@ -816,6 +963,19 @@ module.exports = function defineProperty(it, key, desc) {
 
 __webpack_require__(/*! ../../modules/es6.object.get-prototype-of */ "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js");
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.getPrototypeOf;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/keys.js":
+/*!********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/keys.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.object.keys */ "./node_modules/core-js/library/modules/es6.object.keys.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.keys;
 
 
 /***/ }),
@@ -2211,6 +2371,26 @@ $export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./no
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
+var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
+var $getOwnPropertyDescriptor = __webpack_require__(/*! ./_object-gopd */ "./node_modules/core-js/library/modules/_object-gopd.js").f;
+
+__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('getOwnPropertyDescriptor', function () {
+  return function getOwnPropertyDescriptor(it, key) {
+    return $getOwnPropertyDescriptor(toIObject(it), key);
+  };
+});
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js":
 /*!*****************************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.get-prototype-of.js ***!
@@ -2225,6 +2405,26 @@ var $getPrototypeOf = __webpack_require__(/*! ./_object-gpo */ "./node_modules/c
 __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('getPrototypeOf', function () {
   return function getPrototypeOf(it) {
     return $getPrototypeOf(toObject(it));
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.object.keys.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.keys.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.14 Object.keys(O)
+var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
+var $keys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/library/modules/_object-keys.js");
+
+__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('keys', function () {
+  return function keys(it) {
+    return $keys(toObject(it));
   };
 });
 
