@@ -102,7 +102,11 @@ var Countdown = function Countdown() {
       lineNumber: 11
     },
     __self: this
-  }, function (countdown) {
+  }, function (_ref) {
+    var days = _ref.days,
+        hours = _ref.hours,
+        minutes = _ref.minutes,
+        seconds = _ref.seconds;
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
       __source: {
         fileName: _jsxFileName,
@@ -111,7 +115,7 @@ var Countdown = function Countdown() {
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
       text: "Jours",
-      time: countdown.days,
+      time: days,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 14
@@ -119,7 +123,7 @@ var Countdown = function Countdown() {
       __self: this
     }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
       text: "Heures",
-      time: countdown.hours,
+      time: hours,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 15
@@ -127,7 +131,7 @@ var Countdown = function Countdown() {
       __self: this
     }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
       text: "Minutes",
-      time: countdown.minutes,
+      time: minutes,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 16
@@ -135,7 +139,7 @@ var Countdown = function Countdown() {
       __self: this
     }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
       text: "Secondes",
-      time: countdown.seconds,
+      time: seconds,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 17
@@ -212,7 +216,9 @@ function (_React$PureComponent) {
       seconds: 0
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "finalDate", new Date("Jun 29 2019").getTime());
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "finalDate", new Date("July 26 2019").getTime());
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "intervalId", null);
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "timer", function () {
       var now = new Date().getTime();
@@ -241,15 +247,12 @@ function (_React$PureComponent) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(CountdownProvider, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var intervalId = setInterval(this.timer, 1000);
-      this.setState({
-        intervalId: intervalId
-      });
+      this.intervalId = setInterval(this.timer, 1000);
     }
   }, {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
-      clearInterval(this.state.intervalId);
+      clearInterval(this.intervalId);
     }
   }, {
     key: "render",
@@ -258,7 +261,7 @@ function (_React$PureComponent) {
         value: this.state,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 43
         },
         __self: this
       }, this.props.children);
@@ -311,51 +314,34 @@ var CountdownItem = react__WEBPACK_IMPORTED_MODULE_0___default.a.memo(function (
   var text = _ref.text,
       time = _ref.time;
 
-  var _time = time === 0 ? "00" : String(time);
-
-  var splitTime = _time.split("");
+  var _time = String(time).length >= 1 ? String(time) : "0".concat(time).slice(-2);
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SubContainer, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: this
-  }, _time.length === 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SubContainer, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Time, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }, _time)) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SubContainer, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Time, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }, splitTime[0]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Time, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }, splitTime[1])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItemText__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, _time.split("").map(function (t, i) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Time, {
+      key: i + t,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, t);
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItemText__WEBPACK_IMPORTED_MODULE_2__["default"], {
     text: text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 33
     },
     __self: this
   }));

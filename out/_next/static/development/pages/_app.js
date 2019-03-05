@@ -74,7 +74,9 @@ function (_React$PureComponent) {
       seconds: 0
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "finalDate", new Date("Jun 29 2019").getTime());
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "finalDate", new Date("July 26 2019").getTime());
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "intervalId", null);
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "timer", function () {
       var now = new Date().getTime();
@@ -103,15 +105,12 @@ function (_React$PureComponent) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(CountdownProvider, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var intervalId = setInterval(this.timer, 1000);
-      this.setState({
-        intervalId: intervalId
-      });
+      this.intervalId = setInterval(this.timer, 1000);
     }
   }, {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
-      clearInterval(this.state.intervalId);
+      clearInterval(this.intervalId);
     }
   }, {
     key: "render",
@@ -120,7 +119,7 @@ function (_React$PureComponent) {
         value: this.state,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 43
         },
         __self: this
       }, this.props.children);
@@ -172,49 +171,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_fonts_ILoveGlitter_woff2__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_ILoveGlitter_woff2__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ __webpack_exports__["default"] = ([["ILoveGlitter", 400, "normal", _assets_fonts_ILoveGlitter_woff2__WEBPACK_IMPORTED_MODULE_0___default.a]]);
-
-/***/ }),
-
-/***/ "./components/Footer.js":
-/*!******************************!*\
-  !*** ./components/Footer.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/Footer.js";
-
-
-var StyledFooter = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].footer.attrs({
-  className: "flex jc-c ai-c"
-}).withConfig({
-  displayName: "Footer__StyledFooter",
-  componentId: "sc-1a596ad-0"
-})(["height:100px;border:1px solid black;"]);
-
-var Footer = function Footer() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledFooter, {
-    id: "footer",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, "Footer"));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Footer);
 
 /***/ }),
 
@@ -421,15 +377,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CountdownContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CountdownContext */ "./components/CountdownContext.js");
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
 /* harmony import */ var _Head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Head */ "./components/Head.js");
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
-/* harmony import */ var _GlobalStyle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./GlobalStyle */ "./components/GlobalStyle.js");
+/* harmony import */ var _GlobalStyle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./GlobalStyle */ "./components/GlobalStyle.js");
 var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/Layout.js";
 
 
 
 
 
-
+ // import Footer from "components/Footer"
 
 
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
@@ -460,7 +415,7 @@ var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.wi
       lineNumber: 22
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GlobalStyle__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GlobalStyle__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
