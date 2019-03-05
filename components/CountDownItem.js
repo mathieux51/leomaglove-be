@@ -22,7 +22,7 @@ const Time = styled.span.attrs({ className: "ta-c" })`
 const SubContainer = styled.div.attrs({ className: "flex jc-c w100" })``
 
 const CountdownItem = React.memo(({ text, time }) => {
-  const _time = String(time).length >= 1 ? String(time) : `0${time}`.slice(-2)
+  const _time = String(time).length >= 2 ? String(time) : `0${time}`.slice(-2)
   return (
     <Container>
       <SubContainer>
