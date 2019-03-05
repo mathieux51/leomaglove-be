@@ -2,10 +2,10 @@ import React, { Fragment } from "react"
 import styled, { ThemeProvider } from "styled-components"
 
 import theme from "style/theme"
-import { ProjectProvider } from "components/ProjectContext"
+import { CountdownProvider } from "components/CountdownContext"
 import Header from "components/Header"
 import Head from "components/Head"
-import Footer from "components/Footer"
+// import Footer from "components/Footer"
 import GlobalStyle from "components/GlobalStyle"
 
 const Container = styled.div`
@@ -18,12 +18,14 @@ const Container = styled.div`
 
 export default ({ children }) => (
   <ThemeProvider theme={theme}>
-    <Container>
-      <GlobalStyle />
-      <Head />
-      <Header />
-      {children}
-      {/* <Footer /> */}
-    </Container>
+    <CountdownProvider>
+      <Container>
+        <GlobalStyle />
+        <Head />
+        <Header />
+        {children}
+        {/* <Footer /> */}
+      </Container>
+    </CountdownProvider>
   </ThemeProvider>
 )

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import CountDownItemText from "./CountDownItemText"
+import CountdownItemText from "./CountdownItemText"
 
 const Container = styled.div.attrs({ className: "flex fxd-c jc-sb ai-c" })`
   min-width: 108px;
@@ -21,24 +21,18 @@ const Time = styled.span.attrs({ className: "ta-c" })`
 
 const SubContainer = styled.div.attrs({ className: "flex jc-c w100" })``
 
-const CountDownItem = ({ text, time }) => {
-  const _time = time === 0 ? "00" : String(time)
-  const splitTime = _time.split("")
+const CountdownItem = React.memo(({ text, time }) => {
+  const _time = String(time).length >= 1 ? String(time) : `0${time}`.slice(-2)
   return (
     <Container>
-      {_time.length === 1 ? (
-        <SubContainer>
-          <Time>{_time}</Time>
-        </SubContainer>
-      ) : (
-        <SubContainer>
-          <Time>{splitTime[0]}</Time>
-          <Time>{splitTime[1]}</Time>
-        </SubContainer>
-      )}
-      <CountDownItemText text={text} />
+      <SubContainer>
+        {_time.split("").map((t, i) => (
+          <Time key={i + t}>{t}</Time>
+        ))}
+      </SubContainer>
+      <CountdownItemText text={text} />
     </Container>
   )
-}
+})
 
-export default CountDownItem
+export default CountdownItem
