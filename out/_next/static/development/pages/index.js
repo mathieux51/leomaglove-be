@@ -314,7 +314,7 @@ var CountdownItem = react__WEBPACK_IMPORTED_MODULE_0___default.a.memo(function (
   var text = _ref.text,
       time = _ref.time;
 
-  var _time = String(time).length >= 1 ? String(time) : "0".concat(time).slice(-2);
+  var _time = String(time).length >= 2 ? String(time) : "0".concat(time).slice(-2);
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
