@@ -1,4 +1,12 @@
-import React, { Fragment } from "react"
+import React from "react"
 import Body from "components/Body"
+import Header from "components/Header"
 
-export default () => <Body />
+const Index = () => (
+  <React.Fragment>
+    <Header />
+    <Body />
+  </React.Fragment>
+)
+
+export default Index

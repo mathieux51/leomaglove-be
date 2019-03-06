@@ -1,9 +1,8 @@
-import React, { Fragment } from "react"
+import React from "react"
 import styled, { ThemeProvider } from "styled-components"
 
 import theme from "style/theme"
 import { CountdownProvider } from "components/CountdownContext"
-import Header from "components/Header"
 import Head from "components/Head"
 // import Footer from "components/Footer"
 import GlobalStyle from "components/GlobalStyle"
@@ -22,7 +21,6 @@ export default ({ children }) => (
       <Container>
         <GlobalStyle />
         <Head />
-        <Header />
         {children}
         {/* <Footer /> */}
       </Container>
