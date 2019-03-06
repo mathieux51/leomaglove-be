@@ -1,284 +1,205 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/dev.js"],{
 
-/***/ "./components/Body.js":
-/*!****************************!*\
-  !*** ./components/Body.js ***!
-  \****************************/
+/***/ "./components/Dev.js":
+/*!***************************!*\
+  !*** ./components/Dev.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _Countdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Countdown */ "./components/Countdown.js");
-var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/Body.js";
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Main__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Main */ "./components/Main.js");
 
 
 
-var Main = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].main.attrs({
-  className: "flex fxd-c"
-}).withConfig({
-  displayName: "Body__Main",
-  componentId: "sc-1ccgya6-0"
-})(["min-height:calc(100vh - 120px);border:1px solid black;margin:1px;border-top:0;"]);
-var TopContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
+
+
+
+
+var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/Dev.js";
+
+
+
+var Top = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.attrs({
   className: "flex-1 flex jc-c ai-c fxd-c"
 }).withConfig({
-  displayName: "Body__TopContainer",
-  componentId: "sc-1ccgya6-1"
+  displayName: "Dev__Top",
+  componentId: "kmxpvl-0"
 })(["max-height:900px;"]);
-var H2 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2.attrs({
-  className: "m0 fw400 ta-c"
+var Middle = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.attrs({
+  className: "flex fxd-c ai-c jc-c relative"
 }).withConfig({
-  displayName: "Body__H2",
-  componentId: "sc-1ccgya6-2"
-})(["font-size:3rem;"]);
-
-var Body = function Body() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Main, {
-    id: "main",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopContainer, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H2, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, "Plus d'infos... bient\xF4t !"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Countdown__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  })));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Body);
-
-/***/ }),
-
-/***/ "./components/Countdown.js":
-/*!*********************************!*\
-  !*** ./components/Countdown.js ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _CountdownContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CountdownContext */ "./components/CountdownContext.js");
-/* harmony import */ var _CountdownItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CountdownItem */ "./components/CountdownItem.js");
-var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/Countdown.js";
-
-
-
-
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
-  className: "flex w100 jc-c fxw-w"
+  displayName: "Dev__Middle",
+  componentId: "kmxpvl-1"
+})(["background:gold;flex:0 6rem;"]);
+var Bottom = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.attrs({
+  className: "flex-1"
 }).withConfig({
-  displayName: "Countdown__Container",
-  componentId: "vo6s54-0"
-})(["margin-top:10px;"]);
+  displayName: "Dev__Bottom",
+  componentId: "kmxpvl-2"
+})(["display:", ";"], function (_ref) {
+  var show = _ref.show;
+  return show ? "inherit" : "none";
+});
+var Big = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].span.attrs({
+  className: "f31"
+}).withConfig({
+  displayName: "Dev__Big",
+  componentId: "kmxpvl-3"
+})([""]);
+var CloseButton = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].button.attrs({
+  className: "absolute flex jc-c ai-c"
+}).withConfig({
+  displayName: "Dev__CloseButton",
+  componentId: "kmxpvl-4"
+})(["margin:0.75rem;right:0;top:0;"]);
+var ButtonContainer = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.attrs({
+  className: "flex-1 w100 flex ai-c jc-sa"
+}).withConfig({
+  displayName: "Dev__ButtonContainer",
+  componentId: "kmxpvl-5"
+})([""]);
+var Text = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].span.attrs({
+  className: "flex-1 w100 flex ai-c ta-c jc-c"
+}).withConfig({
+  displayName: "Dev__Text",
+  componentId: "kmxpvl-6"
+})([""]);
+var Button = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].button.attrs({
+  className: "ttu"
+}).withConfig({
+  displayName: "Dev__Button",
+  componentId: "kmxpvl-7"
+})(["border:1px solid black;padding:0.4rem;"]);
 
-var Countdown = function Countdown() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownContext__WEBPACK_IMPORTED_MODULE_2__["CountdownConsumer"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, function (_ref) {
-    var days = _ref.days,
-        hours = _ref.hours,
-        minutes = _ref.minutes,
-        seconds = _ref.seconds;
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      text: "Jours",
-      time: days,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      text: "Heures",
-      time: hours,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15
-      },
-      __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      text: "Minutes",
-      time: minutes,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16
-      },
-      __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      text: "Secondes",
-      time: seconds,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17
-      },
-      __self: this
-    }));
-  });
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Countdown);
-
-/***/ }),
-
-/***/ "./components/CountdownContext.js":
-/*!****************************************!*\
-  !*** ./components/CountdownContext.js ***!
-  \****************************************/
-/*! exports provided: CountdownProvider, CountdownConsumer, CountdownContext */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountdownProvider", function() { return CountdownProvider; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountdownConsumer", function() { return Consumer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountdownContext", function() { return CountdownContext; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
-
-
-
-
-
-
-
-
-var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/CountdownContext.js";
-
-var CountdownContext;
-
-var _CountdownContext = CountdownContext = react__WEBPACK_IMPORTED_MODULE_8___default.a.createContext(),
-    Provider = _CountdownContext.Provider,
-    Consumer = _CountdownContext.Consumer;
-
-var CountdownProvider =
+var Dev =
 /*#__PURE__*/
 function (_React$PureComponent) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(CountdownProvider, _React$PureComponent);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Dev, _React$PureComponent);
 
-  function CountdownProvider() {
+  function Dev() {
     var _getPrototypeOf2;
 
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, CountdownProvider);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Dev);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(CountdownProvider)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Dev)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "state", {
-      days: 0,
-      hours: 0,
-      minutes: 0,
-      seconds: 0
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
+      show: null
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "finalDate", new Date("July 26 2019").getTime());
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "intervalId", null);
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "timer", function () {
-      var now = new Date().getTime();
-      var distance = _this.finalDate - now;
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
-      var minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
-      var seconds = Math.floor(distance % (1000 * 60) / 1000);
-
-      _this.setState(function (prevState) {
-        return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, prevState.days !== days ? {
-          days: days
-        } : {}, prevState.hours !== hours ? {
-          hours: hours
-        } : {}, prevState.minutes !== minutes ? {
-          minutes: minutes
-        } : {}, prevState.seconds !== seconds ? {
-          seconds: seconds
-        } : {});
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "setShow", function (evt) {
+      return _this.setState({
+        show: evt.target.name
       });
     });
 
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(CountdownProvider, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.intervalId = setInterval(this.timer, 1000);
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      clearInterval(this.intervalId);
-    }
-  }, {
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Dev, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Provider, {
-        value: this.state,
+      var show = this.state.show;
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Main__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        id: "main",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 62
         },
         __self: this
-      }, this.props.children);
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Top, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Big, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64
+        },
+        __self: this
+      }, "Vid\xE9o en boucle")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Middle, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
+        },
+        __self: this
+      }, show && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(CloseButton, {
+        onClick: this.setShow,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 67
+        },
+        __self: this
+      }, "\u274C"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Text, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68
+        },
+        __self: this
+      }, "Plus d'info"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ButtonContainer, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Button, {
+        onClick: this.setShow,
+        name: "belgium",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 70
+        },
+        __self: this
+      }, "Les invit\xE9s en Belgique"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Button, {
+        onClick: this.setShow,
+        name: "france",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 73
+        },
+        __self: this
+      }, "Les invit\xE9s en France"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Bottom, {
+        show: show,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78
+        },
+        __self: this
+      }, "Bottom"));
     }
   }]);
 
-  return CountdownProvider;
-}(react__WEBPACK_IMPORTED_MODULE_8___default.a.PureComponent);
+  return Dev;
+}(react__WEBPACK_IMPORTED_MODULE_7___default.a.PureComponent);
 
-
+/* harmony default export */ __webpack_exports__["default"] = (Dev);
 
 /***/ }),
 
-/***/ "./components/CountdownItem.js":
-/*!*************************************!*\
-  !*** ./components/CountdownItem.js ***!
-  \*************************************/
+/***/ "./components/Header.js":
+/*!******************************!*\
+  !*** ./components/Header.js ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -287,98 +208,109 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _CountdownItemText__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CountdownItemText */ "./components/CountdownItemText.js");
-var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/CountdownItem.js";
-
+var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/Header.js";
 
 
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
-  className: "flex fxd-c jc-sb ai-c"
+  className: "flex jc-c ai-c"
 }).withConfig({
-  displayName: "CountdownItem__Container",
-  componentId: "sc-14hj33y-0"
-})(["min-width:108px;min-height:72px;margin:10px 5px 5px;& > div{margin:0 30px;}"]);
-var Time = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.attrs({
-  className: "ta-c"
+  displayName: "Header__Container",
+  componentId: "sc-1l4pn8m-0"
+})(["height:100px;border:1px solid black;margin:1px;"]);
+var H1 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1.attrs({
+  className: "fw400"
 }).withConfig({
-  displayName: "CountdownItem__Time",
-  componentId: "sc-14hj33y-1"
-})(["font-size:1.25rem;border:1px solid black;padding:5px;margin:2px;width:20px;"]);
+  displayName: "Header__H1",
+  componentId: "sc-1l4pn8m-1"
+})(["margin:0;font-size:2.5rem;"]);
 var SubContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
-  className: "flex jc-c w100"
+  className: "flex w100 h100 ai-c jc-sb"
 }).withConfig({
-  displayName: "CountdownItem__SubContainer",
-  componentId: "sc-14hj33y-2"
+  displayName: "Header__SubContainer",
+  componentId: "sc-1l4pn8m-2"
+})(["margin:0 1rem;"]);
+var TextContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
+  className: "flex h100 fxd-c jc-c"
+}).withConfig({
+  displayName: "Header__TextContainer",
+  componentId: "sc-1l4pn8m-3"
 })([""]);
-var CountdownItem = react__WEBPACK_IMPORTED_MODULE_0___default.a.memo(function (_ref) {
-  var text = _ref.text,
-      time = _ref.time;
 
-  var _time = String(time).length >= 2 ? String(time) : "0".concat(time).slice(-2);
-
+var Header = function Header(_ref) {
+  var secondary = _ref.secondary;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 24
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SubContainer, {
+  }, !secondary ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H1, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "Magali \u2764\uFE0F L\xE9o") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SubContainer, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: this
-  }, _time.split("").map(function (t, i) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Time, {
-      key: i + t,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30
-      },
-      __self: this
-    }, t);
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownItemText__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    text: text,
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 29
     },
     __self: this
-  }));
-});
-/* harmony default export */ __webpack_exports__["default"] = (CountdownItem);
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, "Texte"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, "Texte"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, "Texte")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H1, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }, "Magali \u2764\uFE0F L\xE9o ")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Header);
 
 /***/ }),
 
-/***/ "./components/CountdownItemText.js":
-/*!*****************************************!*\
-  !*** ./components/CountdownItemText.js ***!
-  \*****************************************/
+/***/ "./components/Main.js":
+/*!****************************!*\
+  !*** ./components/Main.js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/CountdownItemText.js";
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-var Text = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
-  displayName: "CountdownItemText__Text",
-  componentId: "zh1kkt-0"
-})(["margin-top:10px;font-size:1.25rem;"]);
-var CountDownItemText = react__WEBPACK_IMPORTED_MODULE_0___default.a.memo(function (props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Text, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, props.text);
-});
-/* harmony default export */ __webpack_exports__["default"] = (CountDownItemText);
+var Main = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].main.attrs({
+  className: "flex fxd-c"
+}).withConfig({
+  displayName: "Main",
+  componentId: "sbj0w2-0"
+})(["min-height:calc(100vh - 120px);border:1px solid black;margin:1px;border-top:0;"]);
+/* harmony default export */ __webpack_exports__["default"] = (Main);
 
 /***/ }),
 
@@ -404,28 +336,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js":
-/*!*******************************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js ***!
-  \*******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptor */ "./node_modules/core-js/library/fn/object/get-own-property-descriptor.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
-  \****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "./node_modules/core-js/library/fn/object/get-own-property-symbols.js");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js":
 /*!********************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js ***!
@@ -434,17 +344,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-prope
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/get-prototype-of */ "./node_modules/core-js/library/fn/object/get-prototype-of.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "./node_modules/core-js/library/fn/object/keys.js");
 
 /***/ }),
 
@@ -635,49 +534,6 @@ function _inherits(subClass, superClass) {
     }
   });
   if (superClass) Object(_setPrototypeOf__WEBPACK_IMPORTED_MODULE_1__["default"])(subClass, superClass);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js ***!
-  \*************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectSpread; });
-/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
-/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
-/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _defineProperty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-
-
-
-
-function _objectSpread(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i] != null ? arguments[i] : {};
-
-    var ownKeys = _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default()(source);
-
-    if (typeof _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default.a === 'function') {
-      ownKeys = ownKeys.concat(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default()(source).filter(function (sym) {
-        return _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default()(source, sym).enumerable;
-      }));
-    }
-
-    ownKeys.forEach(function (key) {
-      Object(_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(target, key, source[key]);
-    });
-  }
-
-  return target;
 }
 
 /***/ }),
@@ -911,35 +767,6 @@ module.exports = function defineProperty(it, key, desc) {
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/fn/object/get-own-property-descriptor.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/get-own-property-descriptor.js ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.get-own-property-descriptor */ "./node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js");
-var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object;
-module.exports = function getOwnPropertyDescriptor(it, key) {
-  return $Object.getOwnPropertyDescriptor(it, key);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/get-own-property-symbols.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/get-own-property-symbols.js ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.symbol */ "./node_modules/core-js/library/modules/es6.symbol.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.getOwnPropertySymbols;
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/fn/object/get-prototype-of.js":
 /*!********************************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/get-prototype-of.js ***!
@@ -949,19 +776,6 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
 
 __webpack_require__(/*! ../../modules/es6.object.get-prototype-of */ "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js");
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.getPrototypeOf;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/keys.js":
-/*!********************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/keys.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.keys */ "./node_modules/core-js/library/modules/es6.object.keys.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.keys;
 
 
 /***/ }),
@@ -2357,26 +2171,6 @@ $export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./no
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js ***!
-  \****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
-var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
-var $getOwnPropertyDescriptor = __webpack_require__(/*! ./_object-gopd */ "./node_modules/core-js/library/modules/_object-gopd.js").f;
-
-__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('getOwnPropertyDescriptor', function () {
-  return function getOwnPropertyDescriptor(it, key) {
-    return $getOwnPropertyDescriptor(toIObject(it), key);
-  };
-});
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js":
 /*!*****************************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.get-prototype-of.js ***!
@@ -2391,26 +2185,6 @@ var $getPrototypeOf = __webpack_require__(/*! ./_object-gpo */ "./node_modules/c
 __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('getPrototypeOf', function () {
   return function getPrototypeOf(it) {
     return $getPrototypeOf(toObject(it));
-  };
-});
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.keys.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.keys.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.14 Object.keys(O)
-var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
-var $keys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/library/modules/_object-keys.js");
-
-__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('keys', function () {
-  return function keys(it) {
-    return $keys(toObject(it));
   };
 });
 
@@ -2822,21 +2596,21 @@ function index (resultFn, isEqual) {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fmathieu%2FProjects%2Fproduction%2Fleomaglove-be%2Fpages%2Findex.js!./":
-/*!******************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fmathieu%2FProjects%2Fproduction%2Fleomaglove-be%2Fpages%2Findex.js ***!
-  \******************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdev&absolutePagePath=%2FUsers%2Fmathieu%2FProjects%2Fproduction%2Fleomaglove-be%2Fpages%2Fdev.js!./":
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdev&absolutePagePath=%2FUsers%2Fmathieu%2FProjects%2Fproduction%2Fleomaglove-be%2Fpages%2Fdev.js ***!
+  \*******************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var page = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/dev", function() {
+      var page = __webpack_require__(/*! ./pages/dev.js */ "./pages/dev.js")
       if(true) {
-        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
-          next.router.update("/", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/dev.js */ "./pages/dev.js", function() {
+          if(!next.router.components["/dev"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/dev.js */ "./pages/dev.js")
+          next.router.update("/dev", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -6546,10 +6320,10 @@ if ( true && typeof window !== 'undefined' && typeof navigator !== 'undefined' &
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/dev.js":
+/*!**********************!*\
+  !*** ./pages/dev.js ***!
+  \**********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6557,30 +6331,45 @@ if ( true && typeof window !== 'undefined' && typeof navigator !== 'undefined' &
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Body__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Body */ "./components/Body.js");
-var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/pages/index.js";
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
+/* harmony import */ var _components_Dev__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Dev */ "./components/Dev.js");
+var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/pages/dev.js";
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Body__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 6
     },
     __self: this
-  });
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    secondary: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Dev__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }));
 });
 
 /***/ }),
 
 /***/ 1:
-/*!**********************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fmathieu%2FProjects%2Fproduction%2Fleomaglove-be%2Fpages%2Findex.js ***!
-  \**********************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fdev&absolutePagePath=%2FUsers%2Fmathieu%2FProjects%2Fproduction%2Fleomaglove-be%2Fpages%2Fdev.js ***!
+  \***********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fmathieu%2FProjects%2Fproduction%2Fleomaglove-be%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fmathieu%2FProjects%2Fproduction%2Fleomaglove-be%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fdev&absolutePagePath=%2FUsers%2Fmathieu%2FProjects%2Fproduction%2Fleomaglove-be%2Fpages%2Fdev.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdev&absolutePagePath=%2FUsers%2Fmathieu%2FProjects%2Fproduction%2Fleomaglove-be%2Fpages%2Fdev.js!./");
 
 
 /***/ }),
@@ -6597,4 +6386,4 @@ module.exports = dll_3681e7fd756237ce51c6;
 /***/ })
 
 },[[1,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=dev.js.map
