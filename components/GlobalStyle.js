@@ -12,6 +12,9 @@ export default createGlobalStyle`
     padding: 0;
     background: transparent;
   }
+  button:hover {
+    cursor: pointer;
+  }
 
   ul {
     list-style: none;

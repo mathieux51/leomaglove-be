@@ -10,6 +10,7 @@ module.exports = {
           components: "./components",
           db: "./db",
           helpers: "./helpers",
+          config: "./config",
           style: "./style"
         }
       }
