@@ -20,6 +20,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _Main__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Main */ "./components/Main.js");
+/* harmony import */ var _Map__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Map */ "./components/Map.js");
 
 
 
@@ -28,6 +29,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/Dev.js";
+
 
 
 
@@ -48,10 +50,7 @@ var Bottom = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.attrs
 }).withConfig({
   displayName: "Dev__Bottom",
   componentId: "kmxpvl-2"
-})(["display:", ";"], function (_ref) {
-  var show = _ref.show;
-  return show ? "inherit" : "none";
-});
+})([""]);
 var Big = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].span.attrs({
   className: "f31"
 }).withConfig({
@@ -122,44 +121,44 @@ function (_React$PureComponent) {
         id: "main",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 63
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Top, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 64
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Big, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 65
         },
         __self: this
       }, "Vid\xE9o en boucle")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Middle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 67
         },
         __self: this
       }, show && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(CloseButton, {
         onClick: this.setShow,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 68
         },
         __self: this
       }, "\u274C"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Text, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 69
         },
         __self: this
       }, "Plus d'info"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ButtonContainer, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 70
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Button, {
@@ -167,7 +166,7 @@ function (_React$PureComponent) {
         name: "belgium",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 71
         },
         __self: this
       }, "Les invit\xE9s en Belgique"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Button, {
@@ -175,17 +174,23 @@ function (_React$PureComponent) {
         name: "france",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 74
         },
         __self: this
       }, "Les invit\xE9s en France"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Bottom, {
         show: show,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 80
         },
         __self: this
-      }, "Bottom"));
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Map__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        },
+        __self: this
+      })));
     }
   }]);
 
@@ -311,6 +316,47 @@ var Main = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].main.attrs(
   componentId: "sbj0w2-0"
 })(["min-height:calc(100vh - 120px);border:1px solid black;margin:1px;border-top:0;"]);
 /* harmony default export */ __webpack_exports__["default"] = (Main);
+
+/***/ }),
+
+/***/ "./components/Map.js":
+/*!***************************!*\
+  !*** ./components/Map.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/Map.js";
+
+
+var StyledMap = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(Map).attrs({
+  className: "w100 h100"
+}).withConfig({
+  displayName: "Map__StyledMap",
+  componentId: "sc-1futo3k-0"
+})([""]);
+
+function Map() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+    src: "https://maps.google.com/maps?width=100%&height=600&hl=en&q=Berlin+(leomaglove)&ie=UTF8&t=&z=14&iwloc=B&output=embed",
+    frameBorder: "0",
+    scrolling: "no",
+    marginHeight: "0",
+    marginWidth: "0",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  });
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (StyledMap);
 
 /***/ }),
 
@@ -2621,12 +2667,12 @@ function index (resultFn, isEqual) {
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_3681e7fd756237ce51c6 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_3681e7fd756237ce51c6 */ "dll-reference dll_3681e7fd756237ce51c6"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -2827,12 +2873,12 @@ process.umask = function() { return 0; };
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_3681e7fd756237ce51c6 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_3681e7fd756237ce51c6 */ "dll-reference dll_3681e7fd756237ce51c6"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -3440,23 +3486,23 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_3681e7fd756237ce51c6 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_3681e7fd756237ce51c6 */ "dll-reference dll_3681e7fd756237ce51c6"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_3681e7fd756237ce51c6 ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_3681e7fd756237ce51c6 */ "dll-reference dll_3681e7fd756237ce51c6"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -3698,12 +3744,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_3681e7fd756237ce51c6 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_3681e7fd756237ce51c6 */ "dll-reference dll_3681e7fd756237ce51c6"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -6362,7 +6408,7 @@ var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/pages/dev.j
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!***********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fdev&absolutePagePath=%2FUsers%2Fmathieu%2FProjects%2Fproduction%2Fleomaglove-be%2Fpages%2Fdev.js ***!
   \***********************************************************************************************************************************************/
@@ -6374,16 +6420,16 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fdev&ab
 
 /***/ }),
 
-/***/ "dll-reference dll_3681e7fd756237ce51c6":
+/***/ "dll-reference dll_55dc4e2ecf7824085104":
 /*!*******************************************!*\
-  !*** external "dll_3681e7fd756237ce51c6" ***!
+  !*** external "dll_55dc4e2ecf7824085104" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_3681e7fd756237ce51c6;
+module.exports = dll_55dc4e2ecf7824085104;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]));;
+},[[2,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=dev.js.map
