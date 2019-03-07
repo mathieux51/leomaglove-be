@@ -19,7 +19,7 @@ const Middle = styled.div.attrs({
 const Bottom = styled.div.attrs({
   className: "flex-1"
 })`
-  /* display: ${({ show }) => (show ? "inherit" : "none")}; */
+  display: ${({ show }) => (show ? "inherit" : "none")};
   /* visibility: ${({ show }) => (show ? "visible" : "hidden")};
   transition: visibility 0s, opacity 5s linear; */
 `
