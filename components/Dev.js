@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Main from "./Main"
-import Map from "./Map"
+import Information from "./Information"
 
 const Top = styled.div.attrs({
   className: "flex-1 flex jc-c ai-c fxd-c"
@@ -12,16 +12,10 @@ const Top = styled.div.attrs({
 const Middle = styled.div.attrs({
   className: "flex fxd-c ai-c jc-c relative"
 })`
-  background: gold;
   flex: 0 6rem;
-`
-
-const Bottom = styled.div.attrs({
-  className: "flex-1"
-})`
-  display: ${({ show }) => (show ? "inherit" : "none")};
-  /* visibility: ${({ show }) => (show ? "visible" : "hidden")};
-  transition: visibility 0s, opacity 5s linear; */
+  border: 1px solid black;
+  border-left: 0;
+  border-right: 0;
 `
 
 const Big = styled.span.attrs({
@@ -76,11 +70,7 @@ class Dev extends React.PureComponent {
             </Button>
           </ButtonContainer>
         </Middle>
-        {
-          <Bottom show={show}>
-            <Map />
-          </Bottom>
-        }
+        <Information show={show} />
       </Main>
     )
   }
