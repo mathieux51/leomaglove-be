@@ -20,7 +20,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _Main__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Main */ "./components/Main.js");
-/* harmony import */ var _Map__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Map */ "./components/Map.js");
+/* harmony import */ var _Information__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Information */ "./components/Information.js");
 
 
 
@@ -44,42 +44,36 @@ var Middle = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.attrs
 }).withConfig({
   displayName: "Dev__Middle",
   componentId: "kmxpvl-1"
-})(["background:gold;flex:0 6rem;"]);
-var Bottom = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.attrs({
-  className: "flex-1"
-}).withConfig({
-  displayName: "Dev__Bottom",
-  componentId: "kmxpvl-2"
-})([""]);
+})(["flex:0 6rem;border:1px solid black;border-left:0;border-right:0;"]);
 var Big = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].span.attrs({
   className: "f31"
 }).withConfig({
   displayName: "Dev__Big",
-  componentId: "kmxpvl-3"
+  componentId: "kmxpvl-2"
 })([""]);
 var CloseButton = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].button.attrs({
   className: "absolute flex jc-c ai-c"
 }).withConfig({
   displayName: "Dev__CloseButton",
-  componentId: "kmxpvl-4"
+  componentId: "kmxpvl-3"
 })(["margin:0.75rem;right:0;top:0;"]);
 var ButtonContainer = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.attrs({
   className: "flex-1 w100 flex ai-c jc-sa"
 }).withConfig({
   displayName: "Dev__ButtonContainer",
-  componentId: "kmxpvl-5"
+  componentId: "kmxpvl-4"
 })([""]);
 var Text = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].span.attrs({
   className: "flex-1 w100 flex ai-c ta-c jc-c"
 }).withConfig({
   displayName: "Dev__Text",
-  componentId: "kmxpvl-6"
+  componentId: "kmxpvl-5"
 })([""]);
 var Button = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].button.attrs({
   className: "ttu"
 }).withConfig({
   displayName: "Dev__Button",
-  componentId: "kmxpvl-7"
+  componentId: "kmxpvl-6"
 })(["border:1px solid black;padding:0.4rem;"]);
 
 var Dev =
@@ -121,44 +115,44 @@ function (_React$PureComponent) {
         id: "main",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 57
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Top, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 58
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Big, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 59
         },
         __self: this
       }, "Vid\xE9o en boucle")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Middle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 61
         },
         __self: this
       }, show && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(CloseButton, {
         onClick: this.setShow,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 62
         },
         __self: this
       }, "\u274C"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Text, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 63
         },
         __self: this
       }, "Plus d'info"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ButtonContainer, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 64
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Button, {
@@ -166,7 +160,7 @@ function (_React$PureComponent) {
         name: "belgium",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 65
         },
         __self: this
       }, "Les invit\xE9s en Belgique"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Button, {
@@ -174,23 +168,17 @@ function (_React$PureComponent) {
         name: "france",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 68
         },
         __self: this
-      }, "Les invit\xE9s en France"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Bottom, {
+      }, "Les invit\xE9s en France"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Information__WEBPACK_IMPORTED_MODULE_10__["default"], {
         show: show,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 73
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Map__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 81
-        },
-        __self: this
-      })));
+      }));
     }
   }]);
 
@@ -298,6 +286,131 @@ var Header = function Header(_ref) {
 
 /***/ }),
 
+/***/ "./components/Information.js":
+/*!***********************************!*\
+  !*** ./components/Information.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Map */ "./components/Map.js");
+/* harmony import */ var _Timeline__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Timeline */ "./components/Timeline.js");
+var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/Information.js";
+
+
+
+
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
+  className: "flex-1 fxd-c"
+}).withConfig({
+  displayName: "Information__Container",
+  componentId: "glfbnm-0"
+})(["display:", ";"], function (_ref) {
+  var show = _ref.show;
+  return show ? "inherit" : "none";
+});
+var Top = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
+  className: "flex"
+}).withConfig({
+  displayName: "Information__Top",
+  componentId: "glfbnm-1"
+})(["margin:2rem 1rem;"]);
+var TextContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
+  className: "flex fxd-c flex-1"
+}).withConfig({
+  displayName: "Information__TextContainer",
+  componentId: "glfbnm-2"
+})([""]);
+var StyledMap = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_Map__WEBPACK_IMPORTED_MODULE_2__["default"]).attrs({
+  className: "flex-1"
+}).withConfig({
+  displayName: "Information__StyledMap",
+  componentId: "glfbnm-3"
+})([""]);
+var Schema = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
+  className: "flex-1 flex jc-c ai-c"
+}).withConfig({
+  displayName: "Information__Schema",
+  componentId: "glfbnm-4"
+})([""]);
+var Bottom = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
+  className: ""
+}).withConfig({
+  displayName: "Information__Bottom",
+  componentId: "glfbnm-5"
+})([""]);
+
+var Information = function Information(_ref2) {
+  var show = _ref2.show,
+      className = _ref2.className;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
+    show: show,
+    className: className,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Top, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextContainer, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, "Adresse"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }, "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus rerum quam eius necessitatibus cumque vero officia nemo fugiat labore iusto.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledMap, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Schema, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, "Sch\xE9ma")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Timeline__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Bottom, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Information);
+
+/***/ }),
+
 /***/ "./components/Main.js":
 /*!****************************!*\
   !*** ./components/Main.js ***!
@@ -357,6 +470,119 @@ function Map() {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (StyledMap);
+
+/***/ }),
+
+/***/ "./components/Timeline.js":
+/*!********************************!*\
+  !*** ./components/Timeline.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/Timeline.js";
+
+
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
+  className: "flex jc-sa relative"
+}).withConfig({
+  displayName: "Timeline__Container",
+  componentId: "anie9o-0"
+})(["margin:1rem;"]);
+
+var TimelineItem = function TimelineItem(_ref) {
+  var className = _ref.className;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    width: "100%",
+    viewBox: "0 0 221 121",
+    className: className,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("circle", {
+    cx: "60.5",
+    cy: "60.5",
+    r: "60",
+    fill: "white",
+    stroke: "black",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("line", {
+    x1: "121",
+    y1: "59.5",
+    x2: "221",
+    y2: "59.5",
+    stroke: "black",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }));
+};
+
+var StyledTimelineItem = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(TimelineItem).withConfig({
+  displayName: "Timeline__StyledTimelineItem",
+  componentId: "anie9o-1"
+})(["width:100px;"]);
+var Text = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.attrs({
+  className: "absolute"
+}).withConfig({
+  displayName: "Timeline__Text",
+  componentId: "anie9o-2"
+})(["bottom:0;left:50%;transform:translate3d(0,0,0);"]);
+
+var Timeline = function Timeline() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Text, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, "Timeline"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTimelineItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTimelineItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTimelineItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTimelineItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Timeline);
 
 /***/ }),
 
@@ -2667,12 +2893,12 @@ function index (resultFn, isEqual) {
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_55dc4e2ecf7824085104 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_2c2a52d81d538322a0ca ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_2c2a52d81d538322a0ca */ "dll-reference dll_2c2a52d81d538322a0ca"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -2873,12 +3099,12 @@ process.umask = function() { return 0; };
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_55dc4e2ecf7824085104 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_2c2a52d81d538322a0ca ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_2c2a52d81d538322a0ca */ "dll-reference dll_2c2a52d81d538322a0ca"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -3486,23 +3712,23 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_55dc4e2ecf7824085104 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_2c2a52d81d538322a0ca ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_2c2a52d81d538322a0ca */ "dll-reference dll_2c2a52d81d538322a0ca"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_55dc4e2ecf7824085104 ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_2c2a52d81d538322a0ca ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_2c2a52d81d538322a0ca */ "dll-reference dll_2c2a52d81d538322a0ca"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -3744,12 +3970,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_55dc4e2ecf7824085104 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_2c2a52d81d538322a0ca ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_2c2a52d81d538322a0ca */ "dll-reference dll_2c2a52d81d538322a0ca"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -6420,14 +6646,14 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fdev&ab
 
 /***/ }),
 
-/***/ "dll-reference dll_55dc4e2ecf7824085104":
+/***/ "dll-reference dll_2c2a52d81d538322a0ca":
 /*!*******************************************!*\
-  !*** external "dll_55dc4e2ecf7824085104" ***!
+  !*** external "dll_2c2a52d81d538322a0ca" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_55dc4e2ecf7824085104;
+module.exports = dll_2c2a52d81d538322a0ca;
 
 /***/ })
 
