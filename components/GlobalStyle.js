@@ -76,6 +76,9 @@ export default createGlobalStyle`
   .flex-1 {
     flex: 1;
   }
+  .flex-auto {
+    flex: auto;
+  }
   .w100 {
     width: 100%;
   }

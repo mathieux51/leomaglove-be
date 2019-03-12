@@ -11,7 +11,7 @@
     "build": "next build",
     "clean": "rimraf node_modules/.cache",
     "cname": "touch out/CNAME && echo \"leomaglove.be\\n\" >> out/CNAME",
-    "deploy": "git add out/ && git commit -m \"Deploy to gh-pages\" && git push origin `git subtree split --prefix out master`:gh-pages --force",
+    "deploy": "git add out/ && git commit -m \"Deploy to gh-pages\" && git push origin `git subtree split --prefix out master`:gh-pages --force && git push",
     "dev": "next",
     "export": "next export",
     "predeploy": "npm run clean && npm run build && npm run export && touch out/.nojekyll && npm run cname",

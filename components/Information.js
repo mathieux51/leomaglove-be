@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Map from "./Map"
 import Timeline from "./Timeline"
+import { media } from "../helpers"
 
 const Container = styled.div.attrs({
   className: "flex-1 fxd-c"
@@ -12,7 +13,11 @@ const Container = styled.div.attrs({
 const Top = styled.div.attrs({
   className: "flex"
 })`
+  flex-direction: column;
   margin: 2rem 1rem;
+  ${media.tablet`
+    flex-direction: row;
+  `}
 `
 
 const TextContainer = styled.div.attrs({
@@ -28,7 +33,23 @@ const Schema = styled.div.attrs({
 })``
 
 const Bottom = styled.div.attrs({
+  className: "flex fxd-c flex-auto"
+})``
+
+const BottomSubContainer = styled.div.attrs({
+  className: "flex-1 flex jc-sa ai-c"
+})``
+
+const Camping = styled.span.attrs({
   className: ""
+})``
+
+const Housing = styled.span.attrs({
+  className: ""
+})``
+
+const Message = styled.span.attrs({
+  className: "flex-1 flex ai-c jc-c"
 })``
 
 const Information = ({ show, className }) => (
@@ -46,7 +67,13 @@ const Information = ({ show, className }) => (
       <Schema>Schéma</Schema>
     </Top>
     <Timeline />
-    <Bottom />
+    <Bottom>
+      <BottomSubContainer>
+        <Camping>⛺️ Camping</Camping>
+        <Housing>🏠 Logement</Housing>
+      </BottomSubContainer>
+      <Message>Pour notre voyage dans l'espace : BEXX XXXX XXXX</Message>
+    </Bottom>
   </Container>
 )
 
