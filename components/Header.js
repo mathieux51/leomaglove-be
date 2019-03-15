@@ -14,7 +14,7 @@ const H1 = styled.h1.attrs({ className: "fw400 flex ai-c" })`
 
 const StyledHeart = styled(Heart).attrs({ className: "" })`
   width: 30px;
-  margin: 0 0.75rem;
+  margin: 0 1.5rem;
 `
 
 const SubContainer = styled.div.attrs({
@@ -38,7 +38,7 @@ const Header = ({ secondary }) => (
           <span>Texte</span>
           <span>Texte</span>
         </TextContainer>
-        <H1>Magali ❤️ Léo </H1>
+        <H1>Magali {<StyledHeart />}Léo</H1>
       </SubContainer>
     )}
   </Container>
