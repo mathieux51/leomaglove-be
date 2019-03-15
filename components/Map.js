@@ -7,7 +7,7 @@ function Map({ className }) {
   return (
     <iframe
       className={className}
-      src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Dublin&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+      src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Marly-Gomont%2C%20France+(Marley%20Gomon)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
       frameBorder="0"
       scrolling="no"
       marginHeight="0"
