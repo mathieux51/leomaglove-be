@@ -1,135 +1,35 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_app.js"],{
 
-/***/ "./assets/fonts/ILoveGlitter.woff2":
-/*!*****************************************!*\
-  !*** ./assets/fonts/ILoveGlitter.woff2 ***!
-  \*****************************************/
+/***/ "./assets/fonts/josefin-slab-normal-400.woff2":
+/*!****************************************************!*\
+  !*** ./assets/fonts/josefin-slab-normal-400.woff2 ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/fonts/ILoveGlitter-e373aeb2bbef2c024286505dc6907750.woff2";
+module.exports = "/_next/static/fonts/josefin-slab-normal-400-325589c7b6fe90a07bf6ee47149488f9.woff2";
 
 /***/ }),
 
-/***/ "./components/CountdownContext.js":
-/*!****************************************!*\
-  !*** ./components/CountdownContext.js ***!
-  \****************************************/
-/*! exports provided: CountdownProvider, CountdownConsumer, CountdownContext */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./assets/fonts/josefin-slab-normal-600.woff2":
+/*!****************************************************!*\
+  !*** ./assets/fonts/josefin-slab-normal-600.woff2 ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountdownProvider", function() { return CountdownProvider; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountdownConsumer", function() { return Consumer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountdownContext", function() { return CountdownContext; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+module.exports = "/_next/static/fonts/josefin-slab-normal-600-d19eade635a443b4ade2f5339a326189.woff2";
 
+/***/ }),
 
+/***/ "./assets/fonts/josefin-slab-normal-700.woff2":
+/*!****************************************************!*\
+  !*** ./assets/fonts/josefin-slab-normal-700.woff2 ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-
-
-
-
-
-var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/CountdownContext.js";
-
-var CountdownContext;
-
-var _CountdownContext = CountdownContext = react__WEBPACK_IMPORTED_MODULE_8___default.a.createContext(),
-    Provider = _CountdownContext.Provider,
-    Consumer = _CountdownContext.Consumer;
-
-var CountdownProvider =
-/*#__PURE__*/
-function (_React$PureComponent) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(CountdownProvider, _React$PureComponent);
-
-  function CountdownProvider() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, CountdownProvider);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(CountdownProvider)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "state", {
-      days: 0,
-      hours: 0,
-      minutes: 0,
-      seconds: 0
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "finalDate", new Date("July 26 2019").getTime());
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "intervalId", null);
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "timer", function () {
-      var now = new Date().getTime();
-      var distance = _this.finalDate - now;
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
-      var minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
-      var seconds = Math.floor(distance % (1000 * 60) / 1000);
-
-      _this.setState(function (prevState) {
-        return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, prevState.days !== days ? {
-          days: days
-        } : {}, prevState.hours !== hours ? {
-          hours: hours
-        } : {}, prevState.minutes !== minutes ? {
-          minutes: minutes
-        } : {}, prevState.seconds !== seconds ? {
-          seconds: seconds
-        } : {});
-      });
-    });
-
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(CountdownProvider, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.intervalId = setInterval(this.timer, 1000);
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      clearInterval(this.intervalId);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Provider, {
-        value: this.state,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43
-        },
-        __self: this
-      }, this.props.children);
-    }
-  }]);
-
-  return CountdownProvider;
-}(react__WEBPACK_IMPORTED_MODULE_8___default.a.PureComponent);
-
-
+module.exports = "/_next/static/fonts/josefin-slab-normal-700-3d7270ee7bf094f200a6406215639c06.woff2";
 
 /***/ }),
 
@@ -167,10 +67,16 @@ var fontFaces = _FontFacesList__WEBPACK_IMPORTED_MODULE_1__["default"].map(funct
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _assets_fonts_ILoveGlitter_woff2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/fonts/ILoveGlitter.woff2 */ "./assets/fonts/ILoveGlitter.woff2");
-/* harmony import */ var _assets_fonts_ILoveGlitter_woff2__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_ILoveGlitter_woff2__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_fonts_josefin_slab_normal_400_woff2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/fonts/josefin-slab-normal-400.woff2 */ "./assets/fonts/josefin-slab-normal-400.woff2");
+/* harmony import */ var _assets_fonts_josefin_slab_normal_400_woff2__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_josefin_slab_normal_400_woff2__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_fonts_josefin_slab_normal_600_woff2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/fonts/josefin-slab-normal-600.woff2 */ "./assets/fonts/josefin-slab-normal-600.woff2");
+/* harmony import */ var _assets_fonts_josefin_slab_normal_600_woff2__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_josefin_slab_normal_600_woff2__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_fonts_josefin_slab_normal_700_woff2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/fonts/josefin-slab-normal-700.woff2 */ "./assets/fonts/josefin-slab-normal-700.woff2");
+/* harmony import */ var _assets_fonts_josefin_slab_normal_700_woff2__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_josefin_slab_normal_700_woff2__WEBPACK_IMPORTED_MODULE_2__);
 
-/* harmony default export */ __webpack_exports__["default"] = ([["ILoveGlitter", 400, "normal", _assets_fonts_ILoveGlitter_woff2__WEBPACK_IMPORTED_MODULE_0___default.a]]);
+
+
+/* harmony default export */ __webpack_exports__["default"] = ([["JosefinSlab", 400, "normal", _assets_fonts_josefin_slab_normal_400_woff2__WEBPACK_IMPORTED_MODULE_0___default.a], ["JosefinSlabSemiBold", 600, "normal", _assets_fonts_josefin_slab_normal_600_woff2__WEBPACK_IMPORTED_MODULE_1___default.a], ["JosefinSlabBold", 700, "normal", _assets_fonts_josefin_slab_normal_700_woff2__WEBPACK_IMPORTED_MODULE_2___default.a]]);
 
 /***/ }),
 
@@ -190,7 +96,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  ", "\n  ", "\n\n    /* Reset */\n  button {\n    border: 0;\n    padding: 0;\n    background: transparent;\n  }\n  button:hover {\n    cursor: pointer;\n  }\n\n  ul {\n    list-style: none;\n  }\n\n  html {\n    box-sizing: border-box;\n  }\n  \n  *, *:before, *:after {\n    box-sizing: inherit;\n  }\n  a {\n    text-decoration: none;\n  }\n  /* fonts */\n  body {\n    color: ", ";\n\t\tfont-family: sans-serif;\n    background: ", "\n  }\n\t.fonts-loaded body {\n\t\tfont-family: ILoveGlitter, sans-serif;\n\t}\n\n  /* .fonts-loaded .ff-futura-pt {\n    font-family: futura-pt, sans-serif;\n  } */\n\n   /* flex */\n  .flex {\n    display: flex;\n  }\n  .fxd-c {\n    flex-direction: column;\n  }\n  .jc-c {\n    justify-content: center;\n  } \n  .jc-e {\n    justify-content: flex-end;\n  } \n  .jc-sb {\n    justify-content: space-between;\n  } \n  .jc-sa {\n    justify-content: space-around;\n  } \n  .ai-c {\n    align-items: center;\n  }\n  .fxw-n {\n    flex-wrap: nowrap;\n  }\n  .fxw-w {\n    flex-wrap: wrap;\n  }\n\n  .flex-1 {\n    flex: 1;\n  }\n  .flex-auto {\n    flex: auto;\n  }\n  .w100 {\n    width: 100%;\n  }\n  .h100 {\n    height: 100%;\n  }\n  /* font-size */\n  .f12 {\n    font-size: 12px;\n  }\n  .f14 {\n    font-size: 14px;\n  }\n  .f16 {\n    font-size: 16px;\n  }\n  .f31 {\n    font-size: 31px;\n  }\n\n  .fw300 {\n    font-weight: 300;\n  }\n  .fw400 {\n    font-weight: 400;\n  }\n\n  /* Text */\n  .ttu {\n    text-transform: uppercase;\n  }\n  .tdn {\n    text-decoration: none;\n  }\n  .ta-c {\n    text-align: center;\n  }\n  /* margin/padding */\n  .m0 {\n    margin: 0;\n  }\n  .p0 {\n    padding: 0;\n  }\n  /* display */\n  .d {\n    display: block;\n  }\n  /* debug */\n  .o {\n    outline: 5px solid gold;\n  }\n  /* position */\n  .relative {\n    position: relative;\n  }\n  .absolute {\n    position: absolute;\n  }\n  .t0 {\n    top: 0;\n  }\n  .l0 {\n    left: 0;\n  }\n  .r0 {\n    right: 0;\n  }\n  .b0 {\n    bottom: 0;\n  }\n  /* img */\n  .cover {\n    object-fit: cover;\n  }\n  .z-1 {\n    z-index: -1;\n  }\n  .z0 {\n    z-index: 0;\n  }\n  .z1 {\n    z-index: 1;\n  }\n  .pointer {\n    cursor: pointer;\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  ", "\n  ", "\n\n    /* Reset */\n  button {\n    border: 0;\n    padding: 0;\n    background: transparent;\n  }\n  button:hover {\n    cursor: pointer;\n  }\n\n  ul {\n    list-style: none;\n  }\n\n  html {\n    box-sizing: border-box;\n  }\n  \n  *, *:before, *:after {\n    box-sizing: inherit;\n  }\n  a {\n    text-decoration: none;\n  }\n  /* fonts */\n  body {\n    color: ", ";\n\t\tfont-family: sans-serif;\n    background: ", "\n  }\n\t.fonts-loaded body {\n\t\tfont-family: JosefinSlab, sans-serif;\n\t}\n\n  /* .fonts-loaded .ff-futura-pt {\n    font-family: futura-pt, sans-serif;\n  } */\n\n   /* flex */\n  .flex {\n    display: flex;\n  }\n  .fxd-c {\n    flex-direction: column;\n  }\n  .jc-c {\n    justify-content: center;\n  } \n  .jc-e {\n    justify-content: flex-end;\n  } \n  .jc-sb {\n    justify-content: space-between;\n  } \n  .jc-sa {\n    justify-content: space-around;\n  } \n  .ai-c {\n    align-items: center;\n  }\n  .fxw-n {\n    flex-wrap: nowrap;\n  }\n  .fxw-w {\n    flex-wrap: wrap;\n  }\n\n  .flex-1 {\n    flex: 1;\n  }\n  .flex-auto {\n    flex: auto;\n  }\n  .w100 {\n    width: 100%;\n  }\n  .h100 {\n    height: 100%;\n  }\n  /* font-size */\n  .f12 {\n    font-size: 12px;\n  }\n  .f14 {\n    font-size: 14px;\n  }\n  .f16 {\n    font-size: 16px;\n  }\n  .f31 {\n    font-size: 31px;\n  }\n\n  .fw300 {\n    font-weight: 300;\n  }\n  .fw400 {\n    font-weight: 400;\n  }\n\n  /* Text */\n  .ttu {\n    text-transform: uppercase;\n  }\n  .tdn {\n    text-decoration: none;\n  }\n  .ta-c {\n    text-align: center;\n  }\n  /* margin/padding */\n  .m0 {\n    margin: 0;\n  }\n  .p0 {\n    padding: 0;\n  }\n  /* display */\n  .d {\n    display: block;\n  }\n  /* debug */\n  .o {\n    outline: 5px solid gold;\n  }\n  /* position */\n  .relative {\n    position: relative;\n  }\n  .absolute {\n    position: absolute;\n  }\n  .t0 {\n    top: 0;\n  }\n  .l0 {\n    left: 0;\n  }\n  .r0 {\n    right: 0;\n  }\n  .b0 {\n    bottom: 0;\n  }\n  /* img */\n  .cover {\n    object-fit: cover;\n  }\n  .z-1 {\n    z-index: -1;\n  }\n  .z0 {\n    z-index: 0;\n  }\n  .z1 {\n    z-index: 1;\n  }\n  .pointer {\n    cursor: pointer;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -251,31 +157,65 @@ var HeadComponent = function HeadComponent() {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    rel: "shortcut icon",
-    sizes: "16x16 24x24 32x32 48x48",
-    href: "/static/images/favicon.ico",
+    rel: "apple-touch-icon",
+    sizes: "180x180",
+    href: "/static/apple-touch-icon.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
     rel: "icon",
     type: "image/png",
     sizes: "32x32",
-    href: "/static/images/favicon-32x32.png",
+    href: "/static/favicon-32x32.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 12
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    rel: "apple-touch-icon",
-    sizes: "180x180",
-    href: "/static/images/favicon-180x180.png",
+    rel: "icon",
+    type: "image/png",
+    sizes: "16x16",
+    href: "/static/favicon-16x16.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+    rel: "manifest",
+    href: "/static/site.webmanifest",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+    rel: "mask-icon",
+    href: "/static/safari-pinned-tab.svg",
+    color: "#5bbad5",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "msapplication-TileColor",
+    content: "#da532c",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "theme-color",
+    content: "#ffffff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
     },
     __self: this
   }));
@@ -298,11 +238,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _style_theme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/theme */ "./style/theme.js");
-/* harmony import */ var _CountdownContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CountdownContext */ "./components/CountdownContext.js");
-/* harmony import */ var _Head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Head */ "./components/Head.js");
-/* harmony import */ var _GlobalStyle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./GlobalStyle */ "./components/GlobalStyle.js");
+/* harmony import */ var _Head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Head */ "./components/Head.js");
+/* harmony import */ var _GlobalStyle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./GlobalStyle */ "./components/GlobalStyle.js");
 var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/Layout.js";
-
 
 
 
@@ -322,34 +260,28 @@ var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.wi
     theme: _style_theme__WEBPACK_IMPORTED_MODULE_2__["default"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountdownContext__WEBPACK_IMPORTED_MODULE_3__["CountdownProvider"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 18
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GlobalStyle__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Head__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 21
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GlobalStyle__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Head__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }), children)));
+  }), children));
 });
 
 /***/ }),
@@ -450,28 +382,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/freeze */ "./node_modules/core-js/library/fn/object/freeze.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js":
-/*!*******************************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js ***!
-  \*******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptor */ "./node_modules/core-js/library/fn/object/get-own-property-descriptor.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
-  \****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "./node_modules/core-js/library/fn/object/get-own-property-symbols.js");
 
 /***/ }),
 
@@ -890,36 +800,6 @@ function _createClass(Constructor, protoProps, staticProps) {
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
-/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
 /*!********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
@@ -1101,49 +981,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _nonIterableSpread; });
 function _nonIterableSpread() {
   throw new TypeError("Invalid attempt to spread non-iterable instance");
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js ***!
-  \*************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectSpread; });
-/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
-/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
-/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _defineProperty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-
-
-
-
-function _objectSpread(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i] != null ? arguments[i] : {};
-
-    var ownKeys = _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default()(source);
-
-    if (typeof _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default.a === 'function') {
-      ownKeys = ownKeys.concat(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default()(source).filter(function (sym) {
-        return _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default()(source, sym).enumerable;
-      }));
-    }
-
-    ownKeys.forEach(function (key) {
-      Object(_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(target, key, source[key]);
-    });
-  }
-
-  return target;
 }
 
 /***/ }),
@@ -1701,35 +1538,6 @@ module.exports = function defineProperty(it, key, desc) {
 
 __webpack_require__(/*! ../../modules/es6.object.freeze */ "./node_modules/core-js/library/modules/es6.object.freeze.js");
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.freeze;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/get-own-property-descriptor.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/get-own-property-descriptor.js ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.get-own-property-descriptor */ "./node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js");
-var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object;
-module.exports = function getOwnPropertyDescriptor(it, key) {
-  return $Object.getOwnPropertyDescriptor(it, key);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/get-own-property-symbols.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/get-own-property-symbols.js ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.symbol */ "./node_modules/core-js/library/modules/es6.symbol.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.getOwnPropertySymbols;
 
 
 /***/ }),
@@ -4426,26 +4234,6 @@ var meta = __webpack_require__(/*! ./_meta */ "./node_modules/core-js/library/mo
 __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('freeze', function ($freeze) {
   return function freeze(it) {
     return $freeze && isObject(it) ? $freeze(meta(it)) : it;
-  };
-});
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js ***!
-  \****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
-var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
-var $getOwnPropertyDescriptor = __webpack_require__(/*! ./_object-gopd */ "./node_modules/core-js/library/modules/_object-gopd.js").f;
-
-__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('getOwnPropertyDescriptor', function () {
-  return function getOwnPropertyDescriptor(it, key) {
-    return $getOwnPropertyDescriptor(toIObject(it), key);
   };
 });
 
