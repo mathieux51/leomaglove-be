@@ -541,7 +541,7 @@ function Map(_ref) {
   var className = _ref.className;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
     className: className,
-    src: "https://maps.google.com/maps?width=100%&height=600&hl=en&q=Dublin&ie=UTF8&t=&z=14&iwloc=B&output=embed",
+    src: "https://maps.google.com/maps?width=100%&height=600&hl=en&q=Marly-Gomont%2C%20France+(Marley%20Gomon)&ie=UTF8&t=&z=14&iwloc=B&output=embed",
     frameBorder: "0",
     scrolling: "no",
     marginHeight: "0",
