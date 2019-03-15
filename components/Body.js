@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Countdown from "./Countdown"
 import Main from "./Main"
 
 const TopContainer = styled.div.attrs({
@@ -17,7 +16,6 @@ const Body = () => (
   <Main id="main">
     <TopContainer>
       <H2>Plus d'infos... bientôt !</H2>
-      <Countdown />
     </TopContainer>
   </Main>
 )

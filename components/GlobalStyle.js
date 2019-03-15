@@ -37,7 +37,7 @@ export default createGlobalStyle`
     background: ${({ theme }) => theme.bg}
   }
 	.fonts-loaded body {
-		font-family: ILoveGlitter, sans-serif;
+		font-family: JosefinSlab, sans-serif;
 	}
 
   /* .fonts-loaded .ff-futura-pt {
