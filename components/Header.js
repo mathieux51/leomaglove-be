@@ -1,9 +1,9 @@
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import Heart from "./icons/Heart"
 
 const Container = styled.div.attrs({ className: "flex jc-c ai-c" })`
-  height: 100px;
-  border: 1px solid black;
+  flex: 0 100px;
+  border-bottom: 1px solid black;
   margin: 1px;
 `
 

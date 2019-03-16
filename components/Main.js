@@ -1,8 +1,6 @@
 import styled from "styled-components"
 
-const Main = styled.main.attrs({ className: "flex fxd-c" })`
-  min-height: calc(100vh - 120px);
-  border: 1px solid black;
+const Main = styled.main.attrs({ className: "flex-1 flex fxd-c" })`
   margin: 1px;
   border-top: 0;
 `
