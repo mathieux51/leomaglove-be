@@ -1,20 +1,16 @@
 import styled from "styled-components"
-import Heart from "./icons/Heart"
+import MagaliLoveLeo from "./icons/MagaliLoveLeo"
 
 const Container = styled.div.attrs({ className: "flex jc-c ai-c" })`
-  flex: 0 100px;
+  flex: 0 6rem;
   border-bottom: 1px solid black;
   margin: 1px;
 `
 
-const H1 = styled.h1.attrs({ className: "fw400 flex ai-c" })`
-  margin: 0;
-  font-size: 2.5rem;
-`
-
-const StyledHeart = styled(Heart).attrs({ className: "" })`
-  width: 30px;
-  margin: 0 1.5rem;
+const StyledMagaliLoveLeo = styled(MagaliLoveLeo).attrs({
+  className: ""
+})`
+  height: 6rem;
 `
 
 const SubContainer = styled.div.attrs({
@@ -30,7 +26,7 @@ const TextContainer = styled.div.attrs({
 const Header = ({ secondary }) => (
   <Container>
     {!secondary ? (
-      <H1>Magali {<StyledHeart />}Léo</H1>
+      <StyledMagaliLoveLeo />
     ) : (
       <SubContainer>
         <TextContainer>
