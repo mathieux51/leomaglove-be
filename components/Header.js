@@ -20,7 +20,7 @@ const SubContainer = styled.div.attrs({
 `
 
 const TextContainer = styled.div.attrs({
-  className: "flex h100 fxd-c jc-c"
+  className: "flex-2 flex h100 fxd-c jc-c"
 })``
 
 const Header = ({ secondary }) => (
@@ -34,7 +34,7 @@ const Header = ({ secondary }) => (
           <span>Texte</span>
           <span>Texte</span>
         </TextContainer>
-        <H1>Magali {<StyledHeart />}Léo</H1>
+        <StyledMagaliLoveLeo className="flex-1" />
       </SubContainer>
     )}
   </Container>

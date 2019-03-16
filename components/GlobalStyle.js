@@ -76,6 +76,12 @@ export default createGlobalStyle`
   .flex-1 {
     flex: 1;
   }
+  .flex-2 {
+    flex: 2;
+  }
+  .flex-3 {
+    flex: 3;
+  }
   .flex-auto {
     flex: auto;
   }
