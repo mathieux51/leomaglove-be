@@ -247,42 +247,47 @@ var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/
  // import Footer from "components/Footer"
 
 
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
+  className: "flex fxd-c"
+}).withConfig({
   displayName: "Layout__Container",
   componentId: "oy0maz-0"
-})(["min-height:calc(100vh - 20px);overflow:hidden;background:", ";margin:10px;border-radius:5px;"], function (_ref) {
+})(["min-height:calc(100vh - 4rem);overflow:hidden;background:", ";margin:2rem;border-radius:5px;box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);border:1px solid black;"], function (_ref) {
   var theme = _ref.theme;
   return theme.bg;
 });
-/* harmony default export */ __webpack_exports__["default"] = (function (_ref2) {
+
+var Layout = function Layout(_ref2) {
   var children = _ref2.children;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_1__["ThemeProvider"], {
     theme: _style_theme__WEBPACK_IMPORTED_MODULE_2__["default"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 22
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 23
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GlobalStyle__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 24
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Head__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 25
     },
     __self: this
   }), children));
-});
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
 
 /***/ }),
 

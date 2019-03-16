@@ -79,7 +79,7 @@ var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.at
 }).withConfig({
   displayName: "Header__Container",
   componentId: "sc-1l4pn8m-0"
-})(["height:100px;border:1px solid black;margin:1px;"]);
+})(["flex:0 100px;border-bottom:1px solid black;margin:1px;"]);
 var H1 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1.attrs({
   className: "fw400 flex ai-c"
 }).withConfig({
@@ -186,11 +186,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
 var Main = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].main.attrs({
-  className: "flex fxd-c"
+  className: "flex-1 flex fxd-c"
 }).withConfig({
   displayName: "Main",
   componentId: "sbj0w2-0"
-})(["min-height:calc(100vh - 120px);border:1px solid black;margin:1px;border-top:0;"]);
+})(["margin:1px;border-top:0;"]);
 /* harmony default export */ __webpack_exports__["default"] = (Main);
 
 /***/ }),
