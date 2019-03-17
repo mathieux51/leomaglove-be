@@ -13090,6 +13090,52 @@ module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104
 
 /***/ }),
 
+/***/ "./node_modules/react-hotjar/index.js":
+/*!********************************************!*\
+  !*** ./node_modules/react-hotjar/index.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var hotjar = __webpack_require__(/*! ./src/react-hotjar */ "./node_modules/react-hotjar/src/react-hotjar.js");
+
+module.exports = {
+	hotjar: {
+		initialize: (initialize = (id, sv) => {
+			hotjar(id, sv);
+		})
+	}
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/react-hotjar/src/react-hotjar.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/react-hotjar/src/react-hotjar.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function(id, sv) {
+	(function(h, o, t, j, a, r) {
+		h.hj =
+			h.hj ||
+			function() {
+				(h.hj.q = h.hj.q || []).push(arguments);
+			};
+		h._hjSettings = { hjid: id, hjsv: sv };
+		a = o.getElementsByTagName('head')[0];
+		r = o.createElement('script');
+		r.async = 1;
+		r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+		a.appendChild(r);
+	})(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/react-is/cjs/react-is.development.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-is/cjs/react-is.development.js ***!
@@ -17564,9 +17610,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var react_hotjar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-hotjar */ "./node_modules/react-hotjar/index.js");
+/* harmony import */ var react_hotjar__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_hotjar__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 
 
 
@@ -17574,6 +17622,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/pages/_app.js";
+
 
 
 
@@ -17590,27 +17639,32 @@ function (_App) {
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(_default, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      if (false) {}
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this$props = this.props,
           Component = _this$props.Component,
           pageProps = _this$props.pageProps;
-      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_7__["Container"], {
+      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_8__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 15
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 16
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 17
         },
         __self: this
       }))));
@@ -17618,7 +17672,7 @@ function (_App) {
   }]);
 
   return _default;
-}(next_app__WEBPACK_IMPORTED_MODULE_7___default.a);
+}(next_app__WEBPACK_IMPORTED_MODULE_8___default.a);
 
 
 
