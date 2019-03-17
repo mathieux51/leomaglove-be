@@ -25,6 +25,7 @@
     "polished": "^3.0.3",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-hotjar": "^2.0.0",
     "react-plyr": "^2.1.1",
     "styled-components": "^4.1.3"
   },
