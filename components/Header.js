@@ -1,11 +1,14 @@
 import styled from "styled-components"
 import MagaliLoveLeo from "./icons/MagaliLoveLeo"
+import Emoji from "./Emoji"
 
-const Container = styled.div.attrs({ className: "flex jc-c ai-c" })`
+const Container = styled.header.attrs({ className: "flex jc-c ai-c" })`
   flex: 0 6rem;
   border-bottom: 1px solid black;
   margin: 1px;
 `
+
+const H1 = styled.h1.attrs({ className: "visuallyHidden" })``
 
 const StyledMagaliLoveLeo = styled(MagaliLoveLeo).attrs({
   className: ""
@@ -26,7 +29,10 @@ const TextContainer = styled.div.attrs({
 const Header = ({ secondary }) => (
   <Container>
     {!secondary ? (
-      <StyledMagaliLoveLeo />
+      <React.Fragment>
+        <H1>Magali coeur Léo</H1>
+        <StyledMagaliLoveLeo />
+      </React.Fragment>
     ) : (
       <SubContainer>
         <TextContainer>

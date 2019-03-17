@@ -2,8 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import Main from "./Main"
 import DiscoBall from "./icons/DiscoBall"
+import { media } from "../helpers"
 
-const TopContainer = styled.div.attrs({
+const TopContainer = styled.section.attrs({
   className: "flex-1 flex jc-c ai-c fxd-c relative"
 })`
   max-height: 900px;
@@ -14,10 +15,13 @@ const H2 = styled.h2.attrs({ className: "m0 fw400 ta-c" })`
 `
 
 const StyledDiscoBall = styled(DiscoBall).attrs({ className: "absolute" })`
-  width: 15rem;
+  width: 11rem;
   top: -6px;
   right: 2rem;
   transform: rotate(2deg);
+  ${media.desktop`
+    width: 15rem;  
+  `}
 `
 
 const Body = () => (

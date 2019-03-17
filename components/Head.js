@@ -2,7 +2,7 @@ import Head from "next/head"
 
 const HeadComponent = () => (
   <Head>
-    <title>Léo ♥️ Magali</title>
+    <title>Leomaglove.be</title>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <link
       rel="apple-touch-icon"
