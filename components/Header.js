@@ -2,7 +2,7 @@ import styled from "styled-components"
 import MagaliLoveLeo from "./icons/MagaliLoveLeo"
 import Emoji from "./Emoji"
 
-const Container = styled.header.attrs({ className: "flex jc-c ai-c" })`
+const Header = styled.header.attrs({ className: "flex jc-c ai-c" })`
   flex: 0 6rem;
   border-bottom: 1px solid black;
   margin: 1px;
@@ -26,8 +26,8 @@ const TextContainer = styled.div.attrs({
   className: "flex-2 flex h100 fxd-c jc-c"
 })``
 
-const Header = ({ secondary }) => (
-  <Container>
+const _Header = ({ secondary }) => (
+  <Header>
     {!secondary ? (
       <React.Fragment>
         <H1>Magali coeur Léo</H1>
@@ -43,7 +43,7 @@ const Header = ({ secondary }) => (
         <StyledMagaliLoveLeo className="flex-1" />
       </SubContainer>
     )}
-  </Container>
+  </Header>
 )
 
-export default Header
+export default _Header
