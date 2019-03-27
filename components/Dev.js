@@ -6,7 +6,9 @@ import Information from "./Information"
 const Top = styled.div.attrs({
   className: "flex-1 flex jc-c ai-c fxd-c"
 })`
-  max-height: 900px;
+  height: 60vh;
+  max-height: 31rem;
+  border: 1px solid black;
 `
 
 const Middle = styled.div.attrs({
@@ -19,7 +21,7 @@ const Middle = styled.div.attrs({
 `
 
 const Big = styled.span.attrs({
-  className: "f31"
+  className: "f31 ttu"
 })``
 
 const CloseButton = styled.button.attrs({
@@ -56,7 +58,7 @@ class Dev extends React.PureComponent {
     return (
       <Main id="main">
         <Top>
-          <Big>Vidéo en boucle</Big>
+          <Big>Vidéo in loop</Big>
         </Top>
         <Middle>
           {show && <CloseButton onClick={this.setShow}>❌</CloseButton>}

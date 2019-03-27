@@ -1,48 +1,46 @@
+// @ts-check
 import styled from "styled-components"
 import MagaliLoveLeo from "./icons/MagaliLoveLeo"
-import Emoji from "./Emoji"
+import AmourFritesDecadence from "./icons/AmourFritesDecadence"
 
-const Header = styled.header.attrs({ className: "flex jc-c ai-c" })`
-  flex: 0 6rem;
-  border-bottom: 1px solid black;
-  margin: 1px;
+const Header = styled.header.attrs({ className: "flex jc-c ai-c fxw-w" })`
+  padding: 0 1rem 1rem;
 `
 
-const H1 = styled.h1.attrs({ className: "visuallyHidden" })``
+// const H1 = styled.h1.attrs({ className: "visuallyHidden" })``
+
+const LogoContainer1 = styled.div.attrs({
+  className: "flex-1 w100 h100 flex ai-c"
+})``
+
+const StyledAmourFritesDecadence = styled(AmourFritesDecadence).attrs({
+  className: ""
+})`
+  width: auto;
+  height: 100%;
+  height: 6rem;
+`
+
+const LogoContainer2 = styled.div.attrs({
+  className: "flex-1 w100 h100 flex jc-e ai-c"
+})``
 
 const StyledMagaliLoveLeo = styled(MagaliLoveLeo).attrs({
   className: ""
 })`
-  height: 6rem;
+  width: auto;
+  height: 50%;
+  height: 3rem;
 `
 
-const SubContainer = styled.div.attrs({
-  className: "flex w100 h100 ai-c jc-sb"
-})`
-  margin: 0 1rem;
-`
-
-const TextContainer = styled.div.attrs({
-  className: "flex-2 flex h100 fxd-c jc-c"
-})``
-
-const _Header = ({ secondary }) => (
+const _Header = () => (
   <Header>
-    {!secondary ? (
-      <React.Fragment>
-        <H1>Magali coeur Léo</H1>
-        <StyledMagaliLoveLeo />
-      </React.Fragment>
-    ) : (
-      <SubContainer>
-        <TextContainer>
-          <span>Texte</span>
-          <span>Texte</span>
-          <span>Texte</span>
-        </TextContainer>
-        <StyledMagaliLoveLeo className="flex-1" />
-      </SubContainer>
-    )}
+    <LogoContainer1>
+      <StyledAmourFritesDecadence />
+    </LogoContainer1>
+    <LogoContainer2>
+      <StyledMagaliLoveLeo />
+    </LogoContainer2>
   </Header>
 )
 

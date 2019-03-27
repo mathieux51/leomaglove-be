@@ -3,8 +3,12 @@ const colors = {
   black: "black"
 }
 
-export default {
+const theme = {
   fg: colors.black, // foreground primary
   fgs: colors.white, // foreground secondary secondary
-  bg: colors.white // background primary
+  bg: colors.white, // background primary
+  p: "#FFF7F5", // primary
+  s: "#FFF0EB" // secondary
 }
+
+export default theme

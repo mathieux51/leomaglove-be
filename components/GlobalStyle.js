@@ -54,6 +54,9 @@ export default createGlobalStyle`
   .jc-c {
     justify-content: center;
   } 
+  .jc-s {
+    justify-content: flex-start;
+  } 
   .jc-e {
     justify-content: flex-end;
   } 
