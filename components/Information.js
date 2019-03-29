@@ -6,9 +6,7 @@ import { media } from "../helpers"
 
 const Container = styled.div.attrs({
   className: "flex-1 fxd-c"
-})`
-  display: ${({ show }) => (show ? "inherit" : "none")};
-`
+})``
 
 const Top = styled.div.attrs({
   className: "flex"
@@ -52,8 +50,8 @@ const Message = styled.span.attrs({
   className: "flex-1 flex ai-c jc-c"
 })``
 
-const Information = ({ show, className }) => (
-  <Container show={show} className={className}>
+const Information = ({ className }) => (
+  <Container className={className}>
     <Top>
       <TextContainer>
         <span>Adresse</span>

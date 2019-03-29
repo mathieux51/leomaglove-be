@@ -3,7 +3,7 @@ import sizes from "./style/sizes"
 
 export const media = Object.keys(sizes).reduce((acc, label) => {
   acc[label] = (...args) => css`
-    @media (min-width: ${sizes[label] / 16}em) {
+    @media (max-width: ${sizes[label] / 16}em) {
       ${css(...args)}
     }
   `

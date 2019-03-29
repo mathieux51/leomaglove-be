@@ -1,36 +1,90 @@
 import React from "react"
 import styled from "styled-components"
 import Main from "./Main"
-import DiscoBall from "./icons/DiscoBall"
-import { media } from "../helpers"
+import Information from "./Information"
+import fireworksExplosionSrc from "../assets/images/fireworks-explosion.gif"
+import fireworksTakeOffSrc from "../assets/images/fireworks-take-off.gif"
 
-const TopContainer = styled.section.attrs({
-  className: "flex-1 flex jc-c ai-c fxd-c relative"
+const Top = styled.div.attrs({
+  className: "flex-1 flex jc-c ai-c fxd-c"
 })`
-  max-height: 900px;
+  min-height: 60vh;
+  max-height: 31rem;
+  border: 1px solid black;
+`
+const FireworksExplosion = styled.img.attrs({ className: "" })``
+
+const FireworksTakeOff = styled.img.attrs({ className: "" })``
+
+const Middle = styled.div.attrs({
+  className: "flex fxd-c ai-c jc-c relative"
+})`
+  flex: 0 6rem;
+  border: 1px solid black;
+  border-left: 0;
+  border-right: 0;
 `
 
-const H2 = styled.h2.attrs({ className: "m0 fw400 ta-c" })`
-  font-size: 3rem;
+const Big = styled.span.attrs({
+  className: "f31 ttu"
+})``
+
+const CloseButton = styled.button.attrs({
+  className: "absolute flex jc-c ai-c"
+})`
+  margin: 0.75rem;
+  right: 0;
+  top: 0;
 `
 
-const StyledDiscoBall = styled(DiscoBall).attrs({ className: "absolute" })`
-  width: 11rem;
-  top: -6px;
-  right: 2rem;
-  transform: rotate(2deg);
-  ${media.desktop`
-    width: 15rem;  
-  `}
+const ButtonContainer = styled.div.attrs({
+  className: "flex-1 w100 flex ai-c jc-sa"
+})``
+
+const Text = styled.span.attrs({
+  className: "flex-1 w100 flex ai-c ta-c jc-c"
+})``
+
+const Button = styled.button.attrs({
+  className: "ttu"
+})`
+  border: 1px solid black;
+  padding: 0.4rem;
 `
 
-const Body = () => (
-  <Main id="main">
-    <TopContainer>
-      <StyledDiscoBall />
-      <H2>Plus d'infos... bientôt !</H2>
-    </TopContainer>
-  </Main>
-)
+function Body() {
+  const [show, setShow] = React.useState(null)
+  const handleSetShow = evt => setShow(evt.target.name)
+  return (
+    <Main id="main">
+      <Top>
+        <FireworksExplosion src={fireworksExplosionSrc} alt="Feu d'artifice" />
+        <Big>Coming soon</Big>
+        <FireworksTakeOff
+          src={fireworksTakeOffSrc}
+          alt="Feu d'artifice décolle"
+        />
+      </Top>
+      {/* Hide it for now  */}
+      {show && (
+        <>
+          <Middle>
+            {show && <CloseButton onClick={handleSetShow}>❌</CloseButton>}
+            <Text>Plus d'info</Text>
+            <ButtonContainer>
+              <Button onClick={handleSetShow} name="belgium">
+                Les invités en Belgique
+              </Button>
+              <Button onClick={handleSetShow} name="france">
+                Les invités en France
+              </Button>
+            </ButtonContainer>
+          </Middle>
+          <Information show={show} />
+        </>
+      )}
+    </Main>
+  )
+}
 
 export default Body
