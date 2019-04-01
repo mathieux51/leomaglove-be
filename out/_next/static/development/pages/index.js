@@ -50,7 +50,7 @@ var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/
 
 
 var Top = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.attrs({
-  className: "flex-1 flex jc-c ai-c fxd-c"
+  className: "flex-1 flex jc-c ai-c fxd-c relative"
 }).withConfig({
   displayName: "Body__Top",
   componentId: "sc-1ccgya6-0"
@@ -62,11 +62,11 @@ var FireworksExplosion = styled_components__WEBPACK_IMPORTED_MODULE_2__["default
   componentId: "sc-1ccgya6-1"
 })([""]);
 var FireworksTakeOff = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.attrs({
-  className: ""
+  className: "absolute"
 }).withConfig({
   displayName: "Body__FireworksTakeOff",
   componentId: "sc-1ccgya6-2"
-})([""]);
+})(["top:calc(50% + 85px);left:50%;transform:translate3d(-50%,-50%,0);"]);
 var Middle = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.attrs({
   className: "flex fxd-c ai-c jc-c relative"
 }).withConfig({
@@ -78,7 +78,9 @@ var Big = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].span.attrs({
 }).withConfig({
   displayName: "Body__Big",
   componentId: "sc-1ccgya6-4"
-})([""]);
+})(["", ""], ""
+/* margin-top: 154px; */
+);
 var CloseButton = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].button.attrs({
   className: "absolute flex jc-c ai-c"
 }).withConfig({
@@ -118,60 +120,52 @@ function Body() {
     id: "main",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 65
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Top, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 66
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FireworksExplosion, {
-    src: _assets_images_fireworks_explosion_gif__WEBPACK_IMPORTED_MODULE_5___default.a,
-    alt: "Feu d'artifice",
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Big, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 68
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Big, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
-  }, "Coming soon"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FireworksTakeOff, {
+  }, "Coming soon..."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FireworksTakeOff, {
     src: _assets_images_fireworks_take_off_gif__WEBPACK_IMPORTED_MODULE_6___default.a,
     alt: "Feu d'artifice d\xE9colle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 69
     },
     __self: this
   })), show && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Middle, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 77
     },
     __self: this
   }, show && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(CloseButton, {
     onClick: handleSetShow,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 78
     },
     __self: this
   }, "\u274C"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Text, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 79
     },
     __self: this
   }, "Plus d'info"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ButtonContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 80
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Button, {
@@ -179,7 +173,7 @@ function Body() {
     name: "belgium",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 81
     },
     __self: this
   }, "Les invit\xE9s en Belgique"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Button, {
@@ -187,14 +181,14 @@ function Body() {
     name: "france",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 84
     },
     __self: this
   }, "Les invit\xE9s en France"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Information__WEBPACK_IMPORTED_MODULE_4__["default"], {
     show: show,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 89
     },
     __self: this
   })));
@@ -263,7 +257,7 @@ var Header = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].header.at
 }).withConfig({
   displayName: "Header",
   componentId: "sc-1l4pn8m-0"
-})(["padding:0 1rem 1rem;", ""], _helpers__WEBPACK_IMPORTED_MODULE_5__["media"].phone(_templateObject())); // const H1 = styled.h1.attrs({ className: "visuallyHidden" })``
+})(["padding:0 1rem 3rem;", ""], _helpers__WEBPACK_IMPORTED_MODULE_5__["media"].phone(_templateObject())); // const H1 = styled.h1.attrs({ className: "visuallyHidden" })``
 
 var LogoContainer1 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.attrs({
   className: "flex-1 w100 h100 flex ai-c"
@@ -288,7 +282,7 @@ var StyledMagaliLoveLeo = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__[
 }).withConfig({
   displayName: "Header__StyledMagaliLoveLeo",
   componentId: "sc-1l4pn8m-4"
-})(["width:auto;height:50%;height:3rem;margin-top:1.5rem;"]);
+})(["width:auto;height:50%;height:2rem;margin-top:1.5rem;"]);
 
 var _Header = function _Header() {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Header, {
