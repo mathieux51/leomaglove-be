@@ -28,7 +28,7 @@ var _jsxFileName = "/Users/mathieu/Projects/production/leomaglove-be/components/
 
 
 var Top = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.attrs({
-  className: "flex-1 flex jc-c ai-c fxd-c"
+  className: "flex-1 flex jc-c ai-c fxd-c relative"
 }).withConfig({
   displayName: "Body__Top",
   componentId: "sc-1ccgya6-0"
@@ -40,11 +40,11 @@ var FireworksExplosion = styled_components__WEBPACK_IMPORTED_MODULE_2__["default
   componentId: "sc-1ccgya6-1"
 })([""]);
 var FireworksTakeOff = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.attrs({
-  className: ""
+  className: "absolute"
 }).withConfig({
   displayName: "Body__FireworksTakeOff",
   componentId: "sc-1ccgya6-2"
-})([""]);
+})(["top:calc(50% + 85px);left:50%;transform:translate3d(-50%,-50%,0);"]);
 var Middle = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.attrs({
   className: "flex fxd-c ai-c jc-c relative"
 }).withConfig({
@@ -98,19 +98,19 @@ function Body() {
     id: "main",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 65
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Top, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 66
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Big, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 68
     },
     __self: this
   }, "Coming soon..."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FireworksTakeOff, {
@@ -118,32 +118,32 @@ function Body() {
     alt: "Feu d'artifice d\xE9colle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 69
     },
     __self: this
   })), show && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Middle, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 77
     },
     __self: this
   }, show && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(CloseButton, {
     onClick: handleSetShow,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 78
     },
     __self: this
   }, "\u274C"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Text, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 79
     },
     __self: this
   }, "Plus d'info"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ButtonContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 80
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Button, {
@@ -151,7 +151,7 @@ function Body() {
     name: "belgium",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 81
     },
     __self: this
   }, "Les invit\xE9s en Belgique"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Button, {
@@ -159,14 +159,14 @@ function Body() {
     name: "france",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 84
     },
     __self: this
   }, "Les invit\xE9s en France"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Information__WEBPACK_IMPORTED_MODULE_4__["default"], {
     show: show,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 89
     },
     __self: this
   })));
@@ -177,4 +177,4 @@ function Body() {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.a6db93e85300974559e4.hot-update.js.map
+//# sourceMappingURL=index.js.04420b74456344aa9ad5.hot-update.js.map
