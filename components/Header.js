@@ -6,6 +6,7 @@ import { media } from "../helpers"
 const Header = styled.header.attrs({ className: "flex jc-c ai-c" })`
   padding: 0 1rem 3rem;
   ${media.phone`
+    padding: 0 1rem 1rem;
     flex-direction: column;
   `}
 `
