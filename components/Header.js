@@ -4,7 +4,7 @@ import AmourFritesDecadence from "./icons/AmourFritesDecadence"
 import { media } from "../helpers"
 
 const Header = styled.header.attrs({ className: "flex jc-c ai-c" })`
-  padding: 0 1rem 1rem;
+  padding: 0 1rem 3rem;
   ${media.phone`
     flex-direction: column;
   `}
@@ -42,7 +42,7 @@ const StyledMagaliLoveLeo = styled(MagaliLoveLeo).attrs({
 })`
   width: auto;
   height: 50%;
-  height: 3rem;
+  height: 2rem;
   margin-top: 1.5rem;
 `
 

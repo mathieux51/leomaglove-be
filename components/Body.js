@@ -6,7 +6,7 @@ import fireworksExplosionSrc from "../assets/images/fireworks-explosion.gif"
 import fireworksTakeOffSrc from "../assets/images/fireworks-take-off.gif"
 
 const Top = styled.div.attrs({
-  className: "flex-1 flex jc-c ai-c fxd-c"
+  className: "flex-1 flex jc-c ai-c fxd-c relative"
 })`
   min-height: 60vh;
   max-height: 31rem;
@@ -14,7 +14,11 @@ const Top = styled.div.attrs({
 `
 const FireworksExplosion = styled.img.attrs({ className: "" })``
 
-const FireworksTakeOff = styled.img.attrs({ className: "" })``
+const FireworksTakeOff = styled.img.attrs({ className: "absolute" })`
+  top: calc(50% + 85px);
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+`
 
 const Middle = styled.div.attrs({
   className: "flex fxd-c ai-c jc-c relative"
@@ -27,7 +31,9 @@ const Middle = styled.div.attrs({
 
 const Big = styled.span.attrs({
   className: "f31 ttu"
-})``
+})`
+  ${"" /* margin-top: 154px; */}
+`
 
 const CloseButton = styled.button.attrs({
   className: "absolute flex jc-c ai-c"
@@ -58,8 +64,8 @@ function Body() {
   return (
     <Main id="main">
       <Top>
-        <FireworksExplosion src={fireworksExplosionSrc} alt="Feu d'artifice" />
-        <Big>Coming soon</Big>
+        {/* <FireworksExplosion src={fireworksExplosionSrc} alt="Feu d'artifice" /> */}
+        <Big>Coming soon...</Big>
         <FireworksTakeOff
           src={fireworksTakeOffSrc}
           alt="Feu d'artifice décolle"
