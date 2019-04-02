@@ -1,8 +1,8 @@
+// @ts-check
 import React from "react"
 import styled from "styled-components"
 import Main from "./Main"
 import Information from "./Information"
-import fireworksExplosionSrc from "../assets/images/fireworks-explosion.gif"
 import fireworksTakeOffSrc from "../assets/images/fireworks-take-off.gif"
 
 const Top = styled.div.attrs({
@@ -64,14 +64,12 @@ function Body() {
   return (
     <Main id="main">
       <Top>
-        {/* <FireworksExplosion src={fireworksExplosionSrc} alt="Feu d'artifice" /> */}
         <Big>Coming soon...</Big>
         <FireworksTakeOff
           src={fireworksTakeOffSrc}
           alt="Feu d'artifice décolle"
         />
       </Top>
-      {/* Hide it for now  */}
       {show && (
         <>
           <Middle>
@@ -86,7 +84,7 @@ function Body() {
               </Button>
             </ButtonContainer>
           </Middle>
-          <Information show={show} />
+          {show && <Information />}
         </>
       )}
     </Main>

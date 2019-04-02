@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Link from "./Link"
 import MagaliLoveLeo from "./icons/MagaliLoveLeo"
 import AmourFritesDecadence from "./icons/AmourFritesDecadence"
 import { media } from "../helpers"
@@ -13,7 +14,7 @@ const Header = styled.header.attrs({ className: "flex jc-c ai-c" })`
 
 // const H1 = styled.h1.attrs({ className: "visuallyHidden" })``
 
-const LogoContainer1 = styled.div.attrs({
+const LogoContainer1 = styled(Link).attrs({
   className: "flex-1 w100 h100 flex ai-c"
 })`
   ${media.phone`
@@ -49,10 +50,10 @@ const StyledMagaliLoveLeo = styled(MagaliLoveLeo).attrs({
 
 const _Header = () => (
   <Header>
-    <LogoContainer1>
+    <LogoContainer1 href="/">
       <StyledAmourFritesDecadence />
     </LogoContainer1>
-    <LogoContainer2>
+    <LogoContainer2 href="/">
       <StyledMagaliLoveLeo />
     </LogoContainer2>
   </Header>

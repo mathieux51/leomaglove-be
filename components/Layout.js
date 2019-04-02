@@ -9,7 +9,7 @@ import GlobalStyle from "components/GlobalStyle"
 const Container = styled.div.attrs({
   className: "flex fxd-c"
 })`
-  min-height: calc(100vh);
+  min-height: 100vh;
   overflow: hidden;
   background: ${({ theme }) => theme.p};
   padding: 2rem;

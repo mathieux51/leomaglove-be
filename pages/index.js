@@ -3,10 +3,10 @@ import Body from "components/Body"
 import Header from "components/Header"
 
 const Index = () => (
-  <React.Fragment>
+  <>
     <Header />
     <Body />
-  </React.Fragment>
+  </>
 )
 
 export default Index
