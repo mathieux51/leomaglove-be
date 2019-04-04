@@ -62,7 +62,7 @@ const Information = ({ className }) => (
           iusto.
         </p>
       </TextContainer>
-      <StyledMap />
+      {/* <StyledMap /> */}
       <Schema>Schéma</Schema>
     </Top>
     <Timeline />

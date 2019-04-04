@@ -1,7 +1,8 @@
-// @ts-check
-import React from "react"
+import * as React from "react"
+import { withRouter } from "next/router"
 import styled from "styled-components"
 import Main from "./Main"
+import Link from "./Link"
 import Information from "./Information"
 import fireworksTakeOffSrc from "../assets/images/fireworks-take-off.gif"
 
@@ -12,7 +13,6 @@ const Top = styled.div.attrs({
   max-height: 31rem;
   border: 1px solid black;
 `
-const FireworksExplosion = styled.img.attrs({ className: "" })``
 
 const FireworksTakeOff = styled.img.attrs({ className: "absolute" })`
   top: calc(50% + 85px);
@@ -31,11 +31,9 @@ const Middle = styled.div.attrs({
 
 const Big = styled.span.attrs({
   className: "f31 ttu"
-})`
-  ${"" /* margin-top: 154px; */}
-`
+})``
 
-const CloseButton = styled.button.attrs({
+const CloseButton = styled(Link).attrs({
   className: "absolute flex jc-c ai-c"
 })`
   margin: 0.75rem;
@@ -51,16 +49,15 @@ const Text = styled.span.attrs({
   className: "flex-1 w100 flex ai-c ta-c jc-c"
 })``
 
-const Button = styled.button.attrs({
+const Button = styled(Link).attrs({
   className: "ttu"
 })`
   border: 1px solid black;
   padding: 0.4rem;
 `
 
-function Body() {
-  const [show, setShow] = React.useState(null)
-  const handleSetShow = evt => setShow(evt.target.name)
+function Body({ router }) {
+  const show = router.query.q
   return (
     <Main id="main">
       <Top>
@@ -70,25 +67,23 @@ function Body() {
           alt="Feu d'artifice décolle"
         />
       </Top>
-      {show && (
-        <>
-          <Middle>
-            {show && <CloseButton onClick={handleSetShow}>❌</CloseButton>}
-            <Text>Plus d'info</Text>
-            <ButtonContainer>
-              <Button onClick={handleSetShow} name="belgium">
-                Les invités en Belgique
-              </Button>
-              <Button onClick={handleSetShow} name="france">
-                Les invités en France
-              </Button>
-            </ButtonContainer>
-          </Middle>
-          {show && <Information />}
-        </>
-      )}
+      <>
+        <Middle>
+          {show && <CloseButton href="#">❌</CloseButton>}
+          <Text>Plus d'info</Text>
+          <ButtonContainer>
+            <Button href="?q=belgium#belgium" id="belgium">
+              Les invités en Belgique
+            </Button>
+            <Button href="?q=france#france" id="france">
+              Les invités en France
+            </Button>
+          </ButtonContainer>
+        </Middle>
+        {show && <Information />}
+      </>
     </Main>
   )
 }
 
-export default Body
+export default withRouter(Body)

@@ -1,8 +1,8 @@
 import Link from "next/link"
 
-const _Link = ({ className, children, ...rest }) => (
+const _Link = ({ className, children, id, ...rest }) => (
   <Link {...rest}>
-    <a href={rest.href} className={className}>
+    <a className={className} id={id}>
       {children}
     </a>
   </Link>
