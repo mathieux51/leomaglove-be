@@ -24,9 +24,7 @@ const Middle = styled.div.attrs({
   className: "flex fxd-c ai-c jc-c relative"
 })`
   flex: 0 6rem;
-  border: 1px solid black;
-  border-left: 0;
-  border-right: 0;
+  border-bottom: 1px solid black;
 `
 
 const Big = styled.span.attrs({
@@ -57,11 +55,11 @@ const Button = styled(Link).attrs({
 `
 
 function Body({ router }) {
-  const show = router.query.q
+  const isOpen = !!router.query.q
   return (
     <Main id="main">
       <Top>
-        <Big>Coming soon...</Big>
+        <Big>Vidéo in loop</Big>
         <FireworksTakeOff
           src={fireworksTakeOffSrc}
           alt="Feu d'artifice décolle"
@@ -69,7 +67,7 @@ function Body({ router }) {
       </Top>
       <>
         <Middle>
-          {show && <CloseButton href="#">❌</CloseButton>}
+          {isOpen && <CloseButton href="#">❌</CloseButton>}
           <Text>Plus d'info</Text>
           <ButtonContainer>
             <Button href="?q=belgium#belgium" id="belgium">
@@ -80,7 +78,7 @@ function Body({ router }) {
             </Button>
           </ButtonContainer>
         </Middle>
-        {show && <Information />}
+        {<Information isOpen={isOpen} />}
       </>
     </Main>
   )

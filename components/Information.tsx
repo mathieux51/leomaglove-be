@@ -1,13 +1,26 @@
 // @ts-check
 import React from "react"
 import styled from "styled-components"
+import posed from "react-pose"
 import Map from "./Map"
 import Timeline from "./Timeline"
 import { media } from "../helpers"
 
-const Container = styled.div.attrs({
-  className: "flex-1 fxd-c"
-})``
+const Container = styled(
+  posed.div({
+    open: { y: "0", opacity: 1, transition: { duration: 1000 } },
+    closed: { y: "100%", opacity: 0 }
+  })
+).attrs({
+  className: "flex-1 fxd-c absolute"
+})`
+  display: ${({ isOpen }) => (isOpen ? "block" : "none")};
+  min-height: 60vh;
+  background: ${({ theme }) => theme.p};
+  left: 0;
+  top: 0;
+  border: 1px solid black;
+`
 
 const Top = styled.div.attrs({
   className: "flex"
@@ -51,8 +64,12 @@ const Message = styled.span.attrs({
   className: "flex-1 flex ai-c jc-c"
 })``
 
-const Information = ({ className }) => (
-  <Container className={className}>
+const Information = ({ className, isOpen }) => (
+  <Container
+    className={className}
+    pose={isOpen ? "open" : "closed"}
+    isOpen={isOpen}
+  >
     <Top>
       <TextContainer>
         <span>Adresse</span>
