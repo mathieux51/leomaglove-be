@@ -1,21 +1,21 @@
 // @ts-check
 import React from "react"
 import styled from "styled-components"
-import posed from "react-pose"
+import posed, { PoseGroup } from "react-pose"
 import Map from "./Map"
 import Timeline from "./Timeline"
 import { media } from "../helpers"
 
+// display: ${({ isOpen }) => (isOpen ? "block" : "none")};
 const Container = styled(
   posed.div({
-    open: { y: "0", opacity: 1, transition: { duration: 1000 } },
-    closed: { y: "100%", opacity: 0 }
+    enter: { y: "0" },
+    exit: { y: "100%" }
   })
 ).attrs({
-  className: "flex-1 fxd-c absolute"
+  className: "flex-1 fxd-c absolute w100 h100"
 })`
-  display: ${({ isOpen }) => (isOpen ? "block" : "none")};
-  min-height: 60vh;
+  min-height: 50vh;
   background: ${({ theme }) => theme.p};
   left: 0;
   top: 0;
@@ -65,32 +65,36 @@ const Message = styled.span.attrs({
 })``
 
 const Information = ({ className, isOpen }) => (
-  <Container
-    className={className}
-    pose={isOpen ? "open" : "closed"}
-    isOpen={isOpen}
-  >
-    <Top>
-      <TextContainer>
-        <span>Adresse</span>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
-          rerum quam eius necessitatibus cumque vero officia nemo fugiat labore
-          iusto.
-        </p>
-      </TextContainer>
-      {/* <StyledMap /> */}
-      <Schema>Schéma</Schema>
-    </Top>
-    <Timeline />
-    <Bottom>
-      <BottomSubContainer>
-        <Camping>⛺️ Camping</Camping>
-        <Housing>🏠 Logement</Housing>
-      </BottomSubContainer>
-      <Message>Pour notre voyage dans l'espace : BEXX XXXX XXXX</Message>
-    </Bottom>
-  </Container>
+  <PoseGroup>
+    {isOpen && (
+      <Container
+        className={className}
+        pose={isOpen ? "open" : "closed"}
+        key="information-container"
+      >
+        <Top>
+          <TextContainer>
+            <span>Adresse</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatibus rerum quam eius necessitatibus cumque vero officia
+              nemo fugiat labore iusto.
+            </p>
+          </TextContainer>
+          {/* <StyledMap /> */}
+          <Schema>Schéma</Schema>
+        </Top>
+        <Timeline />
+        <Bottom>
+          <BottomSubContainer>
+            <Camping>⛺️ Camping</Camping>
+            <Housing>🏠 Logement</Housing>
+          </BottomSubContainer>
+          <Message>Pour notre voyage dans l'espace : BEXX XXXX XXXX</Message>
+        </Bottom>
+      </Container>
+    )}
+  </PoseGroup>
 )
 
 export default Information

@@ -9,7 +9,7 @@ import fireworksTakeOffSrc from "../assets/images/fireworks-take-off.gif"
 const Top = styled.div.attrs({
   className: "flex-1 flex jc-c ai-c fxd-c relative"
 })`
-  min-height: 60vh;
+  min-height: 50vh;
   max-height: 31rem;
   border: 1px solid black;
 `
@@ -70,14 +70,11 @@ function Body({ router }) {
           {isOpen && <CloseButton href="#">❌</CloseButton>}
           <Text>Plus d'info</Text>
           <ButtonContainer>
-            <Button href="?q=belgium#belgium" id="belgium">
-              Les invités en Belgique
-            </Button>
-            <Button href="?q=france#france" id="france">
-              Les invités en France
-            </Button>
+            <Button href="?q=belgium">Les invités en Belgique</Button>
+            <Button href="?q=france">Les invités en France</Button>
           </ButtonContainer>
         </Middle>
+
         {<Information isOpen={isOpen} />}
       </>
     </Main>

@@ -30,7 +30,7 @@ const StyledAmourFritesDecadence = styled(AmourFritesDecadence).attrs({
   height: 6rem;
 `
 
-const LogoContainer2 = styled.div.attrs({
+const LogoContainer2 = styled(Link).attrs({
   className: "flex-1 w100 h100 flex ai-c"
 })`
   justify-content: flex-end;
