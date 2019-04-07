@@ -1,24 +1,32 @@
-// @ts-check
 import React from "react"
 import styled from "styled-components"
 import posed, { PoseGroup } from "react-pose"
-import Map from "./Map"
+import MapIFrame from "./MapIFrame"
 import Timeline from "./Timeline"
 import { media } from "../helpers"
 
-// display: ${({ isOpen }) => (isOpen ? "block" : "none")};
 const Container = styled(
   posed.div({
-    enter: { y: "0" },
-    exit: { y: "100%" }
+    enter: {
+      y: "0",
+      transition: {
+        duration: 1000,
+        ease: [0.35, 1.15, 0.6, 0.91]
+      }
+    },
+    exit: {
+      y: "150%",
+      transition: {
+        duration: 1000,
+        ease: [0.35, 1.15, 0.6, 0.91]
+      }
+    }
   })
 ).attrs({
-  className: "flex-1 fxd-c absolute w100 h100"
+  className: "flex-1 fxd-c"
 })`
-  min-height: 50vh;
+  z-index: 1;
   background: ${({ theme }) => theme.p};
-  left: 0;
-  top: 0;
   border: 1px solid black;
 `
 
@@ -26,7 +34,7 @@ const Top = styled.div.attrs({
   className: "flex"
 })`
   flex-direction: column;
-  margin: 2rem 1rem;
+  margin: 1rem;
   ${media.tablet`
     flex-direction: row;
   `}
@@ -36,7 +44,7 @@ const TextContainer = styled.div.attrs({
   className: "flex fxd-c flex-1"
 })``
 
-const StyledMap = styled(Map).attrs({
+const StyledMap = styled(MapIFrame).attrs({
   className: "flex-1"
 })``
 
@@ -64,7 +72,12 @@ const Message = styled.span.attrs({
   className: "flex-1 flex ai-c jc-c"
 })``
 
-const Information = ({ className, isOpen }) => (
+interface Props {
+  className?: string
+  isOpen: boolean
+}
+
+const Information = ({ className, isOpen }: Props) => (
   <PoseGroup>
     {isOpen && (
       <Container
@@ -81,7 +94,7 @@ const Information = ({ className, isOpen }) => (
               nemo fugiat labore iusto.
             </p>
           </TextContainer>
-          {/* <StyledMap /> */}
+          {/* <StyledMap q="Maison communale de Saint-Gilles Place Maurice Van Meenen 1060 Bruxelles" /> */}
           <Schema>Schéma</Schema>
         </Top>
         <Timeline />

@@ -3,11 +3,13 @@ import styled from "styled-components"
 
 const Container = styled.div.attrs({
   className: "flex jc-sa relative"
-})`
-  margin: 1rem;
-`
+})``
 
-const TimelineItem = ({ className }) => (
+interface Props {
+  className?: string
+}
+
+const TimelineItem = ({ className }: Props) => (
   <svg width="100%" viewBox="0 0 221 121" className={className}>
     <circle cx="60.5" cy="60.5" r="60" fill="white" stroke="black" />
     <line x1="121" y1="59.5" x2="221" y2="59.5" stroke="black" />

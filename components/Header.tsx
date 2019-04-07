@@ -27,7 +27,7 @@ const StyledAmourFritesDecadence = styled(AmourFritesDecadence).attrs({
 })`
   width: auto;
   height: 100%;
-  height: 6rem;
+  height: 5rem;
 `
 
 const LogoContainer2 = styled(Link).attrs({

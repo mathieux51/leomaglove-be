@@ -115,6 +115,12 @@ export default createGlobalStyle`
   .fw400 {
     font-weight: 400;
   }
+  .fw700 {
+    font-weight: 700;
+  }
+  .fw900 {
+    font-weight: 900;
+  }
 
   /* Text */
   .ttu {

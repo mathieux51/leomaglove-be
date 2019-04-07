@@ -12,7 +12,7 @@ const Container = styled.div.attrs({
   min-height: 100vh;
   overflow: hidden;
   background: ${({ theme }) => theme.p};
-  padding: 2rem;
+  padding: 1rem 2rem 2rem;
 `
 
 const Layout = ({ children }) => (
