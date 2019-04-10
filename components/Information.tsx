@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import styled from "styled-components"
 import posed, { PoseGroup } from "react-pose"
 import MapIFrame from "./MapIFrame"
@@ -77,37 +77,39 @@ interface Props {
   isOpen: boolean
 }
 
-const Information = ({ className, isOpen }: Props) => (
-  <PoseGroup>
-    {isOpen && (
-      <Container
-        className={className}
-        pose={isOpen ? "open" : "closed"}
-        key="information-container"
-      >
-        <Top>
-          <TextContainer>
-            <span>Adresse</span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Voluptatibus rerum quam eius necessitatibus cumque vero officia
-              nemo fugiat labore iusto.
-            </p>
-          </TextContainer>
-          {/* <StyledMap q="Maison communale de Saint-Gilles Place Maurice Van Meenen 1060 Bruxelles" /> */}
-          <Schema>Schéma</Schema>
-        </Top>
-        <Timeline />
-        <Bottom>
-          <BottomSubContainer>
-            <Camping>⛺️ Camping</Camping>
-            <Housing>🏠 Logement</Housing>
-          </BottomSubContainer>
-          <Message>Pour notre voyage dans l'espace : BEXX XXXX XXXX</Message>
-        </Bottom>
-      </Container>
-    )}
-  </PoseGroup>
-)
+const Information = ({ className, isOpen }: Props) => {
+  return (
+    <PoseGroup>
+      {isOpen && (
+        <Container
+          className={className}
+          pose={isOpen ? "open" : "closed"}
+          key="information-container"
+        >
+          <Top>
+            <TextContainer>
+              <span>Adresse</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus rerum quam eius necessitatibus cumque vero officia
+                nemo fugiat labore iusto.
+              </p>
+            </TextContainer>
+            <StyledMap />
+            <Schema>Schéma</Schema>
+          </Top>
+          <Timeline />
+          <Bottom>
+            <BottomSubContainer>
+              <Camping>⛺️ Camping</Camping>
+              <Housing>🏠 Logement</Housing>
+            </BottomSubContainer>
+            <Message>Pour notre voyage dans l'espace : BEXX XXXX XXXX</Message>
+          </Bottom>
+        </Container>
+      )}
+    </PoseGroup>
+  )
+}
 
 export default Information

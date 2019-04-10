@@ -1,5 +1,5 @@
 import { css } from "styled-components"
-import FontFaceList from "./FontFacesList"
+import fontFaceList from "./fontFacesList"
 
 const generateFontFace = (ff, fw, fs, woff2) => css`
   @font-face {
@@ -10,10 +10,12 @@ const generateFontFace = (ff, fw, fs, woff2) => css`
   }
 `
 
-const fontFaces = FontFaceList.map(f =>
+const fontFaces = fontFaceList.map(f =>
   generateFontFace(f[0], f[1], f[2], f[3])
 )
 
-export default css`
+const _css = css`
   ${fontFaces}
 `
+
+export default _css

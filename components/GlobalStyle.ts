@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 import FontFaces from "./FontFaces"
 import { normalize } from "polished"
 
-export default createGlobalStyle`
+const _createGlobalStyle = createGlobalStyle`
   ${FontFaces}
   ${normalize()}
 
@@ -192,3 +192,5 @@ export default createGlobalStyle`
     width: 1px;
   }
 `
+
+export default _createGlobalStyle
