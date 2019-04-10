@@ -4,7 +4,8 @@ import MagaliLoveLeo from "./icons/MagaliLoveLeo"
 import AmourFritesDecadence from "./icons/AmourFritesDecadence"
 import { media } from "../helpers"
 
-const Header = styled.header.attrs({ className: "flex jc-c ai-c" })`
+const Header = styled.header.attrs({ className: "flex jc-c ai-c w100" })`
+  max-width: 1280px;
   padding: 0 1rem 3rem;
   ${media.phone`
     padding: 0 1rem 1rem;

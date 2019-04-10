@@ -1,13 +1,13 @@
 import * as React from "react"
 import styled, { ThemeProvider } from "styled-components"
 
-import theme from "style/theme"
-import Head from "components/Head"
+import theme from "../style/theme"
+import Head from "./Head"
 // import Footer from "components/Footer"
-import GlobalStyle from "components/GlobalStyle"
+import GlobalStyle from "./GlobalStyle"
 
 const Container = styled.div.attrs({
-  className: "flex fxd-c"
+  className: "flex fxd-c ai-c"
 })`
   min-height: 100vh;
   overflow: hidden;

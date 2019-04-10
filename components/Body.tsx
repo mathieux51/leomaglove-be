@@ -33,9 +33,10 @@ interface Props {
 
 const Body = ({ router }: Props) => {
   const isOpen = router.query ? !!router.query.q : false
+  const query = router.query ? router.query.q : ""
   return (
     <Main id="main">
-      <Information isOpen={isOpen} />
+      <Information isOpen={isOpen} query={query} />
       {!isOpen && (
         <Top>
           <Big>Vidéo in loop</Big>

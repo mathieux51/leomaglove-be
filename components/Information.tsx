@@ -1,9 +1,9 @@
 import * as React from "react"
 import styled from "styled-components"
 import posed, { PoseGroup } from "react-pose"
-import MapIFrame from "./MapIFrame"
-import Timeline from "./Timeline"
+// import MapIFrame from "./MapIFrame"
 import { media } from "../helpers"
+import { InformationContext } from "../context/InformationContext"
 
 const Container = styled(
   posed.div({
@@ -23,61 +23,54 @@ const Container = styled(
     }
   })
 ).attrs({
-  className: "flex-1 fxd-c"
+  className: "flex-1 fxd-c flex"
 })`
   z-index: 1;
   background: ${({ theme }) => theme.p};
   border: 1px solid black;
 `
 
-const Top = styled.div.attrs({
-  className: "flex"
+const Title = styled.h1.attrs({
+  className: "ta-c"
+})``
+
+const Timeline = styled.div.attrs({
+  className: ""
 })`
-  flex-direction: column;
-  margin: 1rem;
-  ${media.tablet`
-    flex-direction: row;
-  `}
+  background: hotpink;
+  width: 50%;
+  flex: 187px;
+  margin: 0 auto;
 `
 
-const TextContainer = styled.div.attrs({
-  className: "flex fxd-c flex-1"
-})``
+const InformationContainer = styled.div.attrs({
+  className: "w100"
+})`
+  background: gold;
+  flex: 130px;
+`
 
-const StyledMap = styled(MapIFrame).attrs({
-  className: "flex-1"
-})``
-
-const Schema = styled.div.attrs({
-  className: "flex-1 flex jc-c ai-c"
-})``
-
-const Bottom = styled.div.attrs({
-  className: "flex fxd-c flex-auto"
-})``
-
-const BottomSubContainer = styled.div.attrs({
-  className: "flex-1 flex jc-sa ai-c"
-})``
-
-const Camping = styled.span.attrs({
+const Honeymoon = styled.div.attrs({
   className: ""
 })``
 
-const Housing = styled.span.attrs({
-  className: ""
+const P = styled.p.attrs({
+  className: "ta-c"
 })``
 
-const Message = styled.span.attrs({
-  className: "flex-1 flex ai-c jc-c"
+const A = styled.a.attrs({
+  className: "ta-c"
 })``
 
 interface Props {
   className?: string
   isOpen: boolean
+  query: string
 }
 
-const Information = ({ className, isOpen }: Props) => {
+const Information = ({ className, isOpen, query }: Props) => {
+  const state = React.useContext(InformationContext)
+  const { date, address, googleMapsURL } = state[query] || {}
   return (
     <PoseGroup>
       {isOpen && (
@@ -86,26 +79,17 @@ const Information = ({ className, isOpen }: Props) => {
           pose={isOpen ? "open" : "closed"}
           key="information-container"
         >
-          <Top>
-            <TextContainer>
-              <span>Adresse</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptatibus rerum quam eius necessitatibus cumque vero officia
-                nemo fugiat labore iusto.
-              </p>
-            </TextContainer>
-            <StyledMap />
-            <Schema>Schéma</Schema>
-          </Top>
+          <Title>{date}</Title>
           <Timeline />
-          <Bottom>
-            <BottomSubContainer>
-              <Camping>⛺️ Camping</Camping>
-              <Housing>🏠 Logement</Housing>
-            </BottomSubContainer>
-            <Message>Pour notre voyage dans l'espace : BEXX XXXX XXXX</Message>
-          </Bottom>
+          <InformationContainer />
+          <Honeymoon>
+            <P>Pour notre voyage sur la lune </P>
+            <P>BE17 3770 7855 8721</P>
+            <P>ou</P>
+            <A href="www.colleo.fr/cagnotte/14909/amour-frites-et-decadence">
+              www.colleo.fr/cagnotte/14909/amour-frites-et-decadence
+            </A>
+          </Honeymoon>
         </Container>
       )}
     </PoseGroup>
