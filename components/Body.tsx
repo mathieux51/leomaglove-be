@@ -6,11 +6,11 @@ import Information from "./Information"
 import { france, belgium } from "../constants"
 
 const Top = styled.div.attrs({
-  className: "flex-1 flex jc-c ai-c fxd-c relative"
+  className: "flex jc-c ai-c fxd-c relative"
 })`
-  min-height: 50vh;
-  max-height: 31rem;
+  flex: 0 65vh;
   border: 1px solid black;
+  background: ${({ theme }) => theme.s};
 `
 
 const Middle = styled.div.attrs({
@@ -20,8 +20,11 @@ const Middle = styled.div.attrs({
 `
 
 const Big = styled.span.attrs({
-  className: "f31 ttu"
-})``
+  className: "ttu"
+})`
+  background: ${({ theme }) => theme.p};
+  padding: 2rem 9rem;
+`
 
 const ButtonContainer = styled.div.attrs({
   className: "w100 flex ai-c jc-sa"

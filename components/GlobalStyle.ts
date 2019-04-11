@@ -31,6 +31,9 @@ const _createGlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+  p {
+    margin: 0;
+  }
   /* fonts */
   body {
     color: ${({ theme }) => theme.g38};
@@ -44,7 +47,9 @@ const _createGlobalStyle = createGlobalStyle`
   /* .fonts-loaded .ff-futura-pt {
     font-family: futura-pt, sans-serif;
   } */
-
+  .fs-n {
+    font-style: normal;
+  }
    /* flex */
   .flex {
     display: flex;
