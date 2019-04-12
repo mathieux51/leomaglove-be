@@ -3,7 +3,11 @@ import styled from "styled-components"
 import posed, { PoseGroup } from "react-pose"
 import MapIFrame from "./MapIFrame"
 import { media } from "../helpers"
-import { InformationContext } from "../context/InformationContext"
+import {
+  InformationContext,
+  CountryInformationType,
+  CountriesType
+} from "../context/InformationContext"
 
 const Container = styled(
   posed.div({
@@ -96,16 +100,15 @@ const A = styled.a.attrs({
   className: "ta-c d"
 })``
 
-interface Props {
+type Props = {
   className?: string
   isOpen: boolean
-  query: string
+  query: CountriesType
 }
 
 const Information = ({ className, isOpen, query }: Props) => {
   const state = React.useContext(InformationContext)
-  const { title, date, address, googleMapsURL, timelineComponent } =
-    state[query] || {}
+  const information: CountryInformationType = state[query] || null
   return (
     <PoseGroup>
       {isOpen && (
@@ -114,23 +117,30 @@ const Information = ({ className, isOpen, query }: Props) => {
           pose={isOpen ? "open" : "closed"}
           key="information-container"
         >
-          <Title>{date}</Title>
-          <Timeline as={timelineComponent} />
-          <InformationContainer>
-            <AddressContainer>
-              <Address>{address}</Address>
-            </AddressContainer>
-            <StyledMap title={title} src={googleMapsURL} />
-            <Schema />
-          </InformationContainer>
-          <Honeymoon>
-            <P>Pour notre voyage sur la lune </P>
-            <P>BE17 3770 7855 8721</P>
-            <P>ou</P>
-            <A href="www.colleo.fr/cagnotte/14909/amour-frites-et-decadence">
-              www.colleo.fr/cagnotte/14909/amour-frites-et-decadence
-            </A>
-          </Honeymoon>
+          {information && (
+            <>
+              <Title>{information.date}</Title>
+              <Timeline as={information.timelineComponent} />
+              <InformationContainer>
+                <AddressContainer>
+                  <Address>{information.address}</Address>
+                </AddressContainer>
+                <StyledMap
+                  title={information.title}
+                  src={information.googleMapsURL}
+                />
+                <Schema />
+              </InformationContainer>
+              <Honeymoon>
+                <P>Pour notre voyage sur la lune </P>
+                <P>BE17 3770 7855 8721</P>
+                <P>ou</P>
+                <A href="www.colleo.fr/cagnotte/14909/amour-frites-et-decadence">
+                  www.colleo.fr/cagnotte/14909/amour-frites-et-decadence
+                </A>
+              </Honeymoon>
+            </>
+          )}
         </Container>
       )}
     </PoseGroup>

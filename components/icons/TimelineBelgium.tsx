@@ -319,21 +319,21 @@ const TimelineBelgium = ({ className }: Props) => (
     <Path
       d="M67.9458 124.03H159.475"
       stroke="black"
-      stroke-width="1.0377"
+      strokeWidth="1.0377"
       stroke-miterlimit="10"
       stroke-linecap="round"
     />
     <Path
       d="M232.078 124.03H330.161"
       stroke="black"
-      stroke-width="0.9921"
+      strokeWidth="0.9921"
       stroke-miterlimit="10"
       stroke-linecap="round"
     />
     <Path
       d="M415.241 124.03H536.613"
       stroke="black"
-      stroke-width="0.9921"
+      strokeWidth="0.9921"
       stroke-miterlimit="10"
       stroke-linecap="round"
     />
