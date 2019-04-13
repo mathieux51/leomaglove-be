@@ -20,28 +20,28 @@ const TimelineFrance = ({ className }: Props) => (
       d="M53.2057 125.132H148.313"
       stroke="black"
       strokeWidth="0.9921"
-      stroke-miterlimit="10"
+      strokeMiterlimit="10"
       stroke-linecap="round"
     />
     <path
       d="M204.993 125.132H276.194"
       stroke="black"
       strokeWidth="0.9921"
-      stroke-miterlimit="10"
+      strokeMiterlimit="10"
       stroke-linecap="round"
     />
     <path
       d="M343.3 125.132H421.97"
       stroke="black"
       strokeWidth="0.9921"
-      stroke-miterlimit="10"
+      strokeMiterlimit="10"
       stroke-linecap="round"
     />
     <path
       d="M479.35 125.132H547.674"
       stroke="black"
       strokeWidth="0.9921"
-      stroke-miterlimit="10"
+      strokeMiterlimit="10"
       stroke-linecap="round"
     />
     <path

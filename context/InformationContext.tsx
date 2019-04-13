@@ -1,6 +1,8 @@
 import * as React from "react"
 import TimelineBelgium from "../components/icons/TimelineBelgium"
 import TimelineFrance from "../components/icons/TimelineFrance"
+import Tent from "../components/icons/Tent"
+import House from "../components/icons/House"
 
 export type CountryInformationType = {
   date: string
@@ -8,8 +10,14 @@ export type CountryInformationType = {
   address: string
   googleMapsURL: string
   timelineComponent: React.ComponentType
-  camping?: string
-  gites?: string
+  camping?: {
+    text: string
+    icon: React.ComponentType
+  }
+  gites?: {
+    text: string
+    icon: React.ComponentType
+  }
 } | null
 
 export type CountriesType = "france" | "belgiumn"
@@ -39,9 +47,15 @@ export class InformationProvider extends React.PureComponent {
       googleMapsURL:
         "https://maps.google.com/maps?width=100%&height=130&hl=en&q=47470%20BEAUVILLE+(Salle%20d%E2%80%99activit%C3%A9%20Ruat-Carguessac%2047470%20BEAUVILLE)&ie=UTF8&t=&z=14&iwloc=B&output=embed",
       timelineComponent: TimelineFrance,
-      camping:
-        "Camping sur le domaine possible. Prévoir tente et matelas de sol",
-      gites: "Gîtes à proximité dans la région via AirBnb ou Gîtes de France"
+      camping: {
+        icon: <Tent />,
+        text: "Camping sur le domaine possible. Prévoir tente et matelas de sol"
+      },
+
+      gites: {
+        icon: <House />,
+        text: "Gîtes à proximité dans la région via AirBnb ou Gîtes de France"
+      }
     }
   }
 

@@ -83,6 +83,19 @@ const Schema = styled.div.attrs({
   flex: 0 17rem;
   background: ${({ theme }) => theme.p};
 `
+
+const SleepingContainer = styled.div.attrs({ className: "flex fxd-c" })`
+  flex: 0 17rem;
+  background: ${({ theme }) => theme.p};
+`
+const Sleeping = styled.dl.attrs({ className: "flex" })`
+  margin: 1rem;
+`
+
+const Dt = styled.dt.attrs({ className: "flex jc-c ai-c" })`
+  width: 5rem;
+`
+
 const Honeymoon = styled.div.attrs({
   className: ""
 })`
@@ -130,6 +143,18 @@ const Information = ({ className, isOpen, query }: Props) => {
                   src={information.googleMapsURL}
                 />
                 <Schema />
+                {information.camping && information.gites && (
+                  <SleepingContainer>
+                    <Sleeping>
+                      <Dt>{information.camping.icon}</Dt>
+                      <dd>{information.camping.text}</dd>
+                    </Sleeping>
+                    <Sleeping>
+                      <Dt>{information.gites.icon}</Dt>
+                      <dd>{information.gites.text}</dd>
+                    </Sleeping>
+                  </SleepingContainer>
+                )}
               </InformationContainer>
               <Honeymoon>
                 <P>Pour notre voyage sur la lune </P>
