@@ -5,6 +5,8 @@ const HeadComponent = () => (
   <Head>
     <title>Leomaglove.be</title>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="preconnect" href="https://in.hotjar.com" />
+    <link rel="preconnect" href="https://vars.hotjar.com" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"

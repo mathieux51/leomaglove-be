@@ -46,10 +46,13 @@ const Timeline = styled.svg.attrs({
   width: 50%;
   flex: 0 187px;
   margin: 0 auto 3rem;
+  ${media.tablet`
+    width: 90%;
+  `}
 `
 
 const InformationContainer = styled.div.attrs({
-  className: "w100 flex jc-sa"
+  className: "w100 flex jc-sa fxw-w"
 })`
   margin: 0.5rem auto;
   flex: 0 130px;
@@ -61,8 +64,12 @@ const InformationContainer = styled.div.attrs({
 const AddressContainer = styled.div.attrs({
   className: "flex jc-c ai-c"
 })`
+  margin-top: 0.5rem;
   flex: 0 17rem;
   background: ${({ theme }) => theme.p};
+  ${media.tablet`
+    flex: 0 10rem;
+  `}
 `
 
 const Address = styled.address.attrs({
@@ -74,19 +81,31 @@ const Address = styled.address.attrs({
 const StyledMap = styled(MapIFrame).attrs({
   className: ""
 })`
+  margin-top: 0.5rem;
   flex: 0 17rem;
+  ${media.tablet`
+    flex: 0 10rem;
+  `}
 `
 
 const Schema = styled.div.attrs({
   className: ""
 })`
+  margin-top: 0.5rem;
   flex: 0 17rem;
   background: ${({ theme }) => theme.p};
+  ${media.tablet`
+    flex: 0 10rem;
+  `}
 `
 
 const SleepingContainer = styled.div.attrs({ className: "flex fxd-c" })`
+  margin-top: 0.5rem;
   flex: 0 17rem;
   background: ${({ theme }) => theme.p};
+  ${media.tablet`
+    flex: 0 10rem;
+  `}
 `
 const Sleeping = styled.dl.attrs({ className: "flex" })`
   margin: 1rem;
@@ -96,6 +115,12 @@ const Dt = styled.dt.attrs({ className: "flex jc-c ai-c" })`
   width: 5rem;
 `
 
+const Dd = styled.dd.attrs({ className: "" })`
+  ${media.tablet`
+    margin: auto 2rem;
+  `}
+`
+
 const Honeymoon = styled.div.attrs({
   className: ""
 })`
@@ -103,6 +128,9 @@ const Honeymoon = styled.div.attrs({
   width: 40%;
   margin: 2rem auto 2rem;
   background: ${({ theme }) => theme.p};
+  ${media.tablet`
+    width: 90%;
+  `}
 `
 
 const P = styled.p.attrs({
@@ -147,11 +175,11 @@ const Information = ({ className, isOpen, query }: Props) => {
                   <SleepingContainer>
                     <Sleeping>
                       <Dt>{information.camping.icon}</Dt>
-                      <dd>{information.camping.text}</dd>
+                      <Dd>{information.camping.text}</Dd>
                     </Sleeping>
                     <Sleeping>
                       <Dt>{information.gites.icon}</Dt>
-                      <dd>{information.gites.text}</dd>
+                      <Dd>{information.gites.text}</Dd>
                     </Sleeping>
                   </SleepingContainer>
                 )}
