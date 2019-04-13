@@ -7,6 +7,7 @@ const HeadComponent = () => (
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <link rel="preconnect" href="https://in.hotjar.com" />
     <link rel="preconnect" href="https://vars.hotjar.com" />
+    <meta name="Description" content="Mariage de Léo et Magali" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"

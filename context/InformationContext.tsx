@@ -1,8 +1,14 @@
 import * as React from "react"
-import TimelineBelgium from "../components/icons/TimelineBelgium"
-import TimelineFrance from "../components/icons/TimelineFrance"
+import dynamic from "next/dynamic"
 import Tent from "../components/icons/Tent"
 import House from "../components/icons/House"
+
+const TimelineBelgium = dynamic(() =>
+  import("../components/icons/TimelineBelgium")
+)
+const TimelineFrance = dynamic(() =>
+  import("../components/icons/TimelineFrance")
+)
 
 export type CountryInformationType = {
   date: string

@@ -1,9 +1,12 @@
+import * as React from "react"
+import dynamic from "next/dynamic"
 import { withRouter, SingletonRouter } from "next/router"
 import styled from "styled-components"
 import Main from "./Main"
 import HomeLink from "./HomeLink"
-import Information from "./Information"
 import { france, belgium } from "../constants"
+
+const Information = dynamic(() => import("./Information"))
 
 const Top = styled.div.attrs({
   className: "flex jc-c ai-c fxd-c relative"

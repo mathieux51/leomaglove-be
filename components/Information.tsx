@@ -105,6 +105,8 @@ const SleepingContainer = styled.div.attrs({ className: "flex fxd-c" })`
   background: ${({ theme }) => theme.p};
   ${media.tablet`
     flex: 0 10rem;
+    width: 90%;
+    margin: 2rem auto;
   `}
 `
 const Sleeping = styled.dl.attrs({ className: "flex" })`
@@ -130,6 +132,7 @@ const Honeymoon = styled.div.attrs({
   background: ${({ theme }) => theme.p};
   ${media.tablet`
     width: 90%;
+    margin: 0 auto 2rem;
   `}
 `
 
