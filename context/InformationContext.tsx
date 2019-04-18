@@ -1,7 +1,8 @@
 import * as React from "react"
 import dynamic from "next/dynamic"
 import Tent from "../components/icons/Tent"
-import House from "../components/icons/House"
+
+const House = dynamic(() => import("../components/icons/House"))
 
 const TimelineBelgium = dynamic(() =>
   import("../components/icons/TimelineBelgium")
