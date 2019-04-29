@@ -13,6 +13,8 @@ module.exports = withTypescript(
           config.plugins.push(new Dotenv({ safe: true }))
           return config
         },
+        // Deployment
+        target: "serverless",
         // BundleAnalyser
         analyzeServer: ["server", "all"].includes(process.env.BUNDLE_ANALYZE),
         analyzeBrowser: ["web", "all"].includes(process.env.BUNDLE_ANALYZE),
