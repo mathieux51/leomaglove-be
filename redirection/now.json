@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "leomaglove-redirection",
+  "alias": ["www.leomaglove.be"],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 301,
+      "headers": { "Location": "https://leomaglove.be/$1" }
+    }
+  ]
+}
