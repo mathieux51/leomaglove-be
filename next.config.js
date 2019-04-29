@@ -10,7 +10,9 @@ module.exports = withTypescript(
       withFonts({
         // dotenv
         webpack: config => {
-          config.plugins.push(new Dotenv({ safe: true }))
+          if (process.env.NODE_ENV !== "production") {
+            config.plugins.push(new Dotenv({ safe: true }))
+          }
           return config
         },
         // Deployment
