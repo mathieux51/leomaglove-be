@@ -25,7 +25,6 @@
     "react-dom": "^16.8.6",
     "react-ga": "^2.5.7",
     "react-hotjar": "^2.0.0",
-    "react-plyr": "^2.2.0",
     "react-pose": "^4.0.8",
     "styled-components": "^4.2.0"
   },
