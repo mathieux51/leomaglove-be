@@ -1,14 +1,12 @@
 import * as React from "react"
 import { ThemeProvider } from "styled-components"
 import App, { Container } from "next/app"
-import dynamic from "next/dynamic"
 import { hotjar } from "react-hotjar"
 import ReactGA from "react-ga"
 import theme from "../style/theme"
 import { InformationProvider } from "../context/InformationContext"
 
-// import Layout from "../components/Layout"
-const Layout = dynamic(() => import("../components/Layout"))
+import Layout from "../components/Layout" // Cannot be dynamically loaded
 
 const isProd = process.env.NODE_ENV !== "development"
 
