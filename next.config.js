@@ -3,8 +3,6 @@ const withImages = require("next-images")
 const withFonts = require("next-fonts")
 const withTypescript = require("@zeit/next-typescript")
 
-console.warn(JSON.stringify(process.env, null, 2))
-
 module.exports = withTypescript(
   withBundleAnalyzer(
     withImages(
