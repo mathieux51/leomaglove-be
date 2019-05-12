@@ -1,9 +1,11 @@
 {
   "version": 2,
   "name": "leomaglove-be",
-  "env": {
-    "HOT_JAR_SITE_ID": "@hot-jar-site-id",
-    "GA_TRACKING_ID": "@ga-tracking-id"
+  "build": {
+    "env": {
+      "HOT_JAR_SITE_ID": "1241116",
+      "GA_TRACKING_ID": "UA-136316793-1"
+    }
   },
   "builds": [{ "src": "next.config.js", "use": "@now/next" }]
 }

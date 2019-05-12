@@ -12,6 +12,8 @@ const isProd = process.env.NODE_ENV !== "development"
 export default class extends App {
   componentDidMount() {
     if (isProd) {
+      console.warn("hotJarSiteId", hotJarSiteId)
+      console.warn("gaTrackingId", gaTrackingId)
       hotjar.initialize(hotJarSiteId, "v1")
       ReactGA.initialize(gaTrackingId)
       ReactGA.pageview(window.location.pathname + window.location.search)
