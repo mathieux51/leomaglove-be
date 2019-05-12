@@ -8,6 +8,7 @@ const HeadComponent = () => (
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="preconnect" href="https://in.hotjar.com" />
     <link rel="preconnect" href="https://vars.hotjar.com" />
+    <link rel="preconnect" href="https://vc.hotjar.io" />
     <meta name="Description" content="Mariage de Léo et Magali" />
     <link
       rel="apple-touch-icon"
