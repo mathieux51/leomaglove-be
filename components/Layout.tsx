@@ -1,7 +1,6 @@
 import * as React from "react"
-import styled, { ThemeProvider } from "styled-components"
+import styled from "styled-components"
 
-import theme from "../style/theme"
 import Head from "./Head"
 // import Footer from "components/Footer"
 import GlobalStyle from "./GlobalStyle"
@@ -16,14 +15,12 @@ const Container = styled.div.attrs({
 `
 
 const Layout = ({ children }) => (
-  <ThemeProvider theme={theme}>
-    <Container>
-      <GlobalStyle />
-      <Head />
-      {children}
-      {/* <Footer /> */}
-    </Container>
-  </ThemeProvider>
+  <Container>
+    <GlobalStyle />
+    <Head />
+    {children}
+    {/* <Footer /> */}
+  </Container>
 )
 
 export default Layout

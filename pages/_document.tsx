@@ -19,7 +19,7 @@ const script = {
 `
 }
 
-export default class MyDocument extends Document {
+class _Document extends Document {
   static async getInitialProps(ctx) {
     // 💅🏻
     const sheet = new ServerStyleSheet()
@@ -52,3 +52,4 @@ export default class MyDocument extends Document {
     )
   }
 }
+export default _Document
