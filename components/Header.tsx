@@ -1,8 +1,12 @@
 import styled from "styled-components"
+import dynamic from "next/dynamic"
 import Link from "./Link"
-import MagaliLoveLeo from "./icons/MagaliLoveLeo"
-import AmourFritesDecadence from "./icons/AmourFritesDecadence"
 import { media } from "../helpers"
+
+const AmourFritesDecadence = dynamic(() =>
+  import("./icons/AmourFritesDecadence")
+)
+const MagaliLoveLeo = dynamic(() => import("./icons/MagaliLoveLeo"))
 
 const Header = styled.header.attrs({ className: "flex jc-c ai-c w100" })`
   max-width: 1280px;
