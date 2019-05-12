@@ -12,3 +12,4 @@
 - [x] Fix secrets with now
 - [ ] Fix environment variables
 - [ ] Fix animation
+- [ ] Update performance
