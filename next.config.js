@@ -1,22 +1,39 @@
 const withBundleAnalyzer = require("@zeit/next-bundle-analyzer")
 const withImages = require("next-images")
 const withFonts = require("next-fonts")
+const withTypescript = require("@zeit/next-typescript")
 
-module.exports = withBundleAnalyzer(
-  withImages(
-    withFonts({
-      analyzeServer: ["server", "all"].includes(process.env.BUNDLE_ANALYZE),
-      analyzeBrowser: ["web", "all"].includes(process.env.BUNDLE_ANALYZE),
-      bundleAnalyzerConfig: {
-        server: {
-          analyzerMode: "static",
-          reportFilename: "../bundles/server.html"
+module.exports = withTypescript(
+  withBundleAnalyzer(
+    withImages(
+      withFonts({
+        // dotenv
+        webpack: config => {
+          // if (process.env.NODE_ENV !== "production") {
+          //   config.plugins.push(new Dotenv({ safe: true }))
+          // }
+          return config
         },
-        browser: {
-          analyzerMode: "static",
-          reportFilename: "../bundles/client.html"
+        env: {
+          HOT_JAR_SITE_ID: process.env.HOT_JAR_SITE_ID,
+          GA_TRACKING_ID: process.env.GA_TRACKING_ID
+        },
+        // Deployment
+        target: "serverless",
+        // BundleAnalyser
+        analyzeServer: ["server", "all"].includes(process.env.BUNDLE_ANALYZE),
+        analyzeBrowser: ["web", "all"].includes(process.env.BUNDLE_ANALYZE),
+        bundleAnalyzerConfig: {
+          server: {
+            analyzerMode: "static",
+            reportFilename: "../bundles/server.html"
+          },
+          browser: {
+            analyzerMode: "static",
+            reportFilename: "../bundles/client.html"
+          }
         }
-      },
-    })
+      })
+    )
   )
 )

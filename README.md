@@ -1,10 +1,15 @@
 # Stack
 
-- nextjs
+- Nextjs
 - styled components
-- github pages
-- cloudflare
+- Now
+- Cloudflare
 
 # To do
 
-- [ ] pages: video ratio 1/2.39
+- [x] Deploy with github pages
+- [x] Deploy with now
+- [x] Fix secrets with now
+- [ ] Fix environment variables
+- [ ] Fix animation
+- [ ] Update performance
