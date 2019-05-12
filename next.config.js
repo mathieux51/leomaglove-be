@@ -2,7 +2,8 @@ const withBundleAnalyzer = require("@zeit/next-bundle-analyzer")
 const withImages = require("next-images")
 const withFonts = require("next-fonts")
 const withTypescript = require("@zeit/next-typescript")
-const Dotenv = require("dotenv-webpack")
+
+console.warn(JSON.stringify(process.env, null, 2))
 
 module.exports = withTypescript(
   withBundleAnalyzer(
@@ -10,10 +11,14 @@ module.exports = withTypescript(
       withFonts({
         // dotenv
         webpack: config => {
-          if (process.env.NODE_ENV !== "production") {
-            config.plugins.push(new Dotenv({ safe: true }))
-          }
+          // if (process.env.NODE_ENV !== "production") {
+          //   config.plugins.push(new Dotenv({ safe: true }))
+          // }
           return config
+        },
+        env: {
+          HOT_JAR_SITE_ID: process.env.HOT_JAR_SITE_ID,
+          GA_TRACKING_ID: process.env.GA_TRACKING_ID
         },
         // Deployment
         target: "serverless",

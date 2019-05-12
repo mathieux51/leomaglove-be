@@ -36,7 +36,6 @@
     "@zeit/next-bundle-analyzer": "^0.1.2",
     "babel-plugin-module-resolver": "^3.2.0",
     "babel-plugin-styled-components": "^1.10.0",
-    "dotenv-webpack": "^1.7.0",
     "next-fonts": "^0.17.0",
     "next-images": "^1.1.1",
     "rimraf": "^2.6.3"
