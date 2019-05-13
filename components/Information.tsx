@@ -15,14 +15,14 @@ const Container = styled(
       y: "0",
       transition: {
         duration: 1000,
-        ease: [0.35, 1.15, 0.6, 0.91]
+        ease: [0.35, 1.15, 0.3, 1.01]
       }
     },
     exit: {
       y: "150%",
       transition: {
         duration: 1000,
-        ease: [0.35, 1.15, 0.6, 0.91]
+        ease: [0.54, 0.01, 0.54, 0.01]
       }
     }
   })
@@ -31,7 +31,8 @@ const Container = styled(
 })`
   z-index: 1;
   background: ${({ theme }) => theme.s};
-  border: 1px solid black;
+  border-radius: 9px;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.19);
 `
 
 const Title = styled.h1.attrs({
