@@ -52,7 +52,7 @@ export class InformationProvider extends React.PureComponent {
       title: "Google maps: Salle d’activité Ruat-Carguessac 47470 BEAUVILLE",
       address: "Salle d’activité Ruat-Carguessac 47470 BEAUVILLE",
       googleMapsURL:
-        "https://maps.google.com/maps?width=100%&height=130&hl=en&q=47470%20BEAUVILLE+(Salle%20d%E2%80%99activit%C3%A9%20Ruat-Carguessac%2047470%20BEAUVILLE)&ie=UTF8&t=&z=14&iwloc=B&output=embed",
+        "https://maps.google.com/maps?width=100%&height=130&hl=en&q=44.283250%2C0.883250&ie=UTF8&t=&z=14&iwloc=B&output=embed",
       timelineComponent: TimelineFrance,
       camping: {
         icon: <Tent />,
