@@ -140,7 +140,6 @@ const P = styled.p.attrs({
   className: "ta-c"
 })``
 
-// Fix me
 const A = styled.a.attrs({
   className: "ta-c d"
 })``
@@ -194,7 +193,7 @@ const Information = ({ className, isOpen, query }: Props) => {
                 <P>ou</P>
                 <A
                   target="_blank"
-                  href="www.colleo.fr/cagnotte/14909/amour-frites-et-decadence"
+                  href="https://www.colleo.fr/cagnotte/14909/amour-frites-et-decadence"
                 >
                   colleo.fr/cagnotte/14909/amour-frites-et-decadence
                 </A>
