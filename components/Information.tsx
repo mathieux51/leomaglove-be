@@ -64,6 +64,8 @@ const InformationContainer = styled.div.attrs({
 const AddressContainer = styled.div.attrs({
   className: "flex jc-c ai-c w100"
 })`
+  border-radius: 9px;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.19);
   margin-top: 0.5rem;
   flex: 0 17rem;
   background: ${({ theme }) => theme.p};
@@ -81,25 +83,18 @@ const Address = styled.address.attrs({
 const StyledMap = styled(MapIFrame).attrs({
   className: "w100"
 })`
+  border-radius: 9px;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.19);
   margin-top: 0.5rem;
   flex: 0 17rem;
-  ${media.tablet`
-    flex: 0 10rem;
-  `}
-`
-
-const Schema = styled.div.attrs({
-  className: ""
-})`
-  margin-top: 0.5rem;
-  flex: 0 17rem;
-  background: ${({ theme }) => theme.p};
   ${media.tablet`
     flex: 0 10rem;
   `}
 `
 
 const SleepingContainer = styled.div.attrs({ className: "flex fxd-c" })`
+  border-radius: 9px;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.19);
   margin-top: 0.5rem;
   flex: 0 17rem;
   background: ${({ theme }) => theme.p};
@@ -126,6 +121,8 @@ const Dd = styled.dd.attrs({ className: "" })`
 const Honeymoon = styled.div.attrs({
   className: ""
 })`
+  border-radius: 9px;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.19);
   padding: 1rem;
   width: 40%;
   margin: 2rem auto 2rem;
@@ -173,7 +170,6 @@ const Information = ({ className, isOpen, query }: Props) => {
                   title={information.title}
                   src={information.googleMapsURL}
                 />
-                <Schema />
                 {information.camping && information.gites && (
                   <SleepingContainer>
                     <Sleeping>

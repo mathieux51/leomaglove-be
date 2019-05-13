@@ -6,27 +6,41 @@ import Main from "./Main"
 import HomeLink from "./HomeLink"
 import { france, belgium } from "../constants"
 import weddingLove200Src from "../assets/images/wedding-love-200.jpg"
-import weddingLove800Src from "../assets/images/wedding-love-800.jpg"
+import weddingLove858Src from "../assets/images/wedding-love-858.jpg"
 import weddingLove1400Src from "../assets/images/wedding-love-1400.jpg"
 
 const Information = dynamic(() => import("./Information"))
 
-// const Top = styled.div.attrs({
-//   className: "flex jc-c ai-c fxd-c"
-// })``
-
 const Img = styled.img.attrs({
-  className: "w100 relative"
+  className: "w100 h100"
 })`
-  flex: 0 38vh;
-  max-height: 500px;
   object-fit: cover;
-  border: 1px solid black;
+  max-height: 500px;
   background: ${({ theme }) => theme.s};
+  border-radius: 9px;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.19);
+`
+
+const Container = styled.div.attrs({ className: "relative" })`
+  flex: 0 38vh;
+`
+
+const Text = styled.span`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16rem;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  opacity: 0.2;
+}
 `
 
 const Middle = styled.div.attrs({
-  className: "flex fxd-c ai-c jc-c relative"
+  className: "flex fxd-c ai-c jc-c"
 })`
   flex: 0 6rem;
 `
@@ -35,7 +49,7 @@ const ButtonContainer = styled.div.attrs({
   className: "w100 flex ai-c jc-sa"
 })``
 
-interface Props {
+type Props = {
   router: SingletonRouter
 }
 
@@ -46,28 +60,26 @@ const Body = ({ router }: Props) => {
     <Main id="main">
       <Information isOpen={isOpen} query={query} />
       {!isOpen && (
-        // <Top>
-        <Img
-          sizes="(max-width: 1400px) 100vw, 1400px"
-          srcSet={`
+        <Container>
+          <Text>Love</Text>
+          <Img
+            sizes="(max-width: 1400px) 100vw, 1400px"
+            srcSet={`
               ${weddingLove200Src} 200w,
-              ${weddingLove800Src} 800w,
+              ${weddingLove858Src} 858w,
               ${weddingLove1400Src} 1400w
             `}
-          src={weddingLove1400Src}
-          alt="Love"
-        />
-        // </Top>
+            src={weddingLove1400Src}
+            alt="Love"
+          />
+        </Container>
       )}
-      <>
-        <Middle>
-          {/* <Text>Plus d'info</Text> */}
-          <ButtonContainer>
-            <HomeLink q={belgium} text="Les invités en Belgique" />
-            <HomeLink q={france} text="Les invités en France" />
-          </ButtonContainer>
-        </Middle>
-      </>
+      <Middle>
+        <ButtonContainer>
+          <HomeLink q={belgium} text="Les invités en Belgique" />
+          <HomeLink q={france} text="Les invités en France" />
+        </ButtonContainer>
+      </Middle>
     </Main>
   )
 }

@@ -4,12 +4,13 @@ import Link from "./Link"
 const StyledHomeLink = styled(Link).attrs({
   className: "fw900 ta-c"
 })`
-  border: 1px solid black;
-  padding: 0.4rem;
+  border-radius: 9px;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.19);
+  padding: 1rem;
   background: ${({ theme }) => theme.t};
 `
 
-interface Props {
+type Props = {
   className?: string
   q: string
   text: string
