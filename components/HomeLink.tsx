@@ -2,7 +2,7 @@ import styled from "styled-components"
 import Link from "./Link"
 
 const StyledHomeLink = styled(Link).attrs({
-  className: "fw900"
+  className: "fw900 ta-c"
 })`
   border: 1px solid black;
   padding: 0.4rem;

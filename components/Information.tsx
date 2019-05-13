@@ -62,7 +62,7 @@ const InformationContainer = styled.div.attrs({
 `
 
 const AddressContainer = styled.div.attrs({
-  className: "flex jc-c ai-c"
+  className: "flex jc-c ai-c w100"
 })`
   margin-top: 0.5rem;
   flex: 0 17rem;
@@ -79,7 +79,7 @@ const Address = styled.address.attrs({
 `
 
 const StyledMap = styled(MapIFrame).attrs({
-  className: ""
+  className: "w100"
 })`
   margin-top: 0.5rem;
   flex: 0 17rem;
@@ -140,6 +140,7 @@ const P = styled.p.attrs({
   className: "ta-c"
 })``
 
+// Fix me
 const A = styled.a.attrs({
   className: "ta-c d"
 })``
@@ -191,8 +192,11 @@ const Information = ({ className, isOpen, query }: Props) => {
                 <P>Pour notre voyage sur la lune </P>
                 <P>BE17 3770 7855 8721</P>
                 <P>ou</P>
-                <A href="www.colleo.fr/cagnotte/14909/amour-frites-et-decadence">
-                  www.colleo.fr/cagnotte/14909/amour-frites-et-decadence
+                <A
+                  target="_blank"
+                  href="www.colleo.fr/cagnotte/14909/amour-frites-et-decadence"
+                >
+                  colleo.fr/cagnotte/14909/amour-frites-et-decadence
                 </A>
               </Honeymoon>
             </>
