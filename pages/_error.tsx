@@ -10,11 +10,6 @@ const H1 = styled.h1.attrs({ className: "tc-c" })`
 `
 
 export default class Error extends React.PureComponent {
-  static getInitialProps({ res, err }) {
-    const statusCode = res ? res.statusCode : err ? err.statusCode : null
-    return { statusCode }
-  }
-
   render() {
     return (
       <>
