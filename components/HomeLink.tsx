@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import Link from "./Link"
-import { media } from "../helpers"
 
 const StyledHomeLink = styled(Link).attrs({
   className: "fw900 ta-c"

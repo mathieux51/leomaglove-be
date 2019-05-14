@@ -8,6 +8,7 @@ import { france, belgium } from "../constants"
 import weddingLove200Src from "../assets/images/wedding-love-200.jpg"
 import weddingLove858Src from "../assets/images/wedding-love-858.jpg"
 import weddingLove1400Src from "../assets/images/wedding-love-1400.jpg"
+import { media } from "../helpers"
 
 const Information = dynamic(() => import("./Information"))
 
@@ -23,6 +24,9 @@ const Img = styled.img.attrs({
 
 const Container = styled.div.attrs({ className: "relative" })`
   flex: 0 38vh;
+  ${media.tablet`
+    flex: none;
+  `}
 `
 
 const Text = styled.span`
@@ -36,6 +40,9 @@ const Text = styled.span`
   font-family: Helvetica, Arial, sans-serif;
   color: white;
   opacity: 0.2;
+  ${media.tablet`
+    font-size: 6rem;
+  `}
 }
 `
 
