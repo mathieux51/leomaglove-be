@@ -1,12 +1,14 @@
 import styled from "styled-components"
 import Link from "./Link"
+import { media } from "../helpers"
 
 const StyledHomeLink = styled(Link).attrs({
   className: "fw900 ta-c"
 })`
   border-radius: 9px;
   box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.19);
-  padding: 1rem;
+  padding: 0.75rem;
+  margin: 0.25rem;
   background: ${({ theme }) => theme.t};
 `
 

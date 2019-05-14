@@ -49,16 +49,21 @@ const Timeline = styled.svg.attrs({
   margin: 0 auto 3rem;
   ${media.tablet`
     width: 90%;
+    margin: 0 auto 1rem; 
   `}
 `
 
 const InformationContainer = styled.div.attrs({
-  className: "w100 flex jc-sa fxw-w"
+  className: "w100 flex jc-sa"
 })`
   margin: 0.5rem auto;
   flex: 0 130px;
+  flex-wrap: wrap;
   ${media.tablet`
+    flex: auto;
+    flex-wrap: nowrap;
     flex-direction: column;
+    align-items: center;
   `}
 `
 
@@ -71,6 +76,7 @@ const AddressContainer = styled.div.attrs({
   flex: 0 17rem;
   background: ${({ theme }) => theme.p};
   ${media.tablet`
+    width: 90%;
     flex: 0 10rem;
   `}
 `
@@ -90,6 +96,7 @@ const StyledMap = styled(MapIFrame).attrs({
   flex: 0 17rem;
   ${media.tablet`
     flex: 0 10rem;
+    width: 90%;
   `}
 `
 
