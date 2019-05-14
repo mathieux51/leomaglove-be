@@ -39,6 +39,9 @@ const Title = styled.h1.attrs({
   className: "ta-c"
 })`
   margin: 0.5rem 0 1rem;
+  ${media.tablet`
+    margin: 1rem 0 0rem;
+  `}
 `
 
 const Timeline = styled.svg.attrs({
@@ -49,7 +52,7 @@ const Timeline = styled.svg.attrs({
   margin: 0 auto 3rem;
   ${media.tablet`
     width: 90%;
-    margin: 0 auto 1rem; 
+    margin: 0 auto; 
   `}
 `
 
@@ -109,7 +112,7 @@ const SleepingContainer = styled.div.attrs({ className: "flex fxd-c" })`
   ${media.tablet`
     flex: 0 10rem;
     width: 90%;
-    margin: 2rem auto;
+    margin: 0.5 auto 0;
   `}
 `
 const Sleeping = styled.dl.attrs({ className: "flex" })`
