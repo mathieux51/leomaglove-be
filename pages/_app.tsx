@@ -1,6 +1,6 @@
 import * as React from "react"
 import { ThemeProvider } from "styled-components"
-import App, { Container } from "next/app"
+import App from "next/app"
 import { hotjar } from "react-hotjar"
 import ReactGA from "react-ga"
 import theme from "../style/theme"
@@ -23,11 +23,9 @@ class _App extends App {
     return (
       <ThemeProvider theme={theme}>
         <InformationProvider>
-          <Container>
-            <Layout>
-              <Component {...pageProps} />
-            </Layout>
-          </Container>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
         </InformationProvider>
       </ThemeProvider>
     )
