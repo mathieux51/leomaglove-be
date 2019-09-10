@@ -320,8 +320,8 @@ const TimelineBelgium = ({ className }: Props) => (
       d="M67.9458 124.03H159.475"
       stroke="black"
       strokeWidth="1.0377"
-      strokeRiterlimit="10"
-      stroke-linecap="round"
+      // strokeRiterlimit="10"
+      strokeLinecap="round"
     />
     <Path
       d="M232.078 124.03H330.161"

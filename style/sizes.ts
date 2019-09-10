@@ -1,6 +1,6 @@
-export interface Sizes {
-  desktop: number
-  tablet: number
+export type Sizes = {
+  desktop: number,
+  tablet: number,
   phone: number
 }
 

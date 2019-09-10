@@ -1,5 +1,5 @@
 module.exports = {
-  presets: ["next/babel", "@zeit/next-typescript/babel"],
+  presets: ["next/babel"],
   plugins: [
     [
       "module-resolver",
@@ -8,9 +8,7 @@ module.exports = {
         alias: {
           assets: "./assets",
           components: "./components",
-          db: "./db",
           helpers: "./helpers",
-          config: "./config",
           style: "./style"
         }
       }

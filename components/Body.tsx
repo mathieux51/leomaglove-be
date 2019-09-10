@@ -1,13 +1,14 @@
-import * as React from "react"
+import React from "react"
 import dynamic from "next/dynamic"
 import { withRouter, SingletonRouter } from "next/router"
 import styled from "styled-components"
 import Main from "./Main"
 import HomeLink from "./HomeLink"
+import StyledLink from './StyledLink'
 import { france, belgium } from "../constants"
-import weddingLove200Src from "../assets/images/wedding-love-200.jpg"
-import weddingLove858Src from "../assets/images/wedding-love-858.jpg"
-import weddingLove1400Src from "../assets/images/wedding-love-1400.jpg"
+import weddingLove200Src from "assets/images/wedding-love-200.jpg"
+import weddingLove858Src from "assets/images/wedding-love-858.jpg"
+import weddingLove1400Src from "assets/images/wedding-love-1400.jpg"
 import { media } from "../helpers"
 
 const Information = dynamic(() => import("./Information"))
@@ -62,7 +63,15 @@ type Props = {
 
 const Body = ({ router }: Props) => {
   const isOpen = router.query ? !!router.query.q : false
-  const query = router.query ? router.query.q : ""
+  let query = ""
+  if (router.query) {
+    if (Array.isArray(router.query.q)) {
+      router.query.q[0]
+    } else {
+      router.query.q
+    }
+  }
+
   return (
     <Main id="main">
       <Information isOpen={isOpen} query={query} />
@@ -84,6 +93,7 @@ const Body = ({ router }: Props) => {
       <Middle>
         <ButtonContainer>
           <HomeLink q={belgium} text="Les invités en Belgique" />
+          <StyledLink href='/photos'>Photos</StyledLink>
           <HomeLink q={france} text="Les invités en France" />
         </ButtonContainer>
       </Middle>

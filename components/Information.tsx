@@ -6,7 +6,6 @@ import { media } from "../helpers"
 import {
   InformationContext,
   CountryInformationType,
-  CountriesType
 } from "../context/InformationContext"
 
 const Container = styled(
@@ -155,7 +154,7 @@ const A = styled.a.attrs({
 type Props = {
   className?: string
   isOpen: boolean
-  query: CountriesType
+  query: string
 }
 
 const Information = ({ className, isOpen, query }: Props) => {

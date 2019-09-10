@@ -12,7 +12,7 @@ const Heart = styled(Path)`
 `
 
 type Props = {
-  className: string
+  className?: string
 }
 
 const MagaliLoveLeo = ({ className }: Props) => (

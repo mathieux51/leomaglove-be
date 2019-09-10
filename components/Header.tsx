@@ -6,6 +6,7 @@ import { media } from "../helpers"
 const AmourFritesDecadence = dynamic(() =>
   import("./icons/AmourFritesDecadence")
 )
+
 const MagaliLoveLeo = dynamic(() => import("./icons/MagaliLoveLeo"))
 
 const Header = styled.header.attrs({ className: "flex jc-c ai-c w100" })`
@@ -17,8 +18,6 @@ const Header = styled.header.attrs({ className: "flex jc-c ai-c w100" })`
   `}
 `
 
-// const H1 = styled.h1.attrs({ className: "visuallyHidden" })``
-
 const LogoContainer1 = styled(Link).attrs({
   className: "flex-1 w100 h100 flex ai-c"
 })`
@@ -27,9 +26,7 @@ const LogoContainer1 = styled(Link).attrs({
   `}
 `
 
-const StyledAmourFritesDecadence = styled(AmourFritesDecadence).attrs({
-  className: ""
-})`
+const StyledAmourFritesDecadence = styled(AmourFritesDecadence)`
   width: auto;
   height: 100%;
   height: 5rem;
@@ -44,16 +41,15 @@ const LogoContainer2 = styled(Link).attrs({
   `}
 `
 
-const StyledMagaliLoveLeo = styled(MagaliLoveLeo).attrs({
-  className: ""
-})`
+const StyledMagaliLoveLeo = styled(MagaliLoveLeo)`
   width: auto;
   height: 50%;
   height: 2rem;
   margin-top: 1.5rem;
 `
+type Props = {}
 
-const _Header = () => (
+const _Header: React.FunctionComponent<Props> = () => (
   <Header>
     <LogoContainer1 href="/">
       <StyledAmourFritesDecadence />

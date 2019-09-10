@@ -1,13 +1,14 @@
 import Link from "next/link"
 
 type Props = {
-  className: string
-  children: React.ComponentType
-  id: string
+  className?: string,
+  children: any,
+  id?: string,
+  href: string
 }
 
-const _Link = ({ className, children, id, ...rest }: Props) => (
-  <Link {...rest}>
+const _Link: React.FunctionComponent<Props> = ({ className, children, id, href, ...rest }) => (
+  <Link href={href} {...rest}>
     <a className={className} id={id}>
       {children}
     </a>

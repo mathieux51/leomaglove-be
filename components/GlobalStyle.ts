@@ -36,7 +36,7 @@ const _createGlobalStyle = createGlobalStyle`
   }
   /* fonts */
   body {
-    color: ${({ theme }) => theme.g38};
+    color: ${({ theme }) => theme.fg};
 		font-family: sans-serif;
     background: ${({ theme }) => theme.bg}
   }

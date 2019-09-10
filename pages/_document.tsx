@@ -1,4 +1,4 @@
-import Document, { Head, Main, NextScript } from "next/document"
+import Document, { Head, Main, NextScript, DocumentContext } from "next/document"
 import { ServerStyleSheet } from "styled-components"
 
 const script = {
@@ -20,7 +20,7 @@ const script = {
 }
 
 class _Document extends Document {
-  static async getInitialProps(ctx) {
+  static async getInitialProps(ctx: DocumentContext) {
     // 💅🏻
     const sheet = new ServerStyleSheet()
     try {
@@ -32,7 +32,12 @@ class _Document extends Document {
       const initialProps = await Document.getInitialProps(ctx)
       return {
         ...initialProps,
-        styles: [...initialProps.styles, ...sheet.getStyleElement()]
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        )
       }
     } finally {
       sheet.seal()
@@ -41,7 +46,8 @@ class _Document extends Document {
   render() {
     return (
       <html lang="fr">
-        <Head>{this.props.styleTags}</Head>
+        {/* <Head>{this.props.styleTags}</Head> */}
+        <Head />
         <body>
           <script dangerouslySetInnerHTML={script} />
           <Main />

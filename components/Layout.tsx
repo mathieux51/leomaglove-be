@@ -13,8 +13,9 @@ const Container = styled.div.attrs({
   background: ${({ theme }) => theme.p};
   padding: 1rem 2rem 2rem;
 `
+type Props = {}
 
-const Layout = ({ children }) => (
+const Layout: React.FunctionComponent<Props> = ({ children }) => (
   <Container>
     <GlobalStyle />
     <Head />

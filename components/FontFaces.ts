@@ -1,7 +1,9 @@
 import { css } from "styled-components"
 import fontFaceList from "./fontFacesList"
 
-const generateFontFace = (ff, fw, fs, woff2) => css`
+
+
+const generateFontFace = (ff: string, fw: string, fs: string, woff2: string) => css`
   @font-face {
     font-family: ${ff};
     src: url(${woff2}) format("woff2");
@@ -10,8 +12,8 @@ const generateFontFace = (ff, fw, fs, woff2) => css`
   }
 `
 
-const fontFaces = fontFaceList.map(f =>
-  generateFontFace(f[0], f[1], f[2], f[3])
+const fontFaces = fontFaceList.map(([ff, fw, fs, woff2]) =>
+  generateFontFace(ff, fw, fs, woff2)
 )
 
 const _css = css`

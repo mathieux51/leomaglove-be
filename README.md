@@ -13,3 +13,4 @@
 - [ ] Fix environment variables
 - [ ] Fix animation
 - [ ] Update performance
+- [ ] `strictPropertyInitialization` and `strictNullChecks` should be `true`
