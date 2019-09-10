@@ -66,9 +66,9 @@ const Body = ({ router }: Props) => {
   let query = ""
   if (router.query) {
     if (Array.isArray(router.query.q)) {
-      router.query.q[0]
+      query = router.query.q[0]
     } else {
-      router.query.q
+      query = router.query.q
     }
   }
 
