@@ -43,7 +43,7 @@ declare module 'react-images' {
 
   export interface ViewType {
     caption?: React.ReactNode
-    source:
+    source?:
       | string
       | {
           download?: string
@@ -51,6 +51,9 @@ declare module 'react-images' {
           regular: string
           thumbnail?: string
         }
+    src?: string
+    height?: number
+    width?: number
   }
 
   export interface CarouselModalProps {

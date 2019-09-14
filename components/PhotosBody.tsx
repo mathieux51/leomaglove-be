@@ -23,14 +23,7 @@ function PhotosBody() {
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
-            <Carousel
-              currentIndex={currentImage}
-              views={photos.map(x => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title
-              }))}
-            />
+            <Carousel currentIndex={currentImage} views={photos} />
           </Modal>
         ) : null}
       </ModalGateway>
