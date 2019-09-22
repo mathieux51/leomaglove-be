@@ -1,11 +1,13 @@
-# Stack
+# leomaglove
+
+## Stack
 
 - Nextjs
 - styled components
 - Now
 - Cloudflare
 
-# To do
+## To do
 
 - [x] Deploy with github pages
 - [x] Deploy with now
@@ -14,3 +16,5 @@
 - [x] Fix animation
 - [x] Update performance
 - [x] `strictPropertyInitialization` and `strictNullChecks` should be `true`
+
+## /photos
