@@ -1,7 +1,6 @@
 const withBundleAnalyzer = require('@zeit/next-bundle-analyzer')
 const withImages = require('next-images')
 const withFonts = require('next-fonts')
-const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin')
 
 module.exports = withBundleAnalyzer(
   withImages(
@@ -10,7 +9,6 @@ module.exports = withBundleAnalyzer(
       webpack: config => {
         if (process.env.NODE_ENV === 'production') {
           // config.plugins.push(new Dotenv({ safe: true }))
-          config.plugins.push(new ImageminWebpWebpackPlugin())
         }
         return config
       },

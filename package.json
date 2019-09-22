@@ -18,7 +18,6 @@
   "author": "Mathieu Schmidt",
   "license": "ISC",
   "dependencies": {
-    "imagemin-webp-webpack-plugin": "^3.2.1",
     "next": "^9.0.6",
     "polished": "^3.4.1",
     "react": "^16.9.0",
