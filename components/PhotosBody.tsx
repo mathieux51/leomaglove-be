@@ -17,6 +17,8 @@ function PhotosBody() {
     setViewerIsOpen(false)
   }
 
+  // depending on the performance strategy we might need an intial photos
+  // array. We can then extend the array onScroll
   return (
     <div>
       <Gallery photos={photos} onClick={openLightbox} />
