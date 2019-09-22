@@ -10,7 +10,7 @@
 - [x] Deploy with github pages
 - [x] Deploy with now
 - [x] Fix secrets with now
-- [ ] Fix environment variables
-- [ ] Fix animation
-- [ ] Update performance
-- [ ] `strictPropertyInitialization` and `strictNullChecks` should be `true`
+- [x] Fix environment variables
+- [x] Fix animation
+- [x] Update performance
+- [x] `strictPropertyInitialization` and `strictNullChecks` should be `true`
