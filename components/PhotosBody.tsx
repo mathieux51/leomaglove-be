@@ -1,7 +1,7 @@
 import React from 'react'
 import Gallery from 'react-photo-gallery'
 import Carousel, { Modal, ModalGateway } from 'react-images'
-import photos from '../constants/photos'
+import photos from '../constants/photos.json'
 
 function PhotosBody() {
   const [currentImage, setCurrentImage] = React.useState(0)
