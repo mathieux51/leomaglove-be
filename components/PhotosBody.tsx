@@ -1,35 +1,35 @@
-import React from 'react'
-import Gallery from 'react-photo-gallery'
-import Carousel, { Modal, ModalGateway } from 'react-images'
-import photos from '../constants/photos.json'
+import React from "react"
+import PhotoSwipe from "./PhotoSwipe"
+import PhotoGallery from "./PhotoGallery"
+import { GalleryContext } from "../context/GalleryContext"
 
-function PhotosBody() {
-  const [currentImage, setCurrentImage] = React.useState(0)
-  const [viewerIsOpen, setViewerIsOpen] = React.useState(false)
+type Photo = {
+  src: string
+  w: number
+  h: number
+  thumbnail: string
+}
 
-  const openLightbox = React.useCallback((_, { index }) => {
-    setCurrentImage(index)
-    setViewerIsOpen(true)
-  }, [])
+type Props = {
+  photos: Photo[]
+}
 
-  const closeLightbox = () => {
-    setCurrentImage(0)
-    setViewerIsOpen(false)
+function PhotosBody(props: Props) {
+  const { isOpen, index, setIsOpen, setIndex } = React.useContext(
+    GalleryContext
+  )
+
+  const handleClick = (index: number) => {
+    setIndex(index)
+    setIsOpen(true)
   }
-
-  // depending on the performance strategy we might need an intial photos
-  // array. We can then extend the array onScroll
-  return (
-    <div>
-      <Gallery photos={photos} onClick={openLightbox} />
-      <ModalGateway>
-        {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
-            <Carousel currentIndex={currentImage} views={photos} />
-          </Modal>
-        ) : null}
-      </ModalGateway>
-    </div>
+  const handleClose = () => {
+    setIsOpen(false)
+  }
+  return isOpen ? (
+    <PhotoSwipe photos={props.photos} index={index} onClose={handleClose} />
+  ) : (
+    <PhotoGallery photos={props.photos} handleClick={handleClick} />
   )
 }
 
