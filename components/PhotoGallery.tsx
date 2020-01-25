@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { media } from "../helpers"
-// import { GalleryContext } from '../context/GalleryContext'
 
 const Container = styled.div`
   display: flex;
@@ -48,7 +47,7 @@ function PhotoGallery(props: Props) {
         const handleClick = () => props.handleClick(i)
         return (
           <A href='#' onClick={handleClick} key={i}>
-            <Img src={photo.thumbnail} alt='' />
+            <Img data-src={photo.thumbnail} alt='' className='lazyload' />
           </A>
         )
       })}
