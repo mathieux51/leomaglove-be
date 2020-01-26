@@ -40,8 +40,8 @@ async function main() {
         //   __dirname,
         //   `/${formatEncoded}/thumbnail/${f}`
         // )
-        const src = `${imageEndpoint}/${formatEncoded}/${f}`
-        const thumbnail = `${imageEndpoint}/${formatEncoded}/thumbnail/${f}`
+        const src = `${imageEndpoint}${formatEncoded}/${f}`
+        const thumbnail = `${imageEndpoint}${formatEncoded}/thumbnail/${f}`
 
         return {
           src,

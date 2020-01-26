@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import dynamic from "next/dynamic"
 
 const House = dynamic(() => import("../components/icons/House"))
