@@ -1,6 +1,5 @@
 import * as React from "react"
 import styled from "styled-components"
-
 import Head from "./Head"
 // import Footer from "components/Footer"
 import GlobalStyle from "./GlobalStyle"
@@ -15,13 +14,15 @@ const Container = styled.div.attrs({
 `
 type Props = {}
 
-const Layout: React.FunctionComponent<Props> = ({ children }) => (
-  <Container>
-    <GlobalStyle />
-    <Head />
-    {children}
-    {/* <Footer /> */}
-  </Container>
-)
+const Layout: React.FunctionComponent<Props> = ({ children }) => {
+  return (
+    <Container>
+      <GlobalStyle />
+      <Head />
+      {children}
+      {/* <Footer /> */}
+    </Container>
+  )
+}
 
 export default Layout

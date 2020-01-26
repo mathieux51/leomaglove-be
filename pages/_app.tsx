@@ -1,12 +1,13 @@
-import * as React from "react"
+import React from "react"
 import { ThemeProvider } from "styled-components"
 import App from "next/app"
 import { hotjar } from "react-hotjar"
 import ReactGA from "react-ga"
 import theme from "../style/theme"
 import { InformationProvider } from "../context/InformationContext"
-
+import { GalleryProvider } from "../context/GalleryContext"
 import Layout from "../components/Layout" // Cannot be dynamically loaded
+import "lazysizes"
 
 const isProd = process.env.NODE_ENV !== "development"
 
@@ -22,11 +23,13 @@ class _App extends App {
     const { Component, pageProps } = this.props
     return (
       <ThemeProvider theme={theme}>
-        <InformationProvider>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        </InformationProvider>
+        <GalleryProvider>
+          <InformationProvider>
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
+          </InformationProvider>
+        </GalleryProvider>
       </ThemeProvider>
     )
   }
