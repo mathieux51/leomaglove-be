@@ -1,14 +1,14 @@
-const fs = require('fs')
-const path = require('path')
-const { promisify } = require('util')
-const sizeOf = require('image-size')
+const fs = require("fs")
+const path = require("path")
+const { promisify } = require("util")
+const sizeOf = require("image-size")
 
 const readdir = promisify(fs.readdir)
 
 async function main() {
   try {
     if (process.argv.length < 4) {
-      throw new Error('Usage node generate.js path nameOfFile')
+      throw new Error("Usage node generate.js path nameOfFile")
     }
 
     const dir = process.argv[2]
@@ -28,9 +28,9 @@ async function main() {
         if (/\.DS_Store/.test(f) || fs.lstatSync(filePath).isDirectory()) {
           return null
         }
-        // remove /public
+        // remove /docs
         const encoded = encodeURI(dir)
-        const formatEncoded = encoded.substring(7)
+        const formatEncoded = encoded.substring(4)
 
         const { width, height } = sizeOf(filePath)
         const src = path.resolve(__dirname, `/${formatEncoded}/${f}`)
@@ -48,7 +48,6 @@ async function main() {
       })
       .filter(Boolean)
     // write the file
-    // console.log(photos)
     fs.writeFileSync(
       path.resolve(__dirname, `../constants/${nameOfFile}.json`),
       JSON.stringify(photos)
