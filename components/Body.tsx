@@ -3,12 +3,13 @@ import React from "react"
 import { withRouter, SingletonRouter } from "next/router"
 import styled from "styled-components"
 import Main from "./Main"
-import HomeLink from "./HomeLink"
+// import HomeLink from "./HomeLink"
 import StyledLink from "./StyledLink"
-import { france, belgium } from "../constants/constants"
-import weddingLove200Src from "assets/images/wedding-love-200.jpg"
-import weddingLove858Src from "assets/images/wedding-love-858.jpg"
-import weddingLove1400Src from "assets/images/wedding-love-1400.jpg"
+import src from "../public/PHOTOS OFFICIELLES by Amélie Landry/1-La crème de la crème/_DSC7213.jpg"
+// import { france, belgium } from "../constants/constants"
+// // import weddingLove200Src from "assets/images/wedding-love-200.jpg"
+// // import weddingLove858Src from "assets/images/wedding-love-858.jpg"
+// // import weddingLove1400Src from "assets/images/wedding-love-1400.jpg"
 import { media } from "../helpers"
 
 // const Information = dynamic(() => import("./Information"));
@@ -80,22 +81,24 @@ const Body = ({ router }: Props) => {
         <Container>
           <Text>Love</Text>
           <Img
-            sizes='(max-width: 1400px) 100vw, 1400px'
-            srcSet={`
-              ${weddingLove200Src} 200w,
-              ${weddingLove858Src} 858w,
-              ${weddingLove1400Src} 1400w
-            `}
-            src={weddingLove1400Src}
+            // sizes='(max-width: 1400px) 100vw, 1400px'
+            // srcSet={`
+            //   ${weddingLove200Src} 200w,
+            //   ${weddingLove858Src} 858w,
+            //   ${weddingLove1400Src} 1400w
+            // `}
+            src={src}
             alt='Love'
           />
         </Container>
       )}
       <Middle>
         <ButtonContainer>
-          <HomeLink q={belgium} text='Les invités en Belgique' />
-          <StyledLink href='/photos'>Photos</StyledLink>
-          <HomeLink q={france} text='Les invités en France' />
+          <StyledLink href='/official'>Photos officielles crêmes</StyledLink>
+          <StyledLink href='/france'>Photos officielles France</StyledLink>
+          <StyledLink href='/belgium'>Photos officielles Belgique</StyledLink>
+          <StyledLink href='/emilie-and-kaspar'>Emilie et Kaspar</StyledLink>
+          <StyledLink href='/everybody'>Everybody</StyledLink>
         </ButtonContainer>
       </Middle>
     </Main>

@@ -1,6 +1,6 @@
-import * as React from "react"
+import React from "react"
 import dynamic from "next/dynamic"
-import photos from "../constants/official.json"
+import photos from "../constants/everybody.json"
 
 const Header = dynamic(() => import("../components/Header"))
 const PhotosBody = dynamic(() => import("../components/PhotosBody"))
