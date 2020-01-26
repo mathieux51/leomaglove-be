@@ -28,16 +28,20 @@ async function main() {
         if (/\.DS_Store/.test(f) || fs.lstatSync(filePath).isDirectory()) {
           return null
         }
+
         // remove /docs
         const encoded = encodeURI(dir)
         const formatEncoded = encoded.substring(4)
+        const imageEndpoint = "https://mathieux51.github.io/leomaglove-be"
 
         const { width, height } = sizeOf(filePath)
-        const src = path.resolve(__dirname, `/${formatEncoded}/${f}`)
-        const thumbnail = path.resolve(
-          __dirname,
-          `/${formatEncoded}/thumbnail/${f}`
-        )
+        // const src = path.resolve(__dirname, `/${formatEncoded}/${f}`)
+        // const thumbnail = path.resolve(
+        //   __dirname,
+        //   `/${formatEncoded}/thumbnail/${f}`
+        // )
+        const src = `${imageEndpoint}/${formatEncoded}/${f}`
+        const thumbnail = `${imageEndpoint}/${formatEncoded}/thumbnail/${f}`
 
         return {
           src,
