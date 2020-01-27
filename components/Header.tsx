@@ -14,8 +14,9 @@ const MagaliLoveLeo = dynamic(() => import("./icons/MagaliLoveLeo"))
 type HeaderProps = {
   isOpen: boolean
 }
-const Header = styled.header.attrs({ className: "flex jc-c ai-c w100" })`
-  ${(props: HeaderProps) => (!props.isOpen ? "inherit" : "none")}
+
+const Header = styled.header.attrs({ className: "jc-c ai-c w100" })`
+  display: ${(props: HeaderProps) => (!props.isOpen ? "inherit" : "none")};
   max-width: 1280px;
   padding: 0 1rem 0.5rem;
   ${media.phone`
