@@ -40,6 +40,7 @@ const _PhotoSwipe: React.FC<Props> = props => {
     }
   }, [])
   // Initializes and opens PhotoSwipe
+
   return (
     <div
       className='pswp'
@@ -58,16 +59,15 @@ const _PhotoSwipe: React.FC<Props> = props => {
         <div className='pswp__ui pswp__ui--hidden'>
           <div className='pswp__top-bar'>
             <div className='pswp__counter'></div>
-
             <Button
               className='pswp__button pswp__button--close'
-              title='Close (Esc)'
+              title='Fermer (Esc)'
             ></Button>
 
-            <Button
+            {/* <Button
               className='pswp__button pswp__button--share'
               title='Share'
-            ></Button>
+            ></Button> */}
 
             <Button
               className='pswp__button pswp__button--fs'
@@ -93,12 +93,12 @@ const _PhotoSwipe: React.FC<Props> = props => {
 
           <Button
             className='pswp__button pswp__button--arrow--left'
-            title='Previous (arrow left)'
+            title='Précédent'
           ></Button>
 
           <Button
             className='pswp__button pswp__button--arrow--right'
-            title='Next (arrow right)'
+            title='Suivant'
           ></Button>
 
           <div className='pswp__caption'>
