@@ -24,12 +24,13 @@ const _PhotoSwipe: React.FC<Props> = props => {
   const options = {
     index: props.index
   }
+  let pswp: PhotoSwipe<PhotoswipeUIDefault.Options>
   let pswpRef = React.createRef<HTMLDivElement>()
 
   React.useEffect(() => {
     if (pswpRef.current) {
       // code to run on component mount
-      const pswp = new PhotoSwipe(
+      pswp = new PhotoSwipe(
         pswpRef.current,
         PhotoswipeUIDefault,
         props.photos,
@@ -40,6 +41,19 @@ const _PhotoSwipe: React.FC<Props> = props => {
     }
   }, [])
   // Initializes and opens PhotoSwipe
+
+  // const handlePrevious = () => {
+  //   if (pswp) {
+  //     pswp.previous()
+  //   }
+  // }
+
+  // const handleNext = () => {
+  //   if (pswp) {
+  //     pswp.next()
+  //   }
+  // }
+
   return (
     <div
       className='pswp'
@@ -59,25 +73,29 @@ const _PhotoSwipe: React.FC<Props> = props => {
           <div className='pswp__top-bar'>
             <div className='pswp__counter'></div>
 
-            <Button
+            {/* <Button
               className='pswp__button pswp__button--close'
-              title='Close (Esc)'
-            ></Button>
+              title='Fermer (Esc)'
+            >
+              X
+            </Button> */}
 
-            <Button
+            {/* <Button
               className='pswp__button pswp__button--share'
               title='Share'
-            ></Button>
+            ></Button> */}
 
-            <Button
+            {/* <Button
               className='pswp__button pswp__button--fs'
               title='Toggle fullscreen'
-            ></Button>
+            >
+            </Button> */}
 
-            <Button
+            {/* <Button
               className='pswp__button pswp__button--zoom'
               title='Zoom in/out'
-            ></Button>
+            >
+            </Button> */}
             <div className='pswp__preloader'>
               <div className='pswp__preloader__icn'>
                 <div className='pswp__preloader__cut'>
@@ -94,12 +112,18 @@ const _PhotoSwipe: React.FC<Props> = props => {
           <Button
             className='pswp__button pswp__button--arrow--left'
             title='Previous (arrow left)'
-          ></Button>
+            // onClick={handlePrevious}
+          >
+            👈
+          </Button>
 
           <Button
             className='pswp__button pswp__button--arrow--right'
             title='Next (arrow right)'
-          ></Button>
+            // onClick={handleNext}
+          >
+            👉
+          </Button>
 
           <div className='pswp__caption'>
             <div className='pswp__caption__center'></div>

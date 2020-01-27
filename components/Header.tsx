@@ -11,7 +11,7 @@ const MagaliLoveLeo = dynamic(() => import("./icons/MagaliLoveLeo"))
 
 const Header = styled.header.attrs({ className: "flex jc-c ai-c w100" })`
   max-width: 1280px;
-  padding: 0 1rem 2rem;
+  padding: 0 1rem 0.5rem;
   ${media.phone`
     padding: 0 1rem 1rem;
     flex-direction: column;
@@ -19,10 +19,12 @@ const Header = styled.header.attrs({ className: "flex jc-c ai-c w100" })`
 `
 
 const LogoContainer1 = styled(Link).attrs({
-  className: "flex-1 w100 h100 flex ai-c"
+  className: "flex-1 w100 h100 ai-c"
 })`
+  display: flex;
   ${media.phone`
     justify-content: center;
+    display: none;
   `}
 `
 
@@ -45,16 +47,15 @@ const StyledMagaliLoveLeo = styled(MagaliLoveLeo)`
   width: auto;
   height: 50%;
   height: 2rem;
-  margin-top: 1.5rem;
 `
 type Props = {}
 
 const _Header: React.FunctionComponent<Props> = () => (
   <Header>
-    <LogoContainer1 href="/">
+    <LogoContainer1 href='/'>
       <StyledAmourFritesDecadence />
     </LogoContainer1>
-    <LogoContainer2 href="/">
+    <LogoContainer2 href='/'>
       <StyledMagaliLoveLeo />
     </LogoContainer2>
   </Header>
