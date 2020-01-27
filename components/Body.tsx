@@ -91,7 +91,10 @@ const Body = () => {
           <StyledLink href='/everybody'>PHOTOS FLASH by everybody</StyledLink>
         </ButtonContainer>
 
-        <Download href='/leomaglove-photos.zip' download>
+        <Download
+          href='https://mathieux51.github.io/leomaglove-be/leomaglove-photos.zip'
+          download
+        >
           télécharger toutes les photos
         </Download>
       </Middle>

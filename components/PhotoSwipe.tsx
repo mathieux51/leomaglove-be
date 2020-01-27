@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+// import styled from "styled-components"
 import PhotoswipeUIDefault from "photoswipe/dist/photoswipe-ui-default"
 import PhotoSwipe from "photoswipe"
 
@@ -16,9 +16,9 @@ type Props = {
   onClose: () => void
 }
 
-const Button = styled.button`
-  color: white;
-`
+// const Button = styled.button`
+//   color: white;
+// `
 
 const _PhotoSwipe: React.FC<Props> = props => {
   const options = {
@@ -109,21 +109,21 @@ const _PhotoSwipe: React.FC<Props> = props => {
             <div className='pswp__share-tooltip'></div>
           </div>
 
-          <Button
+          {/* <Button
             className='pswp__button pswp__button--arrow--left'
             title='Previous (arrow left)'
             // onClick={handlePrevious}
           >
             👈
-          </Button>
+          </Button> */}
 
-          <Button
+          {/* <Button
             className='pswp__button pswp__button--arrow--right'
             title='Next (arrow right)'
             // onClick={handleNext}
           >
             👉
-          </Button>
+          </Button> */}
 
           <div className='pswp__caption'>
             <div className='pswp__caption__center'></div>
