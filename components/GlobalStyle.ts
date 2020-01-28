@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 import FontFaces from "./FontFaces"
 import { normalize } from "polished"
+import { media } from "../helpers"
 
 const _createGlobalStyle = createGlobalStyle`
   ${FontFaces}
@@ -34,6 +35,18 @@ const _createGlobalStyle = createGlobalStyle`
   p {
     margin: 0;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
+  ${media.phone`
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 1.25rem;
+    }
+  `}
+
+
   /* fonts */
   body {
     color: ${({ theme }) => theme.fg};
