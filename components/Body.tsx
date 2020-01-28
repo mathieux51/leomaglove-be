@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Main from "./Main"
 import StyledLink from "./StyledLink"
+import Archive from "./icons/Archive"
 import src from "../assets/images/_DSC7213.jpg"
 import { media } from "../helpers"
 
@@ -45,14 +46,14 @@ const SubContainer = styled.div.attrs({
 `
 
 // StyledLink
+// border-radius: 9px;
+// box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.19);
+// background: ${({ theme }) => theme.t};
 const Download = styled.a.attrs({
-  className: "fw900 ta-c"
+  className: "fw900 ta-c flex ai-c"
 })`
-  border-radius: 9px;
-  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.19);
   padding: 0.75rem;
   margin: 0.25rem;
-  background: ${({ theme }) => theme.t};
   margin-top: 1rem;
 `
 
@@ -66,7 +67,13 @@ const ButtonSubContainer = styled.div.attrs({
 const Text = styled.h1.attrs({
   className: ""
 })`
+  margin-top: 1rem;
   font-size: 20px;
+`
+
+const StyledArchive = styled(Archive)`
+  width: 1.25rem;
+  margin-left: 0.5rem;
 `
 
 const Body = () => {
@@ -90,12 +97,13 @@ const Body = () => {
           </StyledLink>
           <StyledLink href='/everybody'>PHOTOS FLASH by everybody</StyledLink>
         </ButtonContainer>
-
         <Download
-          href='https://mathieux51.github.io/leomaglove-be/leomaglove-photos.zip'
+          href='https://www.dropbox.com/sh/n9ilwhxft3hs2cl/AACYS3GDuVSWM0l9Pz3QRaSAa?dl=0'
           download
+          target='_blank'
         >
-          télécharger toutes les photos
+          Télécharger toutes les photos
+          <StyledArchive />
         </Download>
       </Middle>
     </Main>

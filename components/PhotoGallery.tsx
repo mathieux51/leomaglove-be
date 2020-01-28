@@ -46,7 +46,7 @@ function PhotoGallery(props: Props) {
       {props.photos.map((photo, i) => {
         const handleClick = () => props.handleClick(i)
         return (
-          <A href='#' onClick={handleClick} key={i}>
+          <A href={`#${i}`} onClick={handleClick} key={i} id={i + ""}>
             <Img data-src={photo.thumbnail} alt='' className='lazyload' />
           </A>
         )
