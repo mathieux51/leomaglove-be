@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { media } from "../helpers"
+import { isServer } from "../constants/constants"
 
 const Container = styled.div`
   display: flex;
@@ -40,14 +41,33 @@ type Props = {
   handleClick: (i: number) => void
 }
 
-function PhotoGallery(props: Props) {
+function PhotoGallery(props: Props): JSX.Element {
+  const containerRef = React.createRef<HTMLDivElement>()
+  const hasHash = !isServer && window.location.hash
+  React.useEffect(() => {
+    if (hasHash) {
+      // const hash = window.location.hash.substr(1)
+      const hash = window.location.hash.split("#")[1].split("&")[0]
+      const element = containerRef.current?.children[Number(hash)]
+      if (element instanceof HTMLElement) {
+        // console.log(element.offsetTop)
+        // window.scrollTo(0, element.offsetTop)
+        element.scrollIntoView()
+      }
+    }
+  }, [hasHash])
   return (
-    <Container>
+    <Container ref={containerRef}>
       {props.photos.map((photo, i) => {
-        const handleClick = () => props.handleClick(i)
+        const handleClick = (): void => props.handleClick(i)
         return (
-          <A href={`#${i}`} onClick={handleClick} key={i} id={i + ""}>
-            <Img data-src={photo.thumbnail} alt='' className='lazyload' />
+          <A href={`#${i}`} onClick={handleClick} key={i}>
+            <Img
+              data-src={photo.thumbnail}
+              alt=''
+              className='lazyload'
+              id={i + ""}
+            />
           </A>
         )
       })}

@@ -22,7 +22,8 @@ const Button = styled.button`
 
 const _PhotoSwipe: React.FC<Props> = props => {
   const options = {
-    index: props.index
+    index: props.index,
+    history: false
   }
   let pswpRef = React.createRef<HTMLDivElement>()
 
@@ -36,7 +37,14 @@ const _PhotoSwipe: React.FC<Props> = props => {
         options
       )
       pswp.init()
-      pswp.listen("close", () => props.onClose())
+      pswp.listen("close", props.onClose)
+      // pswp.listen("updateScrollOffset", offset => {
+      //   if (pswpRef.current) {
+      //     const r = pswpRef.current.getBoundingClientRect()
+      //     offset.x += r.left
+      //     offset.y += r.top
+      //   }
+      // })
     }
   }, [])
   // Initializes and opens PhotoSwipe
