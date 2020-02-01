@@ -44,8 +44,13 @@ const SubContainer = styled.div.attrs({
   flex: 100%;
 `
 
-const Hr = styled.hr`
+const HrContainer = styled.div`
   width: 100%;
+  `
+
+const Hr = styled.hr`
+  width: 180px;
+  margin: auto;
   margin-bottom: 1rem;
 `
 
@@ -96,7 +101,9 @@ const Body = () => {
               <StyledLink href='/france'>Le Sud: la totale</StyledLink>
             </ButtonSubContainer>
           </SubContainer>
-          <Hr />
+          <HrContainer>
+            <Hr />
+          </HrContainer>
           <StyledLink href='/emilie-elvis-kaspar'>
             PHOTOS CADEAUX merci Emilie, Elvis et Kaspar
           </StyledLink>
