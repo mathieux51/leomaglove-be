@@ -41,8 +41,12 @@ const ButtonContainer = styled.div.attrs({
 const SubContainer = styled.div.attrs({
   className: "flex ai-c jc-c ta-c fxd-c"
 })`
-  margin: 0 0 1rem;
   flex: 100%;
+`
+
+const Hr = styled.hr`
+  width: 100%;
+  margin-bottom: 1rem;
 `
 
 // StyledLink
@@ -85,15 +89,16 @@ const Body = () => {
       <Middle>
         <ButtonContainer>
           <SubContainer>
-            <Text>PHOTOS OFFICIELLES</Text>
+            <Text>PHOTOS OFFICIELLES by Amélie Landry</Text>
             <ButtonSubContainer>
               <StyledLink href='/official'>La crème de la crème</StyledLink>
               <StyledLink href='/belgium'>Belgique: la totale</StyledLink>
               <StyledLink href='/france'>Le Sud: la totale</StyledLink>
             </ButtonSubContainer>
           </SubContainer>
-          <StyledLink href='/emilie-and-kaspar'>
-            PHOTO CADEAUX merci Kaspar et Emilie
+          <Hr />
+          <StyledLink href='/emilie-elvis-kaspar'>
+            PHOTOS CADEAUX merci Emilie, Elvis et Kaspar
           </StyledLink>
           <StyledLink href='/everybody'>PHOTOS FLASH by everybody</StyledLink>
         </ButtonContainer>
