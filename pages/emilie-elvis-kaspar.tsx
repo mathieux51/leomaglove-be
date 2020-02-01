@@ -10,7 +10,7 @@ const PhotosBody = dynamic(() => import("../components/PhotosBody"))
 const EmilieKaspar = () => (
   <>
     <Header />
-    <h1>PHOTO CADEAUX merci Kaspar et Emilie</h1>
+    <h1>PHOTOS CADEAUX merci Emilie, Elvis et Kaspar</h1>
     <Anchor
       href='https://www.dropbox.com/sh/p0ccphjfi51udto/AACjBvW0fKxWB5iGwmUpDsUZa?dl=0'
       target='_blank'
