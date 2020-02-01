@@ -1,6 +1,6 @@
 import React from "react"
 import dynamic from "next/dynamic"
-import photos from "../constants/emilie-and-kaspar.json"
+import photos from "../constants/emilie-elvis-kaspar.json"
 import Anchor from "../components/pages-shared/Anchor"
 import StyledArchive from "../components/pages-shared/StyledArchive"
 
