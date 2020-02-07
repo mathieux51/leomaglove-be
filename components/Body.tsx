@@ -27,9 +27,9 @@ const Container = styled.div.attrs({ className: "relative" })`
 `
 
 const Middle = styled.div.attrs({
-  className: "flex fxd-c ai-c jc-c"
+  className: "flex fxd-c ai-c jc-s"
 })`
-  flex: 0 6rem;
+  flex: 1;
 `
 
 const ButtonContainer = styled.div.attrs({
@@ -77,6 +77,7 @@ const Text = styled.h1.attrs({
   className: ""
 })`
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 20px;
 `
 
