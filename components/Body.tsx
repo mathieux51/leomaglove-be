@@ -27,9 +27,9 @@ const Container = styled.div.attrs({ className: "relative" })`
 `
 
 const Middle = styled.div.attrs({
-  className: "flex fxd-c ai-c jc-c"
+  className: "flex fxd-c ai-c jc-s"
 })`
-  flex: 0 6rem;
+  flex: 1;
 `
 
 const ButtonContainer = styled.div.attrs({
@@ -44,8 +44,13 @@ const SubContainer = styled.div.attrs({
   flex: 100%;
 `
 
-const Hr = styled.hr`
+const HrContainer = styled.div`
   width: 100%;
+  `
+
+const Hr = styled.hr`
+  width: 180px;
+  margin: auto;
   margin-bottom: 1rem;
 `
 
@@ -72,6 +77,7 @@ const Text = styled.h1.attrs({
   className: ""
 })`
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 20px;
 `
 
@@ -96,7 +102,9 @@ const Body = () => {
               <StyledLink href='/france'>Le Sud: la totale</StyledLink>
             </ButtonSubContainer>
           </SubContainer>
-          <Hr />
+          <HrContainer>
+            <Hr />
+          </HrContainer>
           <StyledLink href='/emilie-elvis-kaspar'>
             PHOTOS CADEAUX merci Emilie, Elvis et Kaspar
           </StyledLink>
